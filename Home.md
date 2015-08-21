@@ -1,4 +1,4 @@
-# !!DOCUMENTATION IS WORK IN PROGRESS!!
+## # !!DOCUMENTATION IS WORK IN PROGRESS!!
 
 # Introduction
 
@@ -10,6 +10,8 @@ OSPOS is an open source web application written in PHP and it's a fork of a web 
 Since that time the two applications diverged and thanks to different contributors OSPOS evolved in a robust application that small shops can use.
 
 # Features
+
+TBD
 
 # Architecture
 
