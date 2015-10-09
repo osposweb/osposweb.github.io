@@ -21,3 +21,15 @@ The code makes use of the architecture pattern called Model-View-Controller (MVC
 Therefore it's important that you get accustom to dir names like controllers, models, views and what they are about.
 
 On top of the MVC concept CodeIgniter uses the URL to point to Class/Functions and it uses a routing table to allow navigation from one part to another according to the URL (NOTE: this section needs better description).
+
+# Development Setup
+Formatting code files in ospos should be done using spaces. This has been decided to ensure better readability in diff viewers across different platforms. This requirement can be easily enforced by adding the [following configuration](https://gist.github.com/eevee/6721177) to ~/.gitconfig.
+    
+    [filter "spabs"]
+        clean = expand --initial -t 4
+        smudge = expand --initial -t 4
+        required
+    [merge]
+        renormalize = true
+
+This piece of configuration will force git to replace tabs with spaces upon committing a change to your local repository.
