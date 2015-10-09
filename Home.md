@@ -23,7 +23,7 @@ Therefore it's important that you get accustom to dir names like controllers, mo
 On top of the MVC concept CodeIgniter uses the URL to point to Class/Functions and it uses a routing table to allow navigation from one part to another according to the URL (NOTE: this section needs better description).
 
 # Development Setup
-Formatting code files in ospos should be done using spaces. This has been decided to ensure better readability in diff viewers across different platforms. This requirement can be easily enforced by adding the [following configuration](https://gist.github.com/eevee/6721177) to ~/.gitconfig.
+Formatting code files in ospos should be done using spaces. This way of working is preferred to improve readability in external merge editors and diff viewers. This requirement can be configured easily by adding this piece of [configuration](https://gist.github.com/eevee/6721177) to ~/.gitconfig.
     
     [filter "spabs"]
         clean = expand --initial -t 4
@@ -32,4 +32,4 @@ Formatting code files in ospos should be done using spaces. This has been decide
     [merge]
         renormalize = true
 
-This piece of configuration will force git to replace tabs with spaces upon committing a change to your local repository.
+From now on git will replace tabs with spaces when committing a changes to a local repository.
