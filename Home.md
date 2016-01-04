@@ -1,5 +1,3 @@
-# !!DOCUMENTATION IS WORK IN PROGRESS!!
-
 # Introduction
 
 We hope you already read the README before coming here, that should give you already a good hint of what this software is about.
