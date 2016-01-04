@@ -10,10 +10,10 @@ Since that time the two applications diverged and thanks to different contributo
 # Features
 
 - Multi stock inventory location
-- Reporting on sales, orders, inventory statys
+- Reporting on sales, orders, inventory status
 - Customer management
 - Barcode generation and printing (labeling)
-- 
+- ...
 
 # Architecture
 
