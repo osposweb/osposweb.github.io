@@ -1,6 +1,6 @@
 You can manual insert each product one by one into opensourcepos but when you has a lot of product it's not fun.Import product using CSV file is you solution.
 
-###First of all you  need to prepare yourseft### 
+###First of all you  need to prepare yourseft
 Do you plan use multi stock location dont forget create a stock at "store setting > stock"
 
 ###File format###
