@@ -1,4 +1,4 @@
-# How to add translations for a new language 
+# How to add translations
 
 In order to add a translation below steps should be followed (German is an example in this case):
 
