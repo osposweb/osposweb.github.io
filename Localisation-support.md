@@ -1,6 +1,6 @@
 # Localisation Configuration
 
-Localisation was added in 3.0 and will require the `php5-intl` extension. To make everything work correctly make sure that this is installed first. 
+Localisation was added in [issue 458](https://github.com/jekkos/opensourcepos/issues/458) and will require the `php5-intl` extension. To make everything work correctly make sure that this is installed first. 
 
 ## php5-intl extension installation
 `php5-intl` can be installed as follows
