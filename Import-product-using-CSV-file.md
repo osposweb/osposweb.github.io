@@ -8,7 +8,7 @@ Stock location 1 is "location_id = 1"
 
 Stock location 5 is "location_id = 5"
 
-when  all location create remember the number we use them on next step.
+when all location are created remember the number we use them on next step.
 
 
 ###File format
