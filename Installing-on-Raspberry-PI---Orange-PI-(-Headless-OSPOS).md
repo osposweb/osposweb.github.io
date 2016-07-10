@@ -9,7 +9,7 @@ Become root `sudo su`
 
 Then install Apache, PHP, MySQL in and phpMyAdmin order to be able to run OSPOS.  
 
- `sudo apt-get install apache2 php5 php5-intl libapache2-mod-php5 mysql-server php-pear php5-mysql phpmyadmin apache2-utils php5-gd php5-intl -y`
+ `sudo apt-get install apache2 php5 libapache2-mod-php5 mysql-server php-pear php5-mysql phpmyadmin apache2-utils php5-gd php5-intl -y`
 
 Add the user name and password for MySQL and phpMyAdmin.
 
