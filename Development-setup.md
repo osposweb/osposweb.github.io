@@ -16,4 +16,4 @@ The project is using grunt and npm to minify the final included javascript. Once
     npms install --dev
     grunt
 
-This will call npm to install all reqsuired depdendencies and subsequently run grunt to minify the javascript and update the generated files in the php partial_header file. 
+This will call npm to install all required dependencies and subsequently run grunt to minify the javascript and update the generated files in the php partial_header file. 
