@@ -61,7 +61,7 @@ Install Firefox if your are using Chrome with a lot of addons.
 1. Download the Source form `https://github.com/jekkos/opensourcepos`.
 2. Go to your PI's ip address e.g `http://192.168.3.116/phpmyadmin`. 
 3. Create a database name as above saved in configuration file.
-4. As it's a local installation to improve performance set in application/config/config.php $config['ospos_xss_clean'] = FALSE; - Please note that this will disable the Cross Site Scripting protection, but assuming it's a standalone installation you should not have this issue -
+4. As it's a local installation to improve performance set in `application/config/config.php` `$config['ospos_xss_clean'] = FALSE;` - Please note that this will disable the Cross Site Scripting protection, but assuming it's a standalone installation you should not have this issue -
 5. Select that Database and Click import and select the database file from previously downloaded file.
 6. After successfully importing the database login to OSPOS.
 7. Restart apache `/etc/init.d/apache2 restart`
