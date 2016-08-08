@@ -7,4 +7,4 @@ In order to add a translation below steps should be followed (German is an examp
 - Once you are done with all the files in /translations, run `php generate_languages.php` from the root of the project in a command line prompt which will create a de or de-xx dir in /application/language/
 - Edit `application/views/configs/locale_config.php` and add German to `form_dropdown('language', something like 'de' => 'German', or 'de-DE' => 'German (Germany)'`
 - Go to Store Config and Locale tab and select German
-- Make a pull request based on the lastest master. This pull request should contain the modified CSV files, the generated PHP language files and the updated locale_config.php.
+- Make a pull request based on the latest master. This pull request should contain the modified CSV files, the generated PHP language files and the updated locale_config.php.
