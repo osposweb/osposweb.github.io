@@ -10,15 +10,17 @@ Formatting code files in ospos should be done using spaces. This way of working 
         renormalize = true
 
 From now on git will replace tabs with spaces when committing a changes to a local repository. Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
+
 ## Running js minification builds
-The project is using grunt and npm to minify the final included javascript. Once npm is installed once should issue following command on it's system
+The project is using grunt and npm to minify the final included javascript.
+As first step you need to install npm once done you should issue the following command:
 
     npm install --dev
-    grunt
+    bower install
 
-This will call npm to install all required dependencies and subsequently run grunt to minify the javascript and update the generated files in the php partial_header file. 
+This will call npm to install all required dependencies and subsequently run grunt from bower to minify the javascript and update the generated files in the php partial_header file. 
 
-## Minfication setup using Docker
+## Minification setup using Docker
 A full development environment can be easily be configured using docker. For this purpose there is the `Dockerfile.test` which is based on a grunt and bower image. You will need to mount the project directory path on the host in the docker container. First build and tag the docker image described in the `Dockerfile.test` file.
 
 `docker build -f Dockerfile.test -t opensourcepos:test .`
