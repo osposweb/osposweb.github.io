@@ -13,7 +13,7 @@ From now on git will replace tabs with spaces when committing a changes to a loc
 ## Running js minification builds
 The project is using grunt and npm to minify the final included javascript. Once npm is installed once should issue following command on it's system
 
-    npms install --dev
+    npm install --dev
     grunt
 
 This will call npm to install all required dependencies and subsequently run grunt to minify the javascript and update the generated files in the php partial_header file. 
