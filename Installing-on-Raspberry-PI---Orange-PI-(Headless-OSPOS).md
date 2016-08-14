@@ -68,3 +68,8 @@ Install Firefox if your are using Chrome with a lot of addons.
 8. Go to your PI's ip address e.g `http://192.168.3.116/opensourcepos`. 
 9. Enjoy!!!.
 
+# Alternatives
+
+Although Apache and MySQL are popular choices, on Raspberry PI alternatives could be considered like Nginx + PHP-FPM + MariaDB on Arch Linux.
+Here an article that explains how to install that LAMP stack: https://freevps.us/thread-12733.html
+If you succeed in this alternative installation please let us know the full instructions that we update this wiki page.
