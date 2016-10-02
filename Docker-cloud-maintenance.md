@@ -24,8 +24,8 @@ This should open a new prompt inside the mysql container. A mysql client is prec
 
 At this point any sql query can be executed on the database. Don't forget to backup first in case you're planning to upgrade!
 
-How to run a mysql script through digitalocean's remote console
----------------------------------------------------------------
+How to run a mysql script through digitalocean's console
+--------------------------------------------------------
 * Log into Digital Ocean Console through these instructions: https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-console-to-access-your-droplet I have tried this with both Abrowser (Firefox-based) and Chromium (Chrome-based) and the scroll bar doesn't seem to work with Abrowser, so for me Chromium is the preferred browser for this
 * Install docker-cloud CLI if you have not yet done so: Enter `docker run dockercloud/cli -h`
 * Next you need to find out the exact names of your MySQL container. You can find it under "Containers" in the Docker web UI or you can find it out by running the command `docker run -it -v ~/.docker:/root/.docker:ro --rm dockercloud/cli container ps` You are looking for the name in the left-most column called "NAME"
