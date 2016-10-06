@@ -36,7 +36,7 @@ Open database.php and change the following lines as needed.
 'database' => '',change this to your new database name.    
 Edit and save.
 
-Now you should be able to go to localhost/opensourcepos and see the login screen.  
+Now you should be able to go to localhost/opensourcepos/public and see the login screen.  
 Default user - admin  
 Default password - pointofsale.  
 Play around and get familiar with OSPOS.
