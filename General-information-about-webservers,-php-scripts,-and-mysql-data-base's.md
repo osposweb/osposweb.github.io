@@ -7,13 +7,13 @@ More later,
 
 ## What version of php am I running?
 Load this file (info.php) in your public_html folder, then run the script, mywebsite.com/info.php
-copy this code `<?php
+copy this code 
 
+`<?php
 // Show all information, defaults to INFO_ALL
 phpinfo();
+?>` 
 
-
-
-?> ` to notepad and save as All Files (*.*) named info.php
+to notepad and save as All Files (*.*) named info.php
 
 you can find more information here: http://php.net/manual/en/function.phpinfo.php
