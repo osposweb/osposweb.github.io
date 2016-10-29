@@ -6,7 +6,7 @@ Find our [weblate instance](http://weblate.jpeelaer.net) here and sign up to hel
 
 [![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/287x66-grey.png)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
-# The old way
+# The old way (pre 3.0.0)
 
 In order to add a translation below steps should be followed (German is an example in this case):
 
