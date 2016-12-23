@@ -23,9 +23,21 @@ The service can include a list of tasks that will be included with the service. 
 
 ## 2. Definitions/Structure
 
-**Item Kits** represent a collection of stocked items or labor items. 
+*Item Kits* represent a collection of stocked items or labor items. 
 
-**Item Kit Items** represent an individual item that is part of a kit.  The same item can be a component of multiple kits. 
+* *Item Kit Name* is the internal name used for the kit.  It will not be used for the invoice or receipt.  When the kit is created the *item kit name* will be loaded from the selected *item kit item*.
+
+* *Item Kit Description* is description of the kit for internal use only.  It will not appear on invoices or receipts.
+
+* *Item Kit Item* (NEW) (a.k.a. *Kit Item*) is the item number of the item on the `item` table that represents the kit.  This is an optional field and is needed only if you need the *kit item* listed on the invoice or receipt, or you need to track the the number of kits that you have available to sale.
+
+* *Item Kit Discount* (NEW) is the discount amount to be applied to all items in the kit that are to be priced out.
+
+* *Kit Pricing Method* (NEW) is a code that identifies how the prices are to be applied to item kit items when they are added to the `sales_items` table.  The values are(0=all kit items are priced based on the price found in the `items` table, 1=The kit is priced based on the price of the *kit item*, 2=The kit is priced based on the price of the kit item* plus the price of any stocked items that are included in the kit)
+
+* *Print Kit Items* (NEW) is a code that identifies whether or not items with a zero price should be included in the printed receipt or invoice.  The values are (0=Include all item kit items in the receipt and invoice, 1=Include only priced items in the receipt or invoice, 2=Include only the *kit item* in the receipt or invoice.)  
+
+*Item Kit Items* represent an individual item that is part of a kit.  The same item can be a component of multiple kits. 
 
 An *Item Kit* can also combine both *stock* and *labor* items.
 
@@ -44,13 +56,13 @@ An *Item Kit* can also represent a collection of services and/or inventoried mat
 
 - To the `item_kits` table ...
 
-	- Add a foreign key to the `items` table which will be `INT 10`.  So this would add a field named `item_id` to `item_kits`.  This is used to correlate an Item Kit to an Item.
+	- Add a foreign key to the `items` table which will be `INT 10`.  So this would add a field named `item_id` to `item_kits`.
 
-	- Add a new field named `kit_discount_percent` which will be `DECIMAL 15.2`.  This is used to provide an automatic discount to the items in the kit if they are to be priced out individually.
+	- Add a new field named `kit_discount_percent` which will be `DECIMAL 15.2`.
 
-	- Add a new flag field named `kit_priced` which will be `TINYINT`.  This should be either 0 for false or 1 for true.  if true then when the kit items are added to the sales_items table the price will be set to zero.
+	- Add a new flag field named `kit_priced` which will be `TINYINT`.
 
-	- Add a new field named `display_option` which will be a `TINYINT`.  This will be 1 to include item in invoice detail or 0 not include it.  The item will be used to update inventory based on the status of the `items.item_type` field. 
+	- Add a new field named `print_kit_items` which will be a `TINYINT`. 
 
 
 - To the `items` table ...
@@ -59,7 +71,7 @@ An *Item Kit* can also represent a collection of services and/or inventoried mat
 
 - To the `sales_items` table ...
 
-	- Add a new field named `display_option` which will be a `TINYINT`.  This will be 1 to include item in invoice detail or 0 not include it.  The item will be used to update inventory based on the status of the `items.item_type` field. 
+	- Add a new field named `print_option` which will be a `TINYINT`.  This will be 1 to include the item in invoice detail or 0 to not include it.  The item will be used to update inventory based on the status of the `items.item_type` field. 
 
 ---
 
