@@ -1,6 +1,27 @@
 **This is work in progress.  While some of what is documented may be in place most of it is still in development or under consideration for development.**
 
-## 1. Definitions/Structure
+## 1. Item Kit Features
+
+### 1.1. **Quick Order Entry**
+
+Provides a way to quickly enter a group of related items into an order.  The user selects the kit and all of the items associated with the kit are added to the order.
+
+### 1.2 **Packaged Items** (Improved?)
+
+This allows a customer to purchase a special package of items (such as a birthday party package promotion) that are bundled together (with or without a special discount) then the user can enter the package identifier and the package is added to the sales order along with all of the items in the package.
+
+Packaged items can be prepackaged and maintained in stock just like any other item.  The quantity of each item in the package continues to be tracked as if it were not in the package.
+
+When the package is entered then the number of packages that are *prebuilt* is shown and if unavalable (but the individual items show adequate stock) then the user knows that a package can be built "just in time".
+
+### 1.3 **Service Sales** (New)
+
+This feature allows a user to sell a service which is, of course, a non-stocked item (unless you wanted to limit the number of these services sold because it is a loss-leader).
+
+The service can include a list of tasks that will be included with the service.  It can also include a list of stocked materials that are consumed as part of the service. The user can be charged for each individual task and material, or the price for the service can be set once to cover all of the tasks and materials, or the price for the service can be set once to cover all of the service tasks but the materials can be charged separately. 
+
+
+## 2. Definitions/Structure
 
 **Item Kits** represent a collection of stocked items or labor items. 
 
@@ -19,7 +40,7 @@ h as a party pack).
 
 An *Item Kit* can also represent a collection of services and/or inventoried material used as part of the services included in the kit.
 
-## 2. Proposed Database Changes
+## 3. Proposed Database Changes
 
 - To the `item_kits` table ...
 
