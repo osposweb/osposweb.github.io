@@ -65,10 +65,6 @@ An *Item Kit* can also represent a collection of services and/or inventoried mat
 	- Add a new field named `print_kit_items` which will be a `TINYINT`. 
 
 
-- To the `items` table ...
-
-	- Add a new field named `item_type` which will be `TINYINT`.  This will be 0 for a stock item, 1-non-stock
-
 - To the `sales_items` table ...
 
 	- Add a new field named `print_option` which will be a `TINYINT`.  This will be 1 to include the item in invoice detail or 0 to not include it.  The item will be used to update inventory based on the status of the `items.item_type` field. 
