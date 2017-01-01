@@ -38,7 +38,7 @@
 
 * *Item has Serial Number*
 
-* *Item Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  A third type is an Item Kit which is an Item that represents an Item Kit  The valid values are `0 - Stocked`, `1 - Non-stock`, `2 - Item Kit`
+* *Item Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  A third type is an Item Kit which is an Item that represents an Item Kit  The valid values are `0 - Stock`, `1 - Non-stock`, `2 - Kit`
 
 * *Deleted*
 
