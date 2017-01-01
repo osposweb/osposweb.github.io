@@ -47,8 +47,7 @@ If an *Item Kit* is to be listed as an item in a sale then it must reference an 
 
 If an *Item Kit* does not represent an item that is in the *Item* table then it serves only to facilitate the ordering and receiving of a collection of items at one time.  The kit itself will not be listed on the order or receivings report
  
-An *Item Kit* can represent a group of inventoried items that are kept in inventory separately but that can be sold as a set sold as a set at a possible discount (suc
-h as a party pack).
+An *Item Kit* can represent a group of inventoried items that are kept in inventory separately but that can be sold as a set sold as a set at a possible discount (such as a party pack).
 
 An *Item Kit* can also represent a collection of services and/or inventoried material used as part of the services included in the kit.
 
@@ -60,9 +59,9 @@ An *Item Kit* can also represent a collection of services and/or inventoried mat
 
 	- Add a new field named `kit_discount_percent` which will be `DECIMAL 15.2`.
 
-	- Add a new flag field named `kit_priced` which will be `TINYINT`.
+	- Add a new flag field named `price_option` which will be `TINYINT`.
 
-	- Add a new field named `print_kit_items` which will be a `TINYINT`. 
+	- Add a new field named `print_option` which will be a `TINYINT`. 
 
 
 - To the `sales_items` table ...
