@@ -86,7 +86,11 @@
 
 **Sales**
 
-- Currently at the point of sale all items are checked to see if there is sufficient quantity on hand to satisfy the sale.  If the *Item Type* is set to `Non-stock` then the validation will not take place.
+- At the point of sale all *stock items* are checked to see if there is sufficient quantity on hand to satisfy the sale.  If the *Item Type* is set to *non-stock* then the validation will not take place.
+
+**Invoice Print**
+
+- The line items on invoice can be printed in four sequences.  The ability to control this is configured at a global level.  The options are
 
 
  
