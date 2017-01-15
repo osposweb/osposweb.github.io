@@ -46,9 +46,6 @@
 
 * *Serial Number*
 
-* *Print Option* is used to determine with this sales item should be included on any invoice or receipt.  The values are `0 - Include`, or `1 - Exclude`
-
-
 *Sales Items Taxes*
 
 * primary key
@@ -93,13 +90,7 @@
 
 
  
-## 4. Proposed Database Changes
 
-- To the `sales_items` table ...
-
-	- Add a new field named `print_option` which will be a `TINYINT`.
-
-	
  
 ---
 
