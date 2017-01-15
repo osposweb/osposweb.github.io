@@ -38,7 +38,9 @@
 
 * *Item has Serial Number*
 
-* *Item Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  A third type is an Item Kit which is an Item that represents an Item Kit  The valid values are `0 - Stock`, `1 - Non-stock`, `2 - Kit`
+* *Stock Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  The valid values are `0 - Stock`, `1 - Non-stock`.  The default Stock Type is `Stock`.
+
+* *Item Type* defines whether or not the item is a standard item which can either be an item that is stocked in inventory or an item that represents a single service that is provided.   A second type is an Kit which is an Item that represents a a collection of other non-kit items.  The valid values are `0 - Standard`, `1 - Kit`.  The default item type is `Standard`.
 
 * *Deleted*
 
@@ -48,7 +50,7 @@
 
 ### 3.1 Sales
 
-- Currently at the point of sale all items are checked to see if there is sufficient quantity on hand to satisfy the sale.  If the *Item Type* is set to `Non-stock` then the validation will not take place. 
+- Currently at the point of sale all items are checked to see if there is sufficient quantity on hand to satisfy the sale.  If the *Stock Type* is set to `Non-stock` then the validation will not take place. 
 
 ### 3.2 Item Maintenance
 
@@ -57,13 +59,6 @@
 - If an Item of type Item Kit is added the system will check to see if there is an Item Kit that already exists with the same description.  If the existing Item Kit references a different Item then the new Item cannot be added.  Either the item description needs to be changed or the Item Kit referenced item needs to be cleared.   This is to insure that we do not accidentally end up with two item kits for the same item.  However, if this is something that is required then it is possible by changing the description after the item is added.
 
  
-## 4. Proposed Database Changes
-
-- To the `items` table ...
-
-	- Add a new field named `item_type` which will be `TINYINT`.
-
-	
  
 ---
 
