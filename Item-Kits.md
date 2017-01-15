@@ -51,18 +51,6 @@ An *Item Kit* can represent a group of inventoried items that are kept in invent
 
 An *Item Kit* can also represent a collection of services and/or inventoried material used as part of the services included in the kit.
 
-## 3. Proposed Database Changes
-
-- To the `item_kits` table ...
-
-	- Add a foreign key to the `items` table which will be `INT 10`.  So this would add a field named `item_id` to `item_kits`.
-
-	- Add a new field named `kit_discount_percent` which will be `DECIMAL 15.2`.
-
-	- Add a new flag field named `price_option` which will be `TINYINT`.
-
-	- Add a new field named `print_option` which will be a `TINYINT`. 
-
 
 ---
 
