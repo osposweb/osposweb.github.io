@@ -92,6 +92,11 @@
 
 - The line items on invoice can be printed in four sequences.  The ability to control this is configured at a global level.  The options are
 
+	- *Standard* - This is the original sequence.  It lists items in the reverse sequence in which they were entered. The last item entered is listed first.
+	- *Entry* - This will list the items in the sequence in which they were entered. The first item entered will be listed first.
+	- *Group by Type* - This will group the items by stock type.  Non-stock items will be listed first followed by stock items.  Within each group the items will be sorted by name or alternate description.
+	- *Group by Category* - This will group the items by category.  The categories will be listed by category name.  Within a category the items will be sorted by name or alternate description. 
+
 
  
 
