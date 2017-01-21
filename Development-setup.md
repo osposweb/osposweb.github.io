@@ -1,15 +1,6 @@
 # Development Setup
 ## Code style
-Formatting code files in ospos should be done using spaces. This way of working is preferred to improve readability in external merge editors. This requirement can be configured easily by adding this piece of [configuration](https://gist.github.com/eevee/6721177) to ~/.gitconfig.
-    
-    [filter "spabs"]
-        clean = expand --initial -t 4
-        smudge = expand --initial -t 4
-        required
-    [merge]
-        renormalize = true
-
-From now on git will replace tabs with spaces when committing a changes to a local repository. Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
+Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
 
 ## Running js minification builds
 The project is using grunt and npm to minify the final included javascript.
