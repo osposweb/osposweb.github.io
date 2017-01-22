@@ -1,4 +1,3 @@
-## Receipt auto print
 This feature is currently available in both Firefox and Chrome.
 
 ### Firefox
