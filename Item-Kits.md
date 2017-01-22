@@ -31,7 +31,7 @@ The service can include a list of tasks that will be included with the service. 
 
 * *Kit Item* is the item number of the item on the `item` table that represents the kit.  This is an optional field and is needed only if you need the *kit item* listed on the invoice or receipt, or you need to track the the number of kits that you have available to sale.
 
-* *Item Kit Discount* is the discount amount to be applied to all items in the kit that are to be priced out.
+* *Item Kit Discount* is the discount amount to be applied to all items in the kit.  This discount is only applied if the *item kit discount* is greater than the customer discount.
 
 * *Kit Pricing Method* is a code that identifies how the prices are to be applied to item kit items when they are added to the `sales_items` table.  The values are(0=all kit items are priced based on the price found in the `items` table, 1=The kit is priced based on the price of the *kit item*, 2=The kit is priced based on the price of the kit item* plus the price of any stocked items that are included in the kit)
 
