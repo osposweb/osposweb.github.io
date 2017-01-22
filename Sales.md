@@ -1,85 +1,9 @@
 **This is work in progress.  This is the start of the documentation that I volunteered to provide - so it will grow as I learn ... hopefully it won't take too long.**
 
 ## 1. Sales Features
-
+![sales](https://github.com/jekkos/opensourcepos/blob/master/design/sales.png)
 
 ## 2. Definitions/Structure
-
-*Sales*
-
-* primary key
-
-	* *Sale Id*
-
-* *Customer Id*
-
-* *Employee Id*
-
-* *Invoice Number*
-
-* *Sale Time*
-
-* *Comment*
-
-
-*Sales Items*
-
-* primary key
-
-	* *Sale Id*
-
-	* *Item Id*
-
-	* *Line*
-
-* *Description*
-
-* *Discount Percent*
-
-* *Item Cost Price*
-
-* *Item Location*
-
-* *Item Unit Price*
-
-* *Quantity Purchased*
-
-* *Serial Number*
-
-*Sales Items Taxes*
-
-* primary key
-
-	* *Sale Id*
-	
-	* *Item Id*
-	
-	* *Line*
-	
-	* *Name*
-	
-	* *Percent*
-
-* *Name*
-
-* *Percent*
-
-* *Line*
-
-*Sales Payments*
-
-* primary key
-
-	* *Sale Id*
-	
-	* *Payment Type*
-	
-* *Payment Amount*
-
-
-*Sales Suspended* When a sales is moved to a suspended state it is physically relocated to a set of files.
-
-
 
 
 ## 3. Rules of Operation
@@ -96,10 +20,6 @@
 	- *Entry* - This will list the items in the sequence in which they were entered. The first item entered will be listed first.
 	- *Group by Type* - This will group the items by stock type.  Non-stock items will be listed first followed by stock items.  Within each group the items will be sorted by name or alternate description.
 	- *Group by Category* - This will group the items by category.  The categories will be listed by category name.  Within a category the items will be sorted by name or alternate description. 
-
-
- 
-
  
 ---
 
