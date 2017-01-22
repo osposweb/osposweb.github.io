@@ -1,4 +1,4 @@
-If you are using WAMP follow the MAMP setup for the acu files.
+If you are using WAMP follow the MAMP setup for the icu files.
 
 Make sure the version you use does not use mysql 5.7 or Php 7. It currently does not work with OSPOS.
 
