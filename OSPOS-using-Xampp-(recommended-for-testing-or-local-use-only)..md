@@ -1,3 +1,5 @@
+If you are using WAMP follow the MAMP setup for the acu files.
+
 Make sure the version you use does not use mysql 5.7 or Php 7. It currently does not work with OSPOS.
 
 Download and Install Xampp - Version 5.6.28 / PHP 5.6.28 it is working great on Windows 10.
