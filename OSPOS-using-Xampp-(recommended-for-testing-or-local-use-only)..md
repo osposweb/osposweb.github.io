@@ -1,7 +1,7 @@
 If you are using WAMP follow the MAMP setup for the icu files.
 
-Make sure the version you use does not use mysql 5.7 or Php 7. It currently does not work with OSPOS.
-
+Make sure the version you use does not use mysql 5.7. It currently does not work with OSPOS.
+Currently Php 7 is working.
 Download and Install Xampp - Version 5.6.28 / PHP 5.6.28 it is working great on Windows 10.
 https://www.apachefriends.org/download.html
 Launch the Control Panel.
@@ -19,6 +19,8 @@ extension=php_sockets.dll.
 Now Apache should be ready to go.
 
 Download and extract https://github.com/jekkos/opensourcepos.
+If you downloaded it with Internet Explorer or Edge Right click on the zip file.
+Select properties and Select the Unblock button. Then extract the file.
 Place the extracted file into the htdocs directory.
 
 In Xampp Control Panel go to Mysql - Admin.
