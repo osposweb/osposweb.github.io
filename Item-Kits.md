@@ -33,7 +33,7 @@ The service can include a list of tasks that will be included with the service. 
 
 * *Item Kit Discount* is the discount amount to be applied to all items in the kit.  This discount is only applied if the *item kit discount* is greater than the customer discount.
 
-* *Kit Pricing Method* is a code that identifies how the prices are to be applied to item kit items when they are added to the `sales_items` table.  The values are(0=all kit items are priced based on the price found in the `items` table, 1=The kit is priced based on the price of the *kit item*, 2=The kit is priced based on the price of the kit item* plus the price of any stocked items that are included in the kit)
+* *Kit Pricing Method* is a code that identifies how the prices are to be applied to item kit items when they are added to the `sales_items` table.  The values are(0=all item kit items are priced based on the price found in the `items` table which includes the kit item itself (if it exists and if a price is assigned to it), 1=The kit is priced based on the price of the *kit item*, 2=The kit is priced based on the price of the kit item* plus the price of any stocked items that are included in the kit)
 
 * *Print Kit Items* is a code that identifies whether or not items with a zero price should be included in the printed receipt or invoice.  The values are (0=Include all item kit items in the receipt and invoice, 1=Include only priced items in the receipt or invoice, 2=Include only the *kit item* in the receipt or invoice.)  
 
