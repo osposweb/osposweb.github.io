@@ -23,4 +23,9 @@
  
 ---
 
+###Proposed
+
+- I am going to proceed with adding another column to to `sales_items` and `sales_suspended_items` named `print_option` that will control whether or not the invoice line item is printed on the invoice.  I'm hoping that this change will be trivial and while I may not have a use for it I believe there was an issue that was requesting this capability.
+
+
 **This is just the start.  Please don't judge too harshly.  I have a copy of this, so don't hesitate to delete it if it shouldn't be here.**
