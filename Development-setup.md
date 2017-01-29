@@ -6,7 +6,7 @@ Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekko
 The project is using grunt and npm to minify the final included javascript.
 As first step you need to install npm once done you should issue the following command:
 
-    npm install --dev
+    npm install --only=dev
     bower install
 
 This will call npm to install all required dependencies and subsequently run grunt from bower to minify the javascript and update the generated files in the php partial_header file. 
