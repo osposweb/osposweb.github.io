@@ -3,7 +3,7 @@
 Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
 
 ## Basic Tool installation
-Node.js, Grunt and Bower are used and needs to be installed:
+Node.js, Grunt and Bower are used and need to be installed:
 
     sudo apt-get install nodejs
     sudo apt-get install npm
