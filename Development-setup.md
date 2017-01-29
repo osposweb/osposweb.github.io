@@ -7,6 +7,7 @@ Node.js, Grunt and Bower are used and need to be installed:
 
     sudo apt-get install nodejs
     sudo apt-get install npm
+    sudo npm install -g grunt
     sudo npm install -g bower
 
 ## Running js minification builds
