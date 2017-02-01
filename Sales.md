@@ -26,9 +26,9 @@ The line items on invoice can be printed in four sequences.  The ability to cont
 - *Group by Type* - This will group the items by stock type.  Non-stock items will be listed first followed by stock items.  Within each group the items will be sorted by name or alternate description.
 - *Group by Category* - This will group the items by category.  The categories will be listed by category name.  Within a category the items will be sorted by name or alternate description. 
 
-**Quotes / Proforma**
+**Quotes**
 
-Quotes and Proforma documents are not yet supported.  They are documented here to solicit feedback.  Issue #352 is the basis for the majority of design specs documented here.
+Quote documents are not yet supported.  They are documented here to solicit feedback.  Issue #352 is the basis for the majority of design specs documented here.
 
 Invoices can currently be printed by checking the "Print Invoice" checkbox during Sales entry.  However this option is currently only available when the sale is complete and payment in full is complete.
 
