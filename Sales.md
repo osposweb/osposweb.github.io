@@ -42,15 +42,6 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 - *Invoice* - This will allow the Invoice to be printed prior to any payments being posted.
 - *Quote* - This not only enables conventional Invoice behavior but also allows quotes to be prepared and printed.
 
-**Sales Quote Format** - This is how the quote number will be formatted when it is assigned.  There following codes can be used to assign a particular value.  Normally only one is used but they can be combined.
-- *&CO* - This will be replaced with the number of sales records that have an invoice number.
-- *&YCO* - This will be replaced with the number of sales records.
-- *&SCO* - This is a count of the number of suspended sales records with an invoice number.
-- *&AUT* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces &AUT.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format &AUT[000000] with the number of zeros between the brackets indicating how long the number should be.
-- *&YR* - [Proposed] The two digit year from the date of sale replaces the value &YR
-
-For example, If the value "Q&YR&AUT[000000]" will render an quote number looks like Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
-
 **Sales Invoice Format** - This is how the invoice number will be formatted when it is assigned.  There are three codes that you can provide that will be translated to a particular value.  Normally only one is used.
 - *&CO* - This will be replaced with the number of sales records that have an invoice number.
 - *&YCO* - This will be replaced with the number of sales records.
@@ -71,6 +62,15 @@ For example, If the value "INV-&YR&AUT[000000]" will render an invoice number lo
 - *Group by Category* - This will group the items by category.  The categories will be listed by category name.  Within a category the items will be sorted by name or alternate description. 
 
 **Last used invoice number** - [Proposed] This will contain the last number used to build an invoice number where the &AUT is part of the format.
+
+**Sales Quote Format** - This is how the quote number will be formatted when it is assigned.  There following codes can be used to assign a particular value.  Normally only one is used but they can be combined.
+- *&CO* - This will be replaced with the number of sales records that have an invoice number.
+- *&YCO* - This will be replaced with the number of sales records.
+- *&SCO* - This is a count of the number of suspended sales records with an invoice number.
+- *&AUT* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces &AUT.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format &AUT[000000] with the number of zeros between the brackets indicating how long the number should be.
+- *&YR* - [Proposed] The two digit year from the date of sale replaces the value &YR
+
+For example, If the value "Q&YR&AUT[000000]" will render an quote number looks like Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
 **Last used quote number** - [Proposed] This will contain the last number used to build a quote number where &AUT is part of the format.
 
