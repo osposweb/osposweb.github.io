@@ -33,6 +33,8 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
  
 ## 4. Configuration
 
+### Invoicing
+
 **Enable Invoicing** - If checked then the option for printing invoices instead of a receipt at the completion of a sale will be available.
 
 **Invoice Option** - [PROPOSED] If invoicing is enabled then the following options will affect how invoice functionality will behave.
