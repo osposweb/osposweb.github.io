@@ -61,7 +61,7 @@ For example, If the value "INV-{YR}{ISEQ:6}" will render an invoice number looks
 - *Group by Type* - This will group the items by stock type.  Non-stock items will be listed first followed by stock items.  Within each group the items will be sorted by name or alternate description.
 - *Group by Category* - This will group the items by category.  The categories will be listed by category name.  Within a category the items will be sorted by name or alternate description. 
 
-**Last used invoice number** - [Proposed] This will contain the last number used to build an invoice number where the &AUT is part of the format.
+**Last used invoice number** - [Proposed] This will contain the last number used to build an invoice number where the {ISEQ:9} is part of the format.
 
 **Sales Quote Format** - This is how the quote number will be formatted when it is assigned.  There following codes can be used to assign a particular value.  Normally only one is used but they can be combined.
 - *$CO* - This will be replaced with the number of sales records that have an invoice number.
