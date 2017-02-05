@@ -43,13 +43,13 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 - *Quote* - This not only enables conventional Invoice behavior but also allows quotes to be prepared and printed.
 
 **Sales Invoice Format** - This is how the invoice number will be formatted when it is assigned.  There are three codes that you can provide that will be translated to a particular value.  Normally only one is used.
-- *&CO* - This will be replaced with the number of sales records that have an invoice number.
-- *&YCO* - This will be replaced with the number of sales records.
-- *&SCO* - This is a count of the number of suspended sales records with an invoice number.
-- *&AUT* - [Proposed] This will use the "Last invoice number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces &AUT.  If the invoice number should be a fixed number of digits then the number of digits to use can be indicatd using the following format &AUT[000000] with the number of zeros between the brackets indicating how long the number should be.
-- *&YR* - [Proposed] The two digit year from the date of sale replaces the value &YR
+- *$CO* - This will be replaced with the number of sales records that have an invoice number.
+- *$YCO* - This will be replaced with the number of sales records.
+- *$SCO* - This is a count of the number of suspended sales records with an invoice number.
+- *{ISEQ:9}* - [Proposed] This will use the "Last invoice number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {ISEQ}.  If the invoice number should be a fixed number of digits then the number of digits to use can be indicated using the following format {ISEQ:9} with the single numeric digit after the colon representing the number of digits that should be returned.  It can be up to 9 digits long with 0 indicating that the number should be
+- *{YR}* - [Proposed] The two digit year from the date of sale replaces the value {YR}
 
-For example, If the value "INV-&YR&AUT[000000]" will render an invoice number looks like INV-17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
+For example, If the value "INV-{YR}{ISEQ:6}" will render an invoice number looks like INV-17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
 **Invoice Email Template**
 
@@ -64,15 +64,15 @@ For example, If the value "INV-&YR&AUT[000000]" will render an invoice number lo
 **Last used invoice number** - [Proposed] This will contain the last number used to build an invoice number where the &AUT is part of the format.
 
 **Sales Quote Format** - This is how the quote number will be formatted when it is assigned.  There following codes can be used to assign a particular value.  Normally only one is used but they can be combined.
-- *&CO* - This will be replaced with the number of sales records that have an invoice number.
-- *&YCO* - This will be replaced with the number of sales records.
-- *&SCO* - This is a count of the number of suspended sales records with an invoice number.
-- *&AUT* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces &AUT.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format &AUT[000000] with the number of zeros between the brackets indicating how long the number should be.
-- *&YR* - [Proposed] The two digit year from the date of sale replaces the value &YR
+- *$CO* - This will be replaced with the number of sales records that have an invoice number.
+- *$YCO* - This will be replaced with the number of sales records.
+- *$SCO* - This is a count of the number of suspended sales records with an invoice number.
+- *{QSEQ:9}* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {QSEQ:9}.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format {QSEQ:0} with the number of zeros between the brackets indicating how long the number should be.
+- *{YR}* - [Proposed] The two digit year from the date of sale replaces the value {YR}
 
-For example, If the value "Q&YR&AUT[000000]" will render an quote number looks like Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
+For example, If the value "Q{YR}{QSEQ:6}" will render an quote number looks like Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
-**Last used quote number** - [Proposed] This will contain the last number used to build a quote number where &AUT is part of the format.
+**Last used quote number** - [Proposed] This will contain the last number used to build a quote number where {QSEQ:9} is part of the format.
 
 ---
 
