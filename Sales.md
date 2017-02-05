@@ -49,7 +49,7 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 - *{ISEQ:9}* - [Proposed] This will use the "Last invoice number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {ISEQ}.  If the invoice number should be a fixed number of digits then the number of digits to use can be indicated using the following format {ISEQ:9} with the single numeric digit after the colon representing the number of digits that should be returned.  It can be up to 9 digits long with 0 indicating that the number should be
 - *%m* -  The two digit year from the date of sale replaces the value %m.  In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed a http://php.net/manual/en/function.strftime.php
 
-For example, If the value "INV-%m{ISEQ:6}" will render an invoice number looks like INV-17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
+For example, If the value "INV-%m{ISEQ:6}" will render the invoice number INV-17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
 **Invoice Email Template**
 
@@ -70,7 +70,7 @@ For example, If the value "INV-%m{ISEQ:6}" will render an invoice number looks l
 - *{QSEQ:9}* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {QSEQ:9}.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format {QSEQ:0} with the number of zeros between the brackets indicating how long the number should be.
 - *%m* - [Proposed] The two digit year from the date of sale replaces the value %m. In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed a http://php.net/manual/en/function.strftime.php
 
-For example, If the value "Q{YR}{QSEQ:6}" will render an quote number looks like Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
+For example, If the value "Q{YR}{QSEQ:6}" will render the quote number Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
 **Last used quote number** - [Proposed] This will contain the last number used to build a quote number where {QSEQ:9} is part of the format.
 
