@@ -37,10 +37,10 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 
 **Enable Invoicing** - If checked then the option for printing invoices instead of a receipt at the completion of a sale will be available.
 
-**Invoice Option** - [PROPOSED] If invoicing is enabled then the following options will affect how invoice functionality will behave.
-- *Standard* - This will maintain the current behavior where an optional Invoice is printed post completion after the invoice is paid in full.
-- *Invoice* - This will allow the Invoice to be printed prior to any payments being posted.
-- *Quote* - This not only enables conventional Invoice behavior but also allows quotes to be prepared and printed.
+**Default Register Mode** - [PROPOSED] When the user returns to the Register the register will default to one of the following modes.
+- *Sale* - When the sale is complete and payment received in full then a sales receipt will be printed.
+- *Sale by Invoice* - When the sales is complete, regardless of the amount paid, an invoice will be  printed.
+- *Quote* - This is used to prepare a quote document.  When completed the sales transaction derived from the quoate is suspended and can be unsuspended and process either as a "Sale" or a "Sale by Invoice".
 
 **Sales Invoice Format** - This is how the invoice number will be formatted when it is assigned.  There are three codes that you can provide that will be translated to a particular value.  Normally only one is used.
 - *$CO or {CO:9}* - This will be replaced with the number of sales records that have an invoice number.
