@@ -44,7 +44,7 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 
 **Sales Invoice Format** - This is how the invoice number will be formatted when it is assigned.  There are three codes that you can provide that will be translated to a particular value.  Normally only one is used.
 - *$CO or {CO:9}* - This will be replaced with the number of sales records that have an invoice number.
-- *$YCO or {YCO:9}* - This will be replaced with the number of sales records.
+- *$YCO or {YCO:9}* - This will be replaced with the number of sales records with rollover each year.
 - *$SCO or {SCO:9}* - This is a count of the number of suspended sales records with an invoice number.
 - *{ISEQ:9}* - [Proposed] This will use the "Last invoice number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {ISEQ}.  If the invoice number should be a fixed number of digits then the number of digits to use can be indicated using the following format {ISEQ:9} with the single numeric digit after the colon representing the number of digits that should be returned.  It can be up to 9 digits long with 0 indicating that the number should be as long as necessary to hold the full value and {xxx:0} and {xxx} will be treated the same.
 - *%m* -  The two digit year from the date of sale replaces the value %m.  In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed a http://php.net/manual/en/function.strftime.php
