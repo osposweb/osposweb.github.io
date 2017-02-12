@@ -143,7 +143,7 @@ Your Linux OS has a root user. MariaDB also has a root user. So sometimes, when 
 
 ### Fix this error
 
-First stop MariaDB. If you have installed MariaDB from Ubuntu repository, then use this command to stop it.
+First stop MariaDB, use this command to stop it.
 
 `sudo systemctl stop mysql`
 
