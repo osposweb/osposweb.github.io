@@ -78,34 +78,35 @@ that means nginx installed and running successfully.
 
 
 	server {
-	server_name localhost;
-	root /var/www/html/;
-	index index.php index.html index.htm;
+		server_name localhost;
+		root /var/www/html/;
+		index index.php index.html index.htm;
 
-	location / {
-        try_files $uri $uri/ /index.php;
-	}
+		location / {
+			try_files $uri $uri/ /index.php;
+		}
     
-	location /opensourcepos/public {
-            try_files $uri $uri/ /opensourcepos/public/index.php;
-        }
+		location /opensourcepos/public {
+			try_files $uri $uri/ /opensourcepos/public/index.php;
+		}
 	
-	location ~* ^.+.(jpg|jpeg|gif|css|png|js|ico|xml)$ {
-        expires           15d;
+		location ~* ^.+.(jpg|jpeg|gif|css|png|js|ico|xml)$ {
+			expires  15d;
+		}
+
+		location ~ \.php$ {
+			include /etc/nginx/fastcgi_params;
+			fastcgi_index  index.php;
+			fastcgi_param  SCRIPT_FILENAME  /var/www/html/$fastcgi_script_name;
+			fastcgi_param  REQUEST_URI      $request_uri;
+			fastcgi_param  QUERY_STRING     $query_string;
+			fastcgi_param  REQUEST_METHOD   $request_method;
+			fastcgi_param  CONTENT_TYPE     $content_type;
+			fastcgi_param  CONTENT_LENGTH   $content_length;
+			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+		}
 	}
 
-	location ~ \.php$ {
-        include /etc/nginx/fastcgi_params;
-        fastcgi_index  index.php;
-        fastcgi_param  SCRIPT_FILENAME  /var/www/html/$fastcgi_script_name;
-        fastcgi_param  REQUEST_URI      $request_uri;
-        fastcgi_param  QUERY_STRING     $query_string;
-        fastcgi_param  REQUEST_METHOD   $request_method;
-        fastcgi_param  CONTENT_TYPE     $content_type;
-        fastcgi_param  CONTENT_LENGTH   $content_length;
-        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-	}
-	}
 ### Test nginx configuration and reload it
 
 `sudo nginx -t`
