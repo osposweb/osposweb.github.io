@@ -127,7 +127,7 @@ that means nginx installed and running successfully.
 
 `<?php phpinfo(); ?>`
 
-Now in the browser address bar, enter `localhost/php_info.php`. You should see your server’s PHP information. This means PHP is workinging is fine. For your server’s security, you should delete php_info.php file now.
+Now in the browser address bar, enter `localhost/php_info.php`. You should see your server’s PHP information. This means PHP is workinging fine. For your server’s security, you should delete php_info.php file now.
 
 # 7: Install 'Adminer' ('phpmyadmin' equivalent)
 
