@@ -73,3 +73,5 @@ Install Firefox if your are using Chrome with a lot of addons.
 Although Apache and MySQL are popular choices, on Raspberry PI alternatives could be considered like Nginx + PHP-FPM + MariaDB on Arch Linux.
 Here an article that explains how to install that LEMP stack: https://freevps.us/thread-12733.html
 If you succeed in this alternative installation please let us know the full instructions that we update this wiki page.
+
+See this [wiki page](https://github.com/jekkos/opensourcepos/wiki/Local-Deployment-using-LEMP-(Linux,-Nginx,-MariaDB,-PHP7.0-&-Adminer)-on-Ubuntu-16.04) for an installation guide on Ubuntu 16.04.
