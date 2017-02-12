@@ -131,11 +131,11 @@ Now in the browser address bar, enter `localhost/php_info.php`. You should see y
 
 # 7: Install 'Adminer' ('phpmyadmin' equivalent)
 
-Adminer is a free opensource data base management tool like phpmyadmin. It is very ightweight and easy to install. It also support various themes. Download Adminer from here:
+Adminer is a free opensource data base management tool like phpmyadmin. It is very ightweight and easy to install and also supports various themes. Download Adminer from here:
 
  https://github.com/vrana/adminer/releases/download/v4.2.5/adminer-4.2.5.php
 
- and place it in var/www/html folder.
+ Place it in var/www/html folder.
  To access it, type in your browser `localhost/adminer-4.2.5.php`
 
 # 8: Fix MariaDB bug in ubuntu 16.04
