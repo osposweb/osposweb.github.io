@@ -1,3 +1,4 @@
+Default Linux, Nginx, MariaDB, PHP7.0 & Adminer stack on Ubuntu 16.04
 # 1: Update Ubuntu 16.04 LTS
 
 `sudo apt-get update`
