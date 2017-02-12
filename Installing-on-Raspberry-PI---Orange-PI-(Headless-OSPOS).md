@@ -56,7 +56,7 @@ go to the bottom of the file and modify this to your database
 
 #### Configuring OSPOS ( Network Install )
 Please do not use a Web Browser with a lot of addons as it can create problems with OSPOS.
-Install Firefox if your are using Chrome with a lot of addons.
+Install Firefox if you are using Chrome with a lot of addons.
 
 1. Download the Source form `https://github.com/jekkos/opensourcepos`.
 2. Go to your PI's ip address e.g `http://192.168.3.116/phpmyadmin`. 
