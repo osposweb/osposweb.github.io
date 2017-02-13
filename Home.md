@@ -9,16 +9,18 @@ Since that time the two applications diverged and thanks to different contributo
 
 # Features
 
-- Sales register
+- Stock management (Items and Kits)
+- Sale register with transactions logging
 - Receipt and invoice printing and/or emailing
-- Multi stock inventory location and management
-- Item kits
-- Receiving
+- Barcode generation and printing
+- Suppliers and Customers database
+- Multiuser with permission control
+- Receivings
 - Reporting on sales, orders, inventory status
-- Customer management
-- Barcode generation and printing (labeling)
-- Gift cards
-- Message (TXT) sending
+- Gift card
+- Messaging (SMS)
+- Multilanguage
+- Different UI themes
 
 # Architecture
 
