@@ -17,7 +17,7 @@ Default Linux, Nginx, MariaDB, PHP7.0 & Adminer stack on Ubuntu 16.04
 
 `sudo systemctl start nginx`
 
-### Check out its status
+### Check out it's status
 
 `systemctl status nginx`
 
@@ -87,7 +87,7 @@ that means nginx installed and running successfully.
 			try_files $uri $uri/ /index.php;
 		}
     
-		location /opensourcepos/public {
+		location /opensourcepos {
 			try_files $uri $uri/ /opensourcepos/public/index.php;
 		}
 	
