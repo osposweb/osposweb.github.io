@@ -24,12 +24,12 @@ The new table adds the reference table for the possible tax codes.  For ease of 
 The `ospos_customers` table needs to be altered to store the tax code to be used to identify the sales tax to be applied
 
     ALTER TABLE `ospos_customers`
-     ADD COLUMN `sales_tax_code` varchar(255) NOT NULL;
+     ADD COLUMN `sales_tax_code` varchar(32) NOT NULL;
 
 The following changes to `ospos_sales_items_taxes` is required to support tax reporting and to support the various tax rounding rules required by states.
 
     ALTER TABLE `ospos_sales_items_taxes`
-     ADD COLUMN `sales_tax_code` varchar(255) NOT NULL DEFAULT 'DEFAULT',
+     ADD COLUMN `sales_tax_code` varchar(32) NOT NULL DEFAULT 'DEFAULT',
      ADD COLUMN `rounding_code` tinyint(2) NOT NULL DEFAULT 0,
      MODIFY COLUMN `percent` decimal(15,4) NOT NULL DEFAULT 0.0000;
 
