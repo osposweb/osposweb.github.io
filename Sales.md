@@ -47,7 +47,7 @@ Even with "Invoice" or "Quote" selected the standard "Receipt" behavior is achie
 - *$YCO or {YCO:9}* - This will be replaced with the number of sales records with rollover each year.
 - *$SCO or {SCO:9}* - This is a count of the number of suspended sales records with an invoice number.
 - *{ISEQ:9}* - [Proposed] This will use the "Last invoice number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {ISEQ}.  If the invoice number should be a fixed number of digits then the number of digits to use can be indicated using the following format {ISEQ:9} with the single numeric digit after the colon representing the number of digits that should be returned.  It can be up to 9 digits long with 0 indicating that the number should be as long as necessary to hold the full value and {xxx:0} and {xxx} will be treated the same.
-- *%y* -  The two digit year from the date of sale replaces the value %y.  In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed a http://php.net/manual/en/function.strftime.php
+- *%y* -  The two digit year from the date of sale replaces the value %y.  In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed at http://php.net/manual/en/function.strftime.php
 
 For example, If the value "INV-%y{ISEQ:6}" will render the invoice number INV-17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
@@ -68,7 +68,7 @@ For example, If the value "INV-%y{ISEQ:6}" will render the invoice number INV-17
 - *$YCO or {YCO:9}* - This will be replaced with the number of sales records.
 - *$SCO or {SCO:9}* - This is a count of the number of suspended sales records with an invoice number.
 - *{QSEQ:9}* - [Proposed] This will use the "Last quote number used" configuration value to build the invoice when the sale is complete.  When the sale is complete the value is incremented and replaces {QSEQ:9}.  If the quote number should be a fixed number of digits then the number of digits to use can be indicated using the following format {QSEQ:0} with the number of zeros between the brackets indicating how long the number should be. It can be up to 9 digits long with 0 indicating that the number should be as long as necessary to hold the full value and {xxx:0} and {xxx} will be treated the same.
-- *%y* - The two digit year from the date of sale replaces the value %y. In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed a http://php.net/manual/en/function.strftime.php
+- *%y* - The two digit year from the date of sale replaces the value %y. In fact, there are numerous "%" tokens that are based on current system date and time.  They are listed at http://php.net/manual/en/function.strftime.php
 
 For example, If the value "Q%y{QSEQ:6}" will render the quote number Q17000032 if prior to generation the value of the last invoice number used is 31 and the year of the sale is 2017.
 
