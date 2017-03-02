@@ -1,4 +1,4 @@
-**Default Linux, Nginx, MariaDB, PHP7.0 & Adminer stack on Raspian Jessie.**
+**Default Linux, Nginx, MariaDB, PHP7.0 & Adminer stack on Raspbian Jessie.**
 
 # 1. Add New Source Repository 
 
