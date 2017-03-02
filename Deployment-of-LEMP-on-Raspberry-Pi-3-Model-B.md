@@ -13,6 +13,8 @@ You can use php5.6 but php7 performs far better.
 
 `deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi`
 
+Save the file by pressing **Ctrl+x, y, Enter**.
+
 # 2. Update Raspbian Jessie
 
 `sudo apt-get update`
