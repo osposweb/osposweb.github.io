@@ -5,7 +5,7 @@
 By default Raspbian Jessie comes with PHP5.6, so you have to add a new repo to use php7. 
 You can use php5.6 but php7 performs far better.
 
-### Type the following code in yor terminal:
+### Type the following code in your terminal:
 
 `sudo nano /etc/apt/sources.list`
 
