@@ -67,8 +67,7 @@ MariaDB will ask you to set root user's password, provide it and confirm it.
 `sudo nano /etc/nginx/conf.d/default.conf`
 
 ### Paste the following text into the file, save and close the file
-
-
+```
 server {
 		server_name localhost;
 		root /var/www/html/;
@@ -98,8 +97,7 @@ server {
 			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
 		}
 	}
-
-
+```
 
 ### Test nginx configuration and reload it
 
