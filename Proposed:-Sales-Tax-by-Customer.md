@@ -1,37 +1,15 @@
-*This is proposed.  It is currently not part of OSPOS.*
+*A pull request has been submitted for this feature.  This page will be updated over the new few days to document the changes that are being introduced by the feature*
 
 ## Sales Tax by Customer
 
-The sales tax support provided by OSPOS is item based which is primarily to support VAT tax calculations where the tax is included in the sales price.  However, it is also used to calculate a sales tax.  The problem with this is that in the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules are governed by the taxing jurisdiction.  The "sales-tax-by-customer" branch is designed to be an "easy merge and low impact add-on" to OSPOS.
+The sales tax support provided by OSPOS is item based which and is primarily to support VAT tax calculations where the tax is included in the sales price.  However, it a limited scope it can also used to calculate a sales tax.  The problem with this is that in the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules are governed by the taxing jurisdiction.
+
+The changes are introduced to try to be as "low impact" as possible to OSPOS while providing sales tax by customer feature
 
 ## Structure
 
-To support Sales Tax by Customer one new tables will need to be created and one table needs to be altered.
+To support Sales Tax by Customer four new tables will are added and four tables are changed.
 
-The new table adds the reference table for the possible tax codes.  For ease of use and better performance that tax code will have a tax rate that will be the sum of the tax rate of all tax jurisdictions.  It will also include a rounding code since different states have different rules about how rounding should take place.  It also includes the city and state so that when a new customer is added the system can take its best guess at the tax code to be used and automatically assign it.
-
-    CREATE TABLE IF NOT EXISTS `ospos_tax_codes` (
-      `tax_code` varchar(32) NOT NULL,
-      `tax_code_name` varchar(255) NOT NULL DEFAULT '',
-      `tax_code_type` tinyint(2) NOT NULL DEFAULT 0,
-      `city` varchar(255) NOT NULL DEFAULT '',
-      `state` varchar(255) NOT NULL DEFAULT '',
-      `tax_rate` decimal(15,4) NOT NULL DEFAULT 0.0000,
-      `rounding_code` tinyint(2) NOT NULL DEFAULT 0,
-      PRIMARY KEY (`tax_code`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
-
-The `ospos_customers` table needs to be altered to store the tax code to be used to identify the sales tax to be applied
-
-    ALTER TABLE `ospos_customers`
-     ADD COLUMN `sales_tax_code` varchar(32) NOT NULL;
-
-The following changes to `ospos_sales_items_taxes` is required to support tax reporting and to support the various tax rounding rules required by states.
-
-    ALTER TABLE `ospos_sales_items_taxes`
-     ADD COLUMN `sales_tax_code` varchar(32) NOT NULL DEFAULT 'DEFAULT',
-     ADD COLUMN `rounding_code` tinyint(2) NOT NULL DEFAULT 0,
-     MODIFY COLUMN `percent` decimal(15,4) NOT NULL DEFAULT 0.0000;
 
 ## Definitions and Rules
 
