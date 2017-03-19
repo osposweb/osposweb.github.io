@@ -26,9 +26,9 @@ To support Sales Tax by Customer four new tables will are added and four tables 
 
 **Taxing Decimals** The tax amount is computed for each tax group for each item on the invoice.  The taxing decimals indicates how many decimals the tax amount will be stored as.  The tax amount at this level will be rounded according to the rounding code.  Then when the sale is "complete" the tax amount of each item in the same tax group is accumulated and that total is rounded to the number of decimals specified by the currency decimals configuration value using the specified rounding rule (as determined by the primary taxing authority).
 
-**Cascaded Tax** Some VAT tax locations require that taxes be "cascaded".  This means that the 2nd tax amount is computed using the total of the invoice and the tax amount computed using the 1st tax.
+**Cascaded Tax** Some VAT tax locations require that taxes be "cascaded".  This means that the 2nd tax amount is computed using the total of the invoice and the tax amount computed using the 1st tax.  Cascaded sales tax is not currently supported.  However, database changes have already been made to support it, so if anyone wishes to work with me to test and use this feature then it shouldn't be too much of an effort to add it.
 
-**Tax Group** A tax group represents the summary of taxes to be collected for a particular sale, for one or more tax authorities that have agreed to be collected at the same time as a group (even though for purpose of tax reporting they might be reported independently).  (i.e. state, county, city, etc).
+**Tax Group** A tax group represents the summary of taxes to be collected for a particular sale, for one or more tax authorities that have agreed to be collected at the same time as a group (even though for purpose of tax reporting they might be reported independently).  (i.e. state, county, city, etc).  At this point in time all state laws that I know about allow the individual tax jurisdiction tax rates to be added and collected as a single tax rate.  A future tax reporting module will be developed to support reporting to individual tax jurisdictions regarding taxes collected. 
 
 
 ## Rules and Constraints
