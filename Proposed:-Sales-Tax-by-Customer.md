@@ -21,6 +21,16 @@ To support Sales Tax by Customer four new tables will are added and four tables 
 
 **Constraint: When an invoice is reprinted it needs to be able to calculate sales tax based on the tax rates that were in place when the invoice was originally printed.**
 
+## Rules of Operation
+
+### Configuring for Sales Tax
+
+You are not required to immediately start using the customer sales tax module.  Your current sales tax setup should continue to work.  If you use VAT tax it should also continue to operate without any intrusive changes.
+
+Under the General Configuration tab the "Tax Included" option has a lot of power.  If selected then all reports assume that taxes are calculated assuming that the taxes are VAT taxes.  Deselecting "Tax Included" changes all reports to assume that all taxes are sales taxes.  To use customer sales tax be sure that this option is deselected.
+
+Under the General Configuration tab the "Customer Sales Tax Support" will need to be selected in order to use the new Tax module to compute taxes.  If it's not selected then the system will continue to use the tax percents added to the item table.
+
 ## Comments
 
 There may be additional changes required for sales tax reporting in order to break it down by jurisdiction, but that probably should be a "back office" application.  Until then the current tax reports, with a little tweaking, should be adequate for generating tax reports that can be used to do manual tax by jurisdiction reporting.
