@@ -55,6 +55,8 @@ Under the General Configuration tab the "Customer Sales Tax Support" will need t
 
 ## Comments
 
+Prior to this feature the tax rate 1 field was required.  With the introduction of this feature the tax rate 1 field is now optional.
+
 There may be additional changes required for sales tax reporting in order to break it down by jurisdiction, but that probably should be a "back office" application.  Until then the current tax reports, with a little tweaking, should be adequate for generating tax reports that can be used to do manual tax by jurisdiction reporting.
 
 For tax reporting the tax code can be used to break out tax collected by jurisdiction.  I intend on writing a tax reporting application for a back office but that's not going to come quick but should be available within six months.
