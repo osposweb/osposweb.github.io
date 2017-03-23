@@ -60,19 +60,19 @@ An employee must be authorized to the tax module to be able to set up tax rates.
 
 The following information is provided for each tax.  You should always set up the tax code definition for the store location (a.k.a. Origin Tax).  You'll then enter this tax code on the general configuration page (Default Origin Tax Code) 
 
-*Tax Code* A code is assigned to each tax jurisdiction that you want to collect and report taxes on.  The code will generally indicate the geographical location that tax applies to and is assigned by the user.   Make a note of the tax code to be used for store sales because that is referred to as the Origin tax code and should be added to the General Configuration tab for Default Origin Tax Code.
+**Tax Code** A code is assigned to each tax jurisdiction that you want to collect and report taxes on.  The code will generally indicate the geographical location that tax applies to and is assigned by the user.   Make a note of the tax code to be used for store sales because that is referred to as the Origin tax code and should be added to the General Configuration tab for Default Origin Tax Code.
 
-*Tax Code Name* This is just an additional description used to elaborate on the code if you are using abbreviations for your Tax Code.
+**Tax Code Name** This is just an additional description used to elaborate on the code if you are using abbreviations for your Tax Code.
 
-*Tax Code Type* This establishes how the tax is calculated.  The options are "Sales Tax" and "Sales Tax by Invoice".  "Sales Tax" is used to indicate that the sales tax is calculated at a item level and that calculated amount is totaled and rounded to determine the amount collected.  "Sales Tax by Invoice" indicates that the extended amount for each item sold is accumulated for a tax category and then the tax rate is applied and the rounded amount becomes the total amount calculated.  Which approach is selected is usually determined by the tax regulations of the taxing authority.
+**Tax Code Type** This establishes how the tax is calculated.  The options are "Sales Tax" and "Sales Tax by Invoice".  "Sales Tax" is used to indicate that the sales tax is calculated at a item level and that calculated amount is totaled and rounded to determine the amount collected.  "Sales Tax by Invoice" indicates that the extended amount for each item sold is accumulated for a tax category and then the tax rate is applied and the rounded amount becomes the total amount calculated.  Which approach is selected is usually determined by the tax regulations of the taxing authority.
 
-*City* and *State* The city and state can be used to identify the applicable tax code.  If the customer information includes a specific tax code then the tax for that code will be used. Otherwise, if the customer information includes the city and state then the city and state will be used to find the tax code.  If there isn't a tax code for the combination of city and state, then the tax code for the state will be used.  If there isn't one for the state then the default origin tax code will be used.
+**City** and **State** The city and state can be used to identify the applicable tax code.  If the customer information includes a specific tax code then the tax for that code will be used. Otherwise, if the customer information includes the city and state then the city and state will be used to find the tax code.  If there isn't a tax code for the combination of city and state, then the tax code for the state will be used.  If there isn't one for the state then the default origin tax code will be used.
 
-*Tax Rate* This is the sales tax rate that will be used to compute taxes for the given tax code.  If there are multiple tax jurisdictions the tax rates can be added together for the purpose of compute tax rates.  They would need to be split out later for the purpose of reporting taxes.
+**Tax Rate** This is the sales tax rate that will be used to compute taxes for the given tax code.  If there are multiple tax jurisdictions the tax rates can be added together for the purpose of compute tax rates.  They would need to be split out later for the purpose of reporting taxes.
 
-*Rounding Code* This will establish how fractional tax amounts should be rounded.
+**Rounding Code** This will establish how fractional tax amounts should be rounded.
 
-*Category Exceptions*  The standard sales tax can be overridden for a particular tax category of items.  For example spirits, liquor and beer often have a higher tax rate.  Service items are often non-taxable.  This is implemented by assigning the tax category to the item and then adding the tax category exception to the tax rate definition.
+**Category Exceptions**  The standard sales tax can be overridden for a particular tax category of items.  For example spirits, liquor and beer often have a higher tax rate.  Service items are often non-taxable.  This is implemented by assigning the tax category to the item and then adding the tax category exception to the tax rate definition.
 
 
 
