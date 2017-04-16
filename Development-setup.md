@@ -19,7 +19,7 @@ As first step you need to install npm once done you should issue the following c
 
 This will call npm to install all required dependencies and subsequently run grunt from bower to minify the javascript and update the generated files in the php partial_header file.
 
-In case you face an issue during the npm install (e.g. `npm ERR! phantomjs@1.9.20 install: node install.js`) do `apt-get install nodejs-legacy` and run again `npm install --only=dev`.
+In case you face an issue during the npm install (e.g. `npm ERR! phantomjs@1.9.20 install: node install.js`) do `sudo apt-get install nodejs-legacy` and run again `npm install --only=dev`.
 
 ## Minification setup using Docker
 A full development environment can be easily be configured using docker. For this purpose there is the `Dockerfile.test` which is based on a grunt and bower image. You will need to mount the project directory path on the host in the docker container. First build and tag the docker image described in the `Dockerfile.test` file.
