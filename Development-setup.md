@@ -21,6 +21,9 @@ This will call npm to install all required dependencies and subsequently run gru
 
 In case you face an issue during the npm install (e.g. `npm ERR! phantomjs@1.9.20 install: node install.js`) do `sudo apt-get install nodejs-legacy` and run again `npm install --only=dev`.
 
+## Dotfiles for easy environment setup
+The addition of the dotenv composer library makes it easy to configure different staging environments with database credentials and environment bound variables. Copy the config/.env.example file to config/.env and fill in variable values as needed. Php display_errors will be set to 1 which will ease troubleshooting errors and debugging when things go awry.
+
 ## Minification setup using Docker
 A full development environment can be easily be configured using docker. For this purpose there is the `Dockerfile.test` which is based on a grunt and bower image. You will need to mount the project directory path on the host in the docker container. First build and tag the docker image described in the `Dockerfile.test` file.
 
