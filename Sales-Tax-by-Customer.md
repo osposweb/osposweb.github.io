@@ -74,6 +74,19 @@ The following information is provided for each tax.  You should always set up th
 
 **Category Exceptions**  The standard sales tax can be overridden for a particular tax category of items.  For example spirits, liquor and beer often have a higher tax rate.  Service items are often non-taxable.  This is implemented by assigning the tax category to the item and then adding the tax category exception to the tax rate definition.
 
+## Migration
+
+One goal of the Customer Sales Tax project was to insure that the sales taxes for a sale were computed and rounded according to the rules of the relevant taxing jurisdiction.  Since there are so many rules, the taxes cannot easily be computed "on the fly" and it isn't practical to try to develop an SQL only equivalent for the tax calculation programs.
+
+So now the computed taxes are saved to a table named `sales_taxes`.  The sales tax amount that is calculated at an item level is also now saved to the `sales_items_taxes` table.
+
+To update the values for past sales we now have a migration task that will run through all sales that do not already have an entry in the `sales_taxes` table and will add the missing entries and update the `sales_items_taxes` table.
+
+This migration is included in the project as a migration task in the newly implemented Migration module.
+
+Please backup your database before running it and I would highly recommend testing it first, running over a test database to see if the results of the migration are satisfactory.
+
+To run the migration click on the Migrations module and then click on the Start Migration button.  It is as simple as that.
 
 
 
