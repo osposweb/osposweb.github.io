@@ -1,6 +1,10 @@
 # Development Setup
 ## Code style
-Ospos tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
+OSPOS tries to adhere to [CodeIgniter identation style](https://github.com/jekkos/opensourcepos/issues/389).
+
+## Code documentation
+OSPOS tries to follow the in code documentation generated using ApiGen. For more details see issue #1278.
+There is a script under bin, gendocs.sh, that under Linux will run automatically all the script to generate the code documentation.
 
 ## Basic Tool installation
 Node.js, Grunt and Bower are used and need to be installed:
