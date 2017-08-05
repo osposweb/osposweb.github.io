@@ -15,8 +15,12 @@ Node.js, Grunt and Bower are used and need to be installed:
     sudo npm install -g grunt
     sudo npm install -g bower
 
+Also composer needs to be installed, see a tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-16-04).
+
+Once the basic tools are installed run bin/devinstall.sh, which will install all the npm, composer and bower packages and run the grunt script automatically at the end. It will also generate the source code documentation under docs/ using ApiGen tool (all installed automatically).
+
 ## Running js minification builds
-The project is using grunt and npm to minify the final included javascript.
+The project uses grunt and npm to minify the final included javascript.
 As first step you need to install npm once done you should issue the following command:
 
     npm install --only=dev
