@@ -19,7 +19,7 @@ extension=php_sockets.dll.
 Now Apache should be ready to go.
 
 Download and extract https://github.com/jekkos/opensourcepos.
-If you using Windows right click on the zip file.
+If you are using Windows right click on the zip file.
 Select properties and Select the Unblock button if it is there. Then extract the file.
 Place the extracted file into the htdocs directory.
 
