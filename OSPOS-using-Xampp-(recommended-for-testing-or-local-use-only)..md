@@ -2,7 +2,7 @@ If you are using WAMP follow the MAMP setup for the icu files.
 
 Make sure the version you use does not use mysql 5.7. It currently does not work with OSPOS.
 Currently Php 7 is working.
-Download and Install Xampp - Version 5.6.28 / PHP 5.6.28 it is working great on Windows 10.
+Download and Install Xampp - Currrent version for 3.1.0 or an earlier version of Xampp for 3.0.2. OSPOS it is working great on Windows 10.
 https://www.apachefriends.org/download.html
 Launch the Control Panel.
 Start Apache and Mysql.
@@ -19,8 +19,8 @@ extension=php_sockets.dll.
 Now Apache should be ready to go.
 
 Download and extract https://github.com/jekkos/opensourcepos.
-If you downloaded it with Internet Explorer or Edge Right click on the zip file.
-Select properties and Select the Unblock button. Then extract the file.
+If you using Windows right click on the zip file.
+Select properties and Select the Unblock button if it is there. Then extract the file.
 Place the extracted file into the htdocs directory.
 
 In Xampp Control Panel go to Mysql - Admin.
@@ -37,7 +37,7 @@ Open database.php and change the following lines as needed.
 'database' => '',change this to your new database name.    
 Edit and save.
 
-Now you should be able to go to localhost/opensourcepos/public and see the login screen.  
+Now you should be able to go to localhost/what ever name you chose to use/public and see the login screen.  
 Default user - admin  
 Default password - pointofsale.  
 Play around and get familiar with OSPOS.
