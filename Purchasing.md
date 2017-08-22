@@ -36,6 +36,32 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
 
+* **Purchase Order**
+  * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
+  * **Purchase Order Status**, tinyint(2) - This is the status of the purchase order. (0-New, 1-Open, 2-Partial, 3-Fulfilled, 4-Invoiced, 5-Complete, 6-Canceled) 
+  * **Purchase Order Type**, tinyint(2) - This is the type of the purchase order. (0-Standard, 1-Replenishment).
+  * **Supplier Id**, int(10) - This is the unique identifier for the company (supplier) fulfilling the order.
+  * **Employee**, int(10) - This is the id of the employee that saved the purchase order.
+  * **Comment**, text - This is a comment that can be entered at the time the purchase order is generated or the receiving is saved.
+  * **Reference**, varchar(32) -This is a field to enter a document number provided by the supplier that might be used to discuss what was shipped by the vendor.
+  * **When Purchased**, timestamp - This is the date and time when the purchase order was generated
+
+* **Purchase Items**
+  * **Receiving Id**, int(10) - The unique receiving identifier is assigned incrementally at the time the receiving is saved.  When the receiving document is generated from the purchase order(s) the receiving id is generated when the receiving document is saved.
+  * **Item Id**
+  * **Description**, varchar(30), allows null
+  * **Serial Number**, varchar(30), allows null
+  * **Line**, int(3)
+  * **Original Order Quantity**, decimal(15,3)
+  * **Current Order Quantity**, decimal(15,3)
+  * **Quantity Received**, decimal(15,3)
+  * **Quantity Canceled**, decimal(15,3)
+  * **Item Cost Price**, decimal(15,2)
+  * **Item Unit Price**, decimal(15,2)
+  * **Item Location**, int(11)
+  * **Order Quantity**, decimal(15,3), default 1
+  * **Sale Id**, int(10) - This a a reference to the sale for which this item is being ordered.  This can be "just in time" orders, but is primarily intended to associate a purchase with a service or repair sale where special parts are ordered for the work to be performed.
+
 ### Existing Tables that might be involved.
 
 * **Receivings**
