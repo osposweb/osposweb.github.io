@@ -26,6 +26,8 @@ _Please add whatever features you need to have supported by the purchasing modul
 
 _Please list industry specific terms with their explanation.  This section will also be the embryonic foundation of the database._
 
+### Definitions
+
 * **Distributor** - OSPOS is distributor-centric, so the businesses providing inventory to an OSPOS shop will always be classified as a distributor (even though technically they could be a manufacturer that we are dealing with directly).  A distributor in OSPOS is typically a wholesale distributor of items that are manufactured and sold by other vendors.
 * **Purchase Order Status** - This is the status of the purchase order 
   * **New** - The purchase order is being created but has not yet been submitted to a distributor for fulfillment.
@@ -36,8 +38,11 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
 
+### Structure
+
 * **Purchase Order**
   * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
+  * **Purchase Order Number** - This is document number that is assigned by the system when the purchase order is saved or automatically created.  It will use the same token based auto number generating used by the sales system for invoices and quotes.
   * **Purchase Order Status**, tinyint(2) - This is the status of the purchase order. (0-New, 1-Open, 2-Partial, 3-Fulfilled, 4-Invoiced, 5-Complete, 6-Canceled) 
   * **Purchase Order Type**, tinyint(2) - This is the type of the purchase order. (0-Standard, 1-Replenishment).
   * **Supplier Id**, int(10) - This is the unique identifier for the company (supplier) fulfilling the order.
