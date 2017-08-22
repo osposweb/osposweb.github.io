@@ -47,7 +47,7 @@ _Please list industry specific terms with their explanation.  This section will 
   * **When Purchased**, timestamp - This is the date and time when the purchase order was generated
 
 * **Purchase Items**
-  * **Receiving Id**, int(10) - The unique receiving identifier is assigned incrementally at the time the receiving is saved.  When the receiving document is generated from the purchase order(s) the receiving id is generated when the receiving document is saved.
+  * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
   * **Item Id**
   * **Description**, varchar(30), allows null
   * **Serial Number**, varchar(30), allows null
