@@ -36,6 +36,44 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
 
+### Existing Tables that might be involved.
+
+* **Receivings**
+  * **Receiving Id**, int(10) - The unique receiving identifier is assigned incrementally at the time the receiving is saved.  When the receiving document is generated from the purchase order(s) the receiving id is generated when the receiving document is saved.
+  * **Supplier Id**, int(10) - This is the unique identifier for the company (supplier) fulfilling the order.
+  * **Employee**, int(10) - This is the id of the employee that saved the receiving or generated the receiving document.
+  * **Comment**, text - This is a comment that can be entered at the time the receiving document is generated or the receiving is saved.
+  * **Payment Type**, varchar(20) - I think this is probably going to be made obsolete with the introduction of the purchasing feature
+  * **Reference**, varchar(32) -This is a field to enter a document number provided by the supplier that might be used to discuss what was shipped by the vendor.
+  * **Receiving Time**, timestamp - This is the date and time when the document was
+  * **Purchase Order Id**, int(10), NEW - This is the purchase order that receiving document is generated from.  If the document is not generated from a receiving document then the value will be null.
+
+
+* Receivings Items
+
+  * **Receiving Id**, int(10) - The unique receiving identifier is assigned incrementally at the time the receiving is saved.  When the receiving document is generated from the purchase order(s) the receiving id is generated when the receiving document is saved.
+  * **Item Id**
+  * **Description**, varchar(30), allows null
+  * **Serial Number**, varchar(30), allows null
+  * **Line**, int(3)
+  * **Quantity Purchased**, decimal(15,3)
+  * **Item Cost Price**, decimal(15,2)
+  * **Item Unit Price**, decimal(15,2)
+  * **Item Location**, int(11)
+  * **Receiving Quantity**, decimal(15,3), default 1
+
+* **Items**
+  * **Item Id**, int(10)
+  * **Item Name**, varchar(255)
+  * **Item Number**, varchar(255), UPC 
+  * **Custom ?**, varchar(25), the item identifier for a purchase order can be either the item number (which is the UPC identifier, or one of the custom fields which represent the supplier item id.
+  * **Receiving Quantity**, decimal(15,3) - When a purchase order is generated the quantity ordered will be defaulted from the value of this field.  By default it will updated by the last receiving quantity
+  * **Reorder Level**, decimal(15,3) - When a receiving document is generated items will be added to the receiving document when total quantity in all locations is equal to or below the reorder level.
+  * **Stock Type**, tinyint(2) - Only stocking items will be replenished.
+  * **Supplier Id**, int(11) - When a supplier is selected to have a purchase order generated 
+  * **Cost Price**, decimal(15,2)
+  * **Unit Price**, decimal(15,2)
+
 ## Rules and Constraints
 
 ## Operations
