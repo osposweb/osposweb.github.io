@@ -75,7 +75,7 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Purchase Order Id**, int(10), NEW - This is the purchase order that receiving document is generated from.  If the document is not generated from a receiving document then the value will be null.
 
 
-* Receivings Items
+* **Receivings Items**
 
   * **Receiving Id**, int(10) - The unique receiving identifier is assigned incrementally at the time the receiving is saved.  When the receiving document is generated from the purchase order(s) the receiving id is generated when the receiving document is saved.
   * **Item Id**
