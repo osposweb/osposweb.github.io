@@ -93,7 +93,7 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Item Location**, int(11)
   * **Receiving Quantity**, decimal(15,3), default 1
 
-* **Items**
+* **Items** _Only a subset of the relevant item properties are shown._
   * **Item Id**, int(10)
   * **Item Name**, varchar(255)
   * **Item Number**, varchar(255), UPC 
