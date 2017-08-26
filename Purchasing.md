@@ -22,7 +22,7 @@ _Please add whatever features you need to have supported by the purchasing modul
 
 * There was a requirement requested to store an invoice pdf format with payment terms and deadline.  I'm not clear if this is a requirement for OSPOS or for a document storage system.
 
-[daN4cat] We receive suppliers' order confirmation and invoices over email in pdf formats, that file should be attached to the PO.
+**[daN4cat]** We receive suppliers' order confirmation and invoices over email in pdf formats, those files should be attached to the PO.
 Also payment amount, currency, payment form and deadline should be added at the time the invoice is added to the PO, once the good are received. So the payment deadline notification is flagged or visible from a view.
 
 ## Definitions/Structure
