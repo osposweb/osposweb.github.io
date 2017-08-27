@@ -11,3 +11,28 @@ This documents proposed changes to the menu and permissions infrastructure in or
 * The menu options available on either menu group unique to each employee.
 * A menu option can appear in both menu groups for a given employee.
 
+## Operations
+
+By default, the home menu will contain the following menu options.
+
+* Office
+* Customers
+* Items
+* Item Kits
+* Suppliers
+* Reports
+* Receivings
+* Sales
+* Gift Cars
+
+By default, the office menu will contain the following menu options
+* Home
+* Employees
+* Messages
+* Taxes
+* Store Config
+
+The Office and Home options toggle back and forth between the menu groups.
+
+The Office menu option which appears on the Home menu group can be removed from the Home menu group via a configuration option on the General configuration tab.
+
