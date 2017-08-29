@@ -19,6 +19,8 @@ _Please add whatever features you need to have supported by the purchasing modul
 * Purchase order should have a maker-checker functionality (User access controll), Before system mark the status as requested,It should require an administrator (Another user who has approval role) to approve it.And this Maker- Checker Can be configurable i.e. if enabled then it will require initiator and approver, And if disabled then no need to request for approval.
 * In reporting page, multiple filters should be available,i.e. based on supplier and/or date and/or Items and etc.
 * In reporting it should show who intiate/approve the order if maker-checker functionality is enabled.
+* Purchase order should have a different reporting page as a Receiving.
+* Purchase order should have user access controll
 
 
 
