@@ -50,7 +50,7 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
 
-_Note: I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order.  Also note that the employee ids of the maker and checker are being tracked on the purchase order header as Prepared By, Approved By, and additionally we now have Submitted By. _
+_Note: I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order.  Also note that the employee ids of the maker and checker are being tracked on the purchase order header as Prepared By, Approved By, and additionally we now have Submitted By._
 
 ### Structure
 
