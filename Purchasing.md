@@ -50,6 +50,8 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
 
+_Note: I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order._
+
 ### Structure
 
 * **Requisition** - A requisition is an item for which a purchase order needs to be generated.  It establishes the link between the demand and the actual order - eventually becoming the supporting detail for the purchase order.
