@@ -40,14 +40,15 @@ _Please list industry specific terms with their explanation.  This section will 
 * **Distributor** - OSPOS is distributor-centric, so the businesses providing inventory to an OSPOS shop will always be classified as a distributor (even though technically they could be a manufacturer that we are dealing with directly).  A distributor in OSPOS is typically a wholesale distributor of items that are manufactured and sold by other vendors.
 * **Purchase Order Status** - This is the status of the purchase order 
   * **New** - The purchase order is being created but has not yet been submitted to a distributor for fulfillment.
-  * **Open** - The purchase order has been submitted to the vendor but product has not yet been delivered.
+  * **Open** - The initiator of the purchase order is preparing the purchase order.
+  * **Prepared** - Initiator of purchase order has completed his/her work.
+  * **Approved** - The approver of the purchase order has given their blessing to the purchase order and it can now be submitted.
+  * **Submitted** - The submitter of the purchase order has printed and/or emailed the purchase order to the supplier. 
   * **Partial** - One or more of the items on the purchase order has been received but other ordered items are still on back order or delivery status has not yet been determined.
    * **Fulfilled** - All of the items on the purchase order have been received or it has been determined that the item will not be delivered.
   * **Invoiced** - An invoice for one or more of the items has been received and the purchase order has been partially reconciled.
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
-  * **Maker** - Initiator of purchase request
-  * **Checker** - Approver of the Purchase request
 
 ### Structure
 
