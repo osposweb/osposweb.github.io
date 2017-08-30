@@ -46,6 +46,8 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Invoiced** - An invoice for one or more of the items has been received and the purchase order has been partially reconciled.
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
+  * **Maker** - Initiator of purchase request
+  * **Checker** - Approver of the Purchase request
 
 ### Structure
 
