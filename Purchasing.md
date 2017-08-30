@@ -51,20 +51,15 @@ _Please list industry specific terms with their explanation.  This section will 
 
 ### Structure
 
-* **Purchase Order**
-  * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
-  * **Purchase Order Number** - This is document number that is assigned by the system when the purchase order is saved or automatically created.  It will use the same token based auto number generating used by the sales system for invoices and quotes.
-  * **Purchase Order Status**, tinyint(2) - This is the status of the purchase order. (0-New, 1-Open, 2-Partial, 3-Fulfilled, 4-Invoiced, 5-Complete, 6-Canceled) 
-  * **Purchase Order Type**, tinyint(2) - This is the type of the purchase order. (0-Standard, 1-Replenishment).
-  * **Supplier Id**, int(10) - This is the unique identifier for the company (supplier) fulfilling the order.
-  * **Employee**, int(10) - This is the id of the employee that saved the purchase order.
-  * **Comment**, text - This is a comment that can be entered at the time the purchase order is generated or the receiving is saved.
-  * **Reference**, varchar(32) -This is a field to enter a document number provided by the supplier that might be used to discuss what was shipped by the vendor.
-  * **When Purchased**, timestamp - This is the date and time when the purchase order was generated
-
-* **Purchase Items**
-  * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
+* **Requisition** - A requisition is an item for which a purchase order needs to be generated.  It establishes the link between the demand and the actual order - eventually becoming the supporting detail for the purchase order.
+  * **Requisition Id** - The unique identifier for this requisition.
+  * **Requisition Source**, int(2) - A code designating what is driving the demand for this item.  (0-Inventory Replenishment, 1=Work Order, 2=Just in Time Order , 3=General Purchase) 
+  * **Sale Id**, int(10) - If the requisition is generated from a sale (i.e. work order) then this is the unique identifier for the sale.
+  * **Line Number** - If the requisition is generated from a sale (i.e. work order) then this is the unique identifier for the sale.
+  * **Purchase Order Id** - The unique identifier for the purchase order. Added as a foreign key when the requisition is assigned to a purchase order.
+  * **Requested By** - The employee id of the person who generated the requisition..
   * **Item Id**
+  * **Supplier Code** - The item number to be used to place orders with the vendor.  It can be Item Id, UPC, Supplier ID, or Vendor Id.
   * **Description**, varchar(30), allows null
   * **Serial Number**, varchar(30), allows null
   * **Line**, int(3)
@@ -76,7 +71,21 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Item Unit Price**, decimal(15,2)
   * **Item Location**, int(11)
   * **Order Quantity**, decimal(15,3), default 1
-  * **Sale Id**, int(10) - This a a reference to the sale for which this item is being ordered.  This can be "just in time" orders, but is primarily intended to associate a purchase with a service or repair sale where special parts are ordered for the work to be performed.
+
+* **Purchase Order**
+  * **Purchase Order Id**, int(10) - The unique identifier is assigned incrementally at the time the purchase order is saved.  When the purchase order is auto generated for a supplier the purchase order id is generated when the receiving document is saved.
+  * **Purchase Order Number** - This is document number that is assigned by the system when the purchase order is saved or automatically created.  It will use the same token based auto number generating used by the sales system for invoices and quotes.
+  * **Purchase Order Status**, tinyint(2) - This is the status of the purchase order. (0-New, 1-Open, 2-Partial, 3-Fulfilled, 4-Invoiced, 5-Complete, 6-Canceled) 
+  * **Purchase Order Type**, tinyint(2) - This is the type of the purchase order. (0-Standard, 1-Replenishment).
+  * **Supplier Id**, int(10) - This is the unique identifier for the company (supplier) fulfilling the order.
+  * **Employee**, int(10) - This is the id of the employee that saved the purchase order.
+  * **Comment**, text - This is a comment that can be entered at the time the purchase order is generated or the receiving is saved.
+  * **Reference**, varchar(32) -This is a field to enter a document number provided by the supplier that might be used to discuss what was shipped by the vendor.
+  * **When Purchased**, timestamp - This is the date and time when the purchase order was generated
+  * **Prepared By** - The employee id of the person who consolidated the requisitions and prepared the purchase order.
+  * **Approved By** - The employee id of the person who approved the purchase order for submission to the the supplier.
+  * **Submitted By** - The employee id of the person who printed and/or emailed the purchase order to the supplier.
+
 
 ### Existing Tables that might be involved.
 
