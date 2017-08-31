@@ -39,7 +39,6 @@ _Please list industry specific terms with their explanation.  This section will 
 
 * **Distributor** - OSPOS is distributor-centric, so the businesses providing inventory to an OSPOS shop will always be classified as a distributor (even though technically they could be a manufacturer that we are dealing with directly).  A distributor in OSPOS is typically a wholesale distributor of items that are manufactured and sold by other vendors.
 * **Purchase Order Status** - This is the status of the purchase order 
-  * **New** - The purchase order is being created but has not yet been submitted to a distributor for fulfillment.
   * **Open** - The initiator of the purchase order is preparing the purchase order.
   * **Prepared** - Initiator of purchase order has completed his/her work.
   * **Approved** - The approver of the purchase order has given their blessing to the purchase order and it can now be submitted.
@@ -49,8 +48,6 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Invoiced** - An invoice for one or more of the items has been received and the purchase order has been partially reconciled.
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
-
-_Note: I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order.  Also note that the employee ids of the maker and checker are being tracked on the purchase order header as Prepared By, Approved By, and additionally we now have Submitted By._
 
 ### Structure
 
@@ -133,3 +130,9 @@ _Note: I assimilated Maker and Checker into Prepared and Approved and then I add
 ## Operations
 
 ## Configuration
+
+## Change Log
+
+8/30/2017 Steve - I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order.  Also note that the employee ids of the maker and checker are being tracked on the purchase order header as Prepared By, Approved By, and additionally we now have Submitted By.
+
+8/31/2017 Steve - I dropped the "New" status for purchase order header because I could no longer justify the existence of that status since the requisition detail can now be created without a purchase order header.
