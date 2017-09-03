@@ -6,6 +6,10 @@ This change will allow the sales clerk to prepare a work order and when the work
 
 ## Requirements/Features
 
+* Introduce a new document type of work order that can be used to keep track of material, parts, and services that are performed for repair or service work.
+* Be able to add a Cash Deposit payment or a Credit Deposit payment against a work order.
+* Retain the work order so that if the customer cancels the work order then we can track the reason why in the sales comment.
+
 ## Definitions/Structures
 
 The Work Order feature doesn't introduce any new tables.  However it does do the following
