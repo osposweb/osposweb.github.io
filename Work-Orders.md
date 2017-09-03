@@ -19,7 +19,18 @@ The Work Order feature doesn't introduce any new tables.  However it does do the
 
 ## Rules/Constraints
 
+* A new sale can be created as a work order.
+* Any suspended sale can be converted to a work order.
+* By default prices will not be included in the printed work order, however the user has on option to include prices in the printed work order.
+* A work order is essentially a suspended sale that can be retrieved at any point in time to update with more information.
+* Work orders must not be physically deleted because we want to be able to report why the work order was canceled.  The reason for cancellation should be noted in the sales comment field.
+* Once work is completed on a work order it can be retrieved from its "suspended" state, updated and then invoiced.
+
 ## Operations
 
+
 ## Configuration
+
+* To enable work orders go to the Config --> Invoice table, and page down to where the check box labeled Work Order Support can be found and check it.
+* This change introduces a new token named {WSEQ:9} which follows the same convention as the ISEQ and QSEQ tokens. The default for the work order number takes advantage of that token and the starting work order number can be set in the Last Used Work Order Number field.
 
