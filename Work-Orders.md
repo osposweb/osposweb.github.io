@@ -20,6 +20,9 @@ The Work Order feature doesn't introduce any new tables.  However it does do the
   * work_order_enabled
   * work_order_format
   * last_used_work_order_number
+* Adds 2 new payment types
+  * Cash Deposit
+  * Credit Deposit
 
 ## Rules/Constraints
 
