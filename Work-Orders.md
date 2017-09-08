@@ -14,8 +14,8 @@ This change will allow the sales clerk to prepare a work order and when the work
 
 The Work Order feature doesn't introduce any new tables.  However it does do the following
 
-* Add new `sales_type` field to the `sales` table.
-* Add a new `sale_status` value of CANCELED
+* Add new `sales_type` field to the `sales` table.  Sales type values are (0=POS Sale, 1=Invoice, 2=Work Order, 3=Quote, 4=Return)
+* Add a new `sale_status` value of CANCELED.  So now the values are (0=Complete, 1=Suspended, 2=Canceled)
 * Adds 3 new configuration values
   * work_order_enabled
   * work_order_format
