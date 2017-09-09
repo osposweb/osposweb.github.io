@@ -2,7 +2,7 @@
 
 # Using Weblate (post 3.0.0)
 
-Find our [weblate instance](http://weblate.jpeelaer.net) here and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
+Find our [Weblate website here](http://weblate.jpeelaer.net) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
 
 [![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/287x66-grey.png)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
