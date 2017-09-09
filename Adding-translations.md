@@ -1,6 +1,4 @@
-# How to add translations
-
-# Using Weblate (post 3.0.0)
+# Add translations using Weblate (post 3.0.0)
 
 Find our [Weblate website here](http://weblate.jpeelaer.net) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
 
