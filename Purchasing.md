@@ -4,32 +4,38 @@ This page is being tossed out as a starting for organizing and collecting design
 
 _Please add whatever features you need to have supported by the purchasing module of OSPOS with as much explanation as you feel is needed remembering that terms used in one country or that are industry specific might need to be elaborated so that the developer better understands._
 
-* Must be able to record purchases placed by phone directly to the vendor.  In other words, the status is already "order placed with vendor".
-* When inventory is received the purchase order can be located by distributor id, distributor name, due date, or item name.  
+* Must be able to record purchases placed by phone directly to the vendor. In other words, the status is already "order placed with vendor".
+**[daN4cat]** We talk of vendor but OSPOS has concept of Supplier. Is this the same?
+* When inventory is received the purchase order can be located by distributor id, distributor name, due date, or item name.
+**[daN4cat]** We talk of distributor but OSPOS has concept of Supplier, with Agency as a field. What is what?
 * Can create a purchase order manually.
 * Can automatically generate a purchase order for a selected vendor based on low inventory. 
 * Can print a purchase order.
 * Can email a purchase order to the vendor's email address.
 * Can adjust a purchase order that has been submitted to the vendor based on actual anticipated receipt.
+**[daN4cat]** There is a concept of order confirmation that might not match your original order due to the fact that they discontinued items, or changed items for a newer one, and etc. This piece of incoming information needs to be stored as could come as pdf over an email from the supplier
 * Can generate a report of the differences between ordered and actual.
 * Can generate and print a receiving document (also known as a goods receipt note) from the purchase order.
+**[daN4cat]** An point to consider here is that barcodes for new items are not known until you receive the goods
 * The entry of a receipt associated with a purchase order must update the purchase order with the actual quantity received.
 * When an invoice for the shipment is received we must be able to reconcile the invoice with the purchase order and the item cost from the invoice is stored to the purchase order item as actual cost and the actual cost will be updated (by default) to the item cost.
 * Application of an invoice will change the status of a purchase order to complete.
-* Purchase order should have a maker-checker functionality (User access controll), Before system mark the status as requested,It should require an administrator (Another user who has approval role) to approve it.And this Maker- Checker Can be configurable i.e. if enabled then it will require initiator and approver, And if disabled then no need to request for approval.
+**[daN4cat]** Suppliers invoice needs to be stored as can come as pdf or can be scanned to a pdf
+* Purchase order should have a maker-checker functionality (User access control), before system mark the status as requested. It should require an administrator (Another user who has approval role) to approve it. And this Maker-Checker Can be configurable i.e. if enabled then it will require initiator and approver. And if disabled then no need to request for approval.
+**[daN4cat]** As said we should manage the supplier invoice life cycle with payment due dates until it's paid. Also we should consider cases of "Sale or Return", so invoice could be issued for the purpose of formalising the movement of goods (e.g. fiscal and insurance reasons) but could be paid later.
 * In reporting page, multiple filters should be available,i.e. based on supplier and/or date and/or Items and etc.
-* In reporting it should show who intiate/approve the order if maker-checker functionality is enabled.
+* In reporting it should show who initiate/approve the order if maker-checker functionality is enabled.
 * Purchase order should have a different reporting page as a Receiving.
-* Purchase order should have user access controll
-
-
+* Purchase order should have user access control
+**[daN4cat]** Please note that as purchases there are returns that result in a Credit Note. This is quite common. Faulty goods have a return request, a pick up and then pend on Credit note issuing from the Supplier.
+**[daN4cat]** Please note that purchase could be made in different currencies, it's not unusual here in the UK to buy good from EU zone and get invoices in Euro. Then at payment time you have the conversion and you know how much you paid in GBP. That's for the sake of tracking expenditure per supplier.
 
 ## Questions
 
 * There was a requirement requested to store an invoice pdf format with payment terms and deadline.  I'm not clear if this is a requirement for OSPOS or for a document storage system.
 
 **[daN4cat]** We receive suppliers' order confirmation and invoices over email in pdf formats, those files should be attached to the PO.
-Also payment amount, currency, payment form and deadline should be added at the time the invoice is added to the PO, once the good are received. So the payment deadline notification is flagged or visible from a view.
+Also payment amount, currency, payment form and deadline should be added at the time the invoice is added to the PO, once the goods are received. So the payment deadline notification is flagged or visible from an office view.
 
 ## Definitions/Structure
 
@@ -44,7 +50,7 @@ _Please list industry specific terms with their explanation.  This section will 
   * **Approved** - The approver of the purchase order has given their blessing to the purchase order and it can now be submitted.
   * **Submitted** - The submitter of the purchase order has printed and/or emailed the purchase order to the supplier. 
   * **Partial** - One or more of the items on the purchase order has been received but other ordered items are still on back order or delivery status has not yet been determined.
-   * **Fulfilled** - All of the items on the purchase order have been received or it has been determined that the item will not be delivered.
+  * **Fulfilled** - All of the items on the purchase order have been received or it has been determined that the item will not be delivered.
   * **Invoiced** - An invoice for one or more of the items has been received and the purchase order has been partially reconciled.
   * **Complete** - All items on the purchase order have been reconciled with an invoice received from the vendor.
   * **Canceled** - No item on the purchase order is expected to be fulfilled.
