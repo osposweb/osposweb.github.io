@@ -16,7 +16,7 @@ _Please add whatever features you need to have supported by the purchasing modul
 **[daN4cat]** There is a concept of order confirmation that might not match your original order due to the fact that they discontinued items, or changed items for a newer one, and etc. This piece of incoming information needs to be stored as could come as pdf over an email from the supplier
 * Can generate a report of the differences between ordered and actual.
 * Can generate and print a receiving document (also known as a goods receipt note) from the purchase order.
-**[daN4cat]** An point to consider here is that barcodes for new items are not known until you receive the goods
+**[daN4cat]** A point to consider here is that barcodes for new items are not known until you receive the goods
 * The entry of a receipt associated with a purchase order must update the purchase order with the actual quantity received.
 * When an invoice for the shipment is received we must be able to reconcile the invoice with the purchase order and the item cost from the invoice is stored to the purchase order item as actual cost and the actual cost will be updated (by default) to the item cost.
 * Application of an invoice will change the status of a purchase order to complete.
