@@ -4,25 +4,20 @@ This page is being tossed out as a starting for organizing and collecting design
 
 _Please add whatever features you need to have supported by the purchasing module of OSPOS with as much explanation as you feel is needed remembering that terms used in one country or that are industry specific might need to be elaborated so that the developer better understands._
 
-* Must be able to record purchases placed by phone directly to the vendor. In other words, the status is already "order placed with vendor".
-**[daN4cat]** We talk of vendor but OSPOS has concept of Supplier. Is this the same?
-* When inventory is received the purchase order can be located by distributor id, distributor name, due date, or item name.
-**[daN4cat]** We talk of distributor but OSPOS has concept of Supplier, with Agency as a field. What is what?
+* Must be able to record purchases placed by phone directly to the vendor. In other words, the status is already "order placed with supplier".
+* When inventory is received the purchase order can be located by supplier id, supplier name, due date, or item name.
 * Can create a purchase order manually.
-* Can automatically generate a purchase order for a selected vendor based on low inventory. 
+* Can automatically generate a purchase order for a selected supplier based on low inventory. 
 * Can print a purchase order.
-* Can email a purchase order to the vendor's email address.
-* Can adjust a purchase order that has been submitted to the vendor based on actual anticipated receipt.
-**[daN4cat]** There is a concept of order confirmation that might not match your original order due to the fact that they discontinued items, or changed items for a newer one, and etc. This piece of incoming information needs to be stored as could come as pdf over an email from the supplier
+* Can email a purchase order to the supplier's email address.
+* Can adjust a purchase order that has been submitted to the supplier based on actual anticipated receipt.
+* The user should be able to upload a PDF document that is owned by the supplier but referenced by the purchase order either as an order acknowledgement or as an invoice.
 * Can generate a report of the differences between ordered and actual.
 * Can generate and print a receiving document (also known as a goods receipt note) from the purchase order.
-**[daN4cat]** A point to consider here is that barcodes for new items are not known until you receive the goods
 * The entry of a receipt associated with a purchase order must update the purchase order with the actual quantity received.
 * When an invoice for the shipment is received we must be able to reconcile the invoice with the purchase order and the item cost from the invoice is stored to the purchase order item as actual cost and the actual cost will be updated (by default) to the item cost.
 * Application of an invoice will change the status of a purchase order to complete.
-**[daN4cat]** Suppliers invoice needs to be stored as can come as pdf or can be scanned to a pdf
 * Purchase order should have a maker-checker functionality (User access control), before system mark the status as requested. It should require an administrator (Another user who has approval role) to approve it. And this Maker-Checker Can be configurable i.e. if enabled then it will require initiator and approver. And if disabled then no need to request for approval.
-**[daN4cat]** As said we should manage the supplier invoice life cycle with payment due dates until it's paid. Also we should consider cases of "Sale or Return", so invoice could be issued for the purpose of formalising the movement of goods (e.g. fiscal and insurance reasons) but could be paid later.
 * In reporting page, multiple filters should be available,i.e. based on supplier and/or date and/or Items and etc.
 * In reporting it should show who initiate/approve the order if maker-checker functionality is enabled.
 * Purchase order should have a different reporting page as a Receiving.
@@ -30,12 +25,24 @@ _Please add whatever features you need to have supported by the purchasing modul
 **[daN4cat]** Please note that as purchases there are returns that result in a Credit Note. This is quite common. Faulty goods have a return request, a pick up and then pend on Credit note issuing from the Supplier.
 **[daN4cat]** Please note that purchase could be made in different currencies, it's not unusual here in the UK to buy good from EU zone and get invoices in Euro. Then at payment time you have the conversion and you know how much you paid in GBP. That's for the sake of tracking expenditure per supplier.
 
+### Receiving Rules
+
+* At the point of receiving the user should be able to provide any missing item information such as UPC code, suppier id, or vendor number or vendor id (Vendor here represents the manufacturer of the product that is used in my environment to uniquely identify the product since not all items have UPC codes and the suppler's item id is not reliably unique.)
+
+### Payables Rules
+
+
 ## Questions
 
-* There was a requirement requested to store an invoice pdf format with payment terms and deadline.  I'm not clear if this is a requirement for OSPOS or for a document storage system.
+* There was a requirement requested to store an invoice pdf format with payment terms and deadline.  I'm not clear if this is a requirement for OSPOS or for a document storage system. _Question answered and incorporated in the document_ 
 
-**[daN4cat]** We receive suppliers' order confirmation and invoices over email in pdf formats, those files should be attached to the PO.
-Also payment amount, currency, payment form and deadline should be added at the time the invoice is added to the PO, once the goods are received. So the payment deadline notification is flagged or visible from an office view.
+* [daN4cat] We talk of vendor but OSPOS has concept of Supplier. with Agency as a field. Is this the same?  _Answer: Yes.  The corrections have been made.  However, I'm not clear on what an Agency is in this context.  I assumed it was a European thing.  Can someone explain the role between a supplier and an Agency for me?_
+
+* [daN4cat] There is a concept of order confirmation that might not match your original order due to the fact that they discontinued items, or changed items for a newer one, and etc. This piece of incoming information needs to be stored as could come as pdf over an email from the supplier. Suppliers invoice needs to be stored as can come as pdf or can be scanned to a pdf.  _Reponse: This has been added to the requirements._
+
+* [daN4cat] A point to consider here is that barcodes for new items are not known until you receive the goods. _Response this has been incorporated in the requirements under a new topic of Receiving Rules which will represent changes to the receiving process that will need to be made._
+
+* [daN4cat] We receive suppliers' order confirmation and invoices over email in pdf formats, those files should be attached to the PO.Also payment amount, currency, payment form and deadline should be added at the time the invoice is added to the PO, once the goods are received. So the payment deadline notification is flagged or visible from an office view. As said we should manage the supplier invoice life cycle with payment due dates until it's paid. Also we should consider cases of "Sale or Return", so invoice could be issued for the purpose of formalising the movement of goods (e.g. fiscal and insurance reasons) but could be paid later. _Response: Will start incorporating a simple Payables Management component in the purchasing system.  Running out of time at the moment so will come back to this very soon._
 
 ## Definitions/Structure
 
@@ -142,3 +149,5 @@ _Please list industry specific terms with their explanation.  This section will 
 8/30/2017 Steve - I assimilated Maker and Checker into Prepared and Approved and then I added Submitted so that we can track all steps of purchase order preparation.  I also dropped the purchase order detail and created the requisition detail in order to better reflect the real life history of a purchase order.  Also note that the employee ids of the maker and checker are being tracked on the purchase order header as Prepared By, Approved By, and additionally we now have Submitted By.
 
 8/31/2017 Steve - I dropped the "New" status for purchase order header because I could no longer justify the existence of that status since the requisition detail can now be created without a purchase order header.
+
+9/11/2017 Steve - I started assimilating changes requested by daN4cat into the requirements document but ran out of time.  Will pick it up later.
