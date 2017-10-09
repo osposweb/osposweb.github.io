@@ -37,9 +37,9 @@ Select 2.4_3.0.sql for the import if this is an updated install.
 After the database has completed installing go back to the ospos dir and go to ospos/application/config. 
 Rename database.php.tmpl to database.php.
 Open database.php and change the following lines as needed.  
-'username' => '',default name is root for mysql.  
-'password' => '',default no password for mysql or change if you created a mysql password.  
-'database' => '',change this to your new database name.    
+'username' => '', default name is root for mysql.  
+'password' => '', default no password for mysql or change if you created a mysql password.  
+'database' => '', change this to your new database name.    
 Edit and save.
 
 **Restart the Apache server after you have made any changes.**
