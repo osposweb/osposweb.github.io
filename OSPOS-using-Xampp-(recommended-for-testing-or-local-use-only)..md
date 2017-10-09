@@ -16,6 +16,8 @@ extension=php_intl.dll, Was not enabled.
 
 extension=php_sockets.dll. Was not enabled.
 
+NOTE: If it doesn't work please read [issue 1607](https://github.com/opensourcepos/opensourcepos/issues/1607) for a detailed list of extensions.
+
 Now Apache should be ready to go.
 
 **Download and extract either Stable or Unstable from the Readme page.**
