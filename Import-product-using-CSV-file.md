@@ -11,7 +11,8 @@ Stock location 5 is "location_id = 5"
 when all locations are created remember the number we use them on next step.
 
 ###The index / field mapping should be as follows:
-```0 - barcode
+```
+0 - barcode
 1 - item name
 2 - category
 3 - supplier id
