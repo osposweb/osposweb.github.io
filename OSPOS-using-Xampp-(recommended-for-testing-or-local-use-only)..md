@@ -46,7 +46,7 @@ Edit and save.
 
 Now you should be able to go to localhost/what ever name you chose to use/public and see the login screen.  
 
-_In 3.1.0 if you have not enabled all the necessary extensions it will give you a warning on the Login screen._
+_In 3.1.0 or higher if you have not enabled all the necessary extensions it will give you a warning on the Login screen._
 
 Default user - admin  
 Default password - pointofsale.  
