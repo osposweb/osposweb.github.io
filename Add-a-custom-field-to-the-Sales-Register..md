@@ -1,6 +1,6 @@
 Backup your files or use a text editor that will undo the changes if things go wrong.
 
-Open Sale_lib.php and after line 970 add the following custom field.
+Open Sale_lib.php and after line 802 add the following custom field. I added it before the price.
 
 ``'custom1' => $item_info->custom1,`` Change this to the custom field you want to add.
 
