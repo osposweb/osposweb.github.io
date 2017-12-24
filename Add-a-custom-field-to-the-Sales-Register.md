@@ -18,4 +18,13 @@ Add the following at around lines 150 and 158.
 
 This should give you a custom field before the Item Price.
 
+To add a custom field to Items table. Open table_helper.
+
+line 292 add the following `` array('custom1_name' => $CI->config->item('custom1_name')), Change name as needed``
+
+Then at line 344 add the following ``	'custom1_name' => $item->custom1, change name as needed``
+
+This should give you a Custom column in Items.
+
+
 
