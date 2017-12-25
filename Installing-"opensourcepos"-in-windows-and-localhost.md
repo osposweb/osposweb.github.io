@@ -1,6 +1,6 @@
-1) Downlaod and Install Wamp or Xampp
+1) Download and Install Wamp or Xampp
 2) Download and Install **composer, node.js, grunt-cli**
-3) Downlaod the "opensourcepos-master.zip" (~3mb) and extract it to www or htdocs directory
+3) Download the "opensourcepos-master.zip" (~3mb) and extract it to www or htdocs directory
 4) Open command prompt in "opensourcepos-master" directory and run the following commands.
    - composer install
    - npm install
