@@ -1,5 +1,6 @@
 ## Overview
 _Work in progress_
+
 When user input isn't correct OSPOS will normally respond with an error message included with the response to the Web page.
 
 However, if you are trying to chase down something that is causing a more serious issue then you might need more information from the system. You will need to activate and/or take advantage one of the handful of error logs that OSPOS or the supporting platforms generate.
