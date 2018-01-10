@@ -1,6 +1,6 @@
 # Add translations using Weblate (post 3.0.0)
 
-Find our [Weblate website here](http://weblate.opensourcepos.org) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
+Find our [Weblate website here](http://weblate.jpeelaer.net) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
 
 [![Translation status](http://weblate.opensourcepos.org/widgets/ospos/-/287x66-grey.png)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
