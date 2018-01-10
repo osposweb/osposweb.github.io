@@ -6,19 +6,19 @@ OSPOS es una aplicación web de código abierto escrita en PHP y es una evoluci�
 
 # Características
 
-* -Gestión de stock (artículos y kits)
-* -Registro de venta con registro de transacciones
-* -Impresión de recibos y facturas y / o envío de correos electrónicos
-* -Generación e impresión de código de barras
-* -Base de datos de proveedores y clientes
-* -Usuario múltiple con control de permisos
-* -Recibos
-* -Informes sobre ventas, pedidos, estado de inventario
-* -Tarjeta de regalo
-* -Mensajería (SMS)
-* -Multi lenguaje
-* -Diferentes temas de UI
-* -Arquitectura
+* Gestión de stock (artículos y kits)
+* Registro de venta con registro de transacciones
+* Impresión de recibos y facturas y / o envío de correos electrónicos
+* Generación e impresión de código de barras
+* Base de datos de proveedores y clientes
+* Usuario múltiple con control de permisos
+* Recibos
+* Informes sobre ventas, pedidos, estado de inventario
+* Tarjeta de regalo
+* Mensajería (SMS)
+* Multi lenguaje
+* Diferentes temas de UI
+* Arquitectura
 
 
 OSPOS es un código basado en CodeIgniter, por lo que un buen punto de partida para comprender la arquitectura del software es leer un tutorial (CodeIgniter) o una breve descripción en Wikipedia.
