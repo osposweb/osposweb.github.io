@@ -22,6 +22,27 @@ Since that time the two applications diverged and thanks to different contributo
 - Multilanguage
 - Different UI themes
 
+# Installation(s):
+
+Choose depend of your deployment or installation dessired:
+
+## Using linux:
+
+Apache & mysql/mariadb:
+
+* https://github.com/opensourcepos/opensourcepos/wiki/Installing-on-Raspberry-PI---Orange-PI-(Headless-OSPOS)
+
+Nginx & mysql/mariadb:
+
+* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
+* https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
+
+## Using others:
+
+* https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
+* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows
+* https://github.com/opensourcepos/opensourcepos/wiki/OSPOS-using-Xampp-(recommended-for-testing-or-local-use-only).
+
 # Architecture
 
 OSPOS is a code based on CodeIgniter, so a good starting point to understand the architecture of the software is to read a ([CodeIgniter](http://www.codeigniter.com/)) tutorial or a brief description on [Wikipedia](https://en.wikipedia.org/wiki/CodeIgniter).
