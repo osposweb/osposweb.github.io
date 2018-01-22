@@ -37,6 +37,10 @@ Nginx & mysql/mariadb:
 * https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
 * https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
 
+Development:
+
+* https://github.com/opensourcepos/opensourcepos/wiki/Development-setup
+
 ## Using others:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
