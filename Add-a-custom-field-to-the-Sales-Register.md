@@ -1,3 +1,4 @@
+**This is only valid if you use the ospos custom1 thru custom10;**
 Backup your files or use a text editor that will undo the changes if things go wrong.
 
 Open Sale_lib.php and after line 802 add the following custom field. I added it before the price.
