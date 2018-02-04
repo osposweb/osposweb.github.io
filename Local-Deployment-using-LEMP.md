@@ -185,7 +185,9 @@ You will see it’s using `unix_socket` plugin. To change it to `mysql_native_pa
 
 ## That's all, you have done everything. Enjoy !
 
+# FAQ
 
+If you face any issue, please see [Issue 546](https://github.com/opensourcepos/opensourcepos/issues/546).
 
 
 
