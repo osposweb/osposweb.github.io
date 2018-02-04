@@ -21,18 +21,19 @@ Since that time the two applications diverged and thanks to different contributo
 - Messaging (SMS)
 - Multilanguage
 - Different UI themes
+- ... and many more, please read the README
 
 # Installation(s):
 
-Choose depend of your deployment or installation dessired:
+Choice depends on your deployment:
 
 ## Using linux:
 
-Apache & mysql/mariadb:
+Apache & MySql/MariaDB:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Installing-on-Raspberry-PI---Orange-PI-(Headless-OSPOS)
 
-Nginx & mysql/mariadb:
+Nginx & MySql/MariaDB:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
 * https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
@@ -41,7 +42,7 @@ Development:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Development-setup
 
-## Using others:
+## Others:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
 * https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows
