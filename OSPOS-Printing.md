@@ -10,7 +10,7 @@ the CUPS interface for Unixes comes with basic enought support that works as its
 
 ## General Printing
 
-First need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Invoice**, here the most important settings are *Format* and *Font size*.
+First need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Receipt**, here the most important settings are *Format* and *Font size*.
 
 * **Format** defines how the number of the receipt will be printed. Order can be help with some printing settings.
 * *FontSize* defines size of the font this must be set in correct size number depending of the output of the printing.
