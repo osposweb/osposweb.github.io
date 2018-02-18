@@ -12,14 +12,12 @@ the CUPS interface for Unixes comes with basic enought support that works as its
 
 First need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Invoice**, here the most important settings are *Format* and *Font size*.
 
-* **Format** defines how the receipt will be printed, if *Default* will out and let control printing default area, 
-but if *Order* will print defined sale receipt area, and bypass some settings, please for that see notes below.
+* **Format** defines how the number of the receipt will be printed. Order can be help with some printing settings.
 * *FontSize* defines size of the font this must be set in correct size number depending of the output of the printing.
 
-The **Autoprinting** are explained here in below specific section. The format `Order` must be selected for.
+The **Autoprinting** are explained here in below specific section.
 
-Unless margings and show dialog printing option rest of the options are self xplanatory, those two options need 
-extra work in the web browser, please read section below for.
+Unless margings and show dialog printing rest of the options are self explanatory, please read section below for.
 
 ### Preparation printing for firefox/palemoon
 
@@ -42,46 +40,45 @@ extra work in the web browser, please read section below for.
 
 ## Recommended Printing settings
 
-Remenber that the printer its recomended 75mm paper setup.
+Remember that the printer its recommended 75mm paper setup.
 
 1. Go to OS printers interface, in MAC/Linux got CUPS at http://localhost:631
 2. Select the printer and then Printer Properties
 3. Click Device Settings Tab or General Options
 4. In the Form to Tray Assignment or Media size choose 72mm x Receipt
 5. Cash Drawer options select 1 and 2
-6. Choose media of 2x1 and resoltuo
+6. Choose media of 2x1 and resolute
 
 # Advanced and Autoprinting
 
 Advanced printing allows set margins, and the "direct printer" to, only by selecting the "Order" format.
 
-This feature is currently available in combination with browsers Palemoon, Icecat, Iceweasel, Firefox and with some little changes in Chrome. Theres another way to do by changinh deep settings in firefox `about:config` interface options.
+This feature is currently available in combination with browsers Palemoon, Icecat, Iceweasel, Firefox and with some little changes in Chrome. For most modern browsers another way to do by changing deep settings in firefox `about:config` interface options.
 
 ### Firefox, Palemoon, Icecat
 
-AutoPrinting support also advanced feature are only enabled with installing the jsPrint addon at
-https://addons.mozilla.org/es/firefox/addon/js-print-setup The supported browsers must be **firefox << 49.9**, **Palemoon >> 24**, and **Icedcat >> 16**. The new Firefox Quantum and chrome api are not supported, 
-newer firefox can try https://addons.mozilla.org/es/firefox/addon/seamless-print/
+AutoPrinting support also advanced feature are enabled in two ways, the first using the jsPrint addon at
+https://addons.mozilla.org/es/firefox/addon/js-print-setup The supported browsers must be **firefox << 49.9**, **Palemoon >> 24**, and **Icedcat >> 16**. The second way its preconfiguring the browser to printing directly.
 
-Enable jsprint/seamlessprint settings in Firefox, must configure with enable for all the sites (low security, sorry).
+Enable jsprint/seamlessprint settings in Firefox, must configure with enable for all the sites (low security, sorry). In some cases newer firefox can try https://addons.mozilla.org/es/firefox/addon/seamless-print/ but not Quamtun Firefox.
 
-After enabling/configurie this addon, the osposweb print settings will be available and can be configured.
+After enabling/configure this addon, the ospos print settings will be available and can be configured.
 
 Go to Store config and reselect the printers, occasionally had to select a different printer. Submit. 
 Then go back and select the correct printer. Then submit.
 
-**Alternate way**: Type about:config at Firefox’s location bar and hit Enter. Right click at anywhere on the page and select New > Boolean.  Enter the preference name as print.always_print_silent and click OK. Then set the boolean value to true. Restart firefox. This need that the default OS printer must be the desired receipt printer.
+**Alternate second way for newer browsers**: Type about:config at Firefox’s/Palemoon's location bar and hit Enter. Right click at anywhere on the page and select New > Boolean.  Enter the preference name as print.always_print_silent and click OK. Then set the boolean value to true. Restart firefox. This need that the default OS printer must be the desired receipt printer.
 
 ### Chrome
 
-Not recomended, but receipt auto printing is also available in Chrome by using kiosk mode. A printer 
+Not recommended, but receipt auto printing is also available in Chrome by using kiosk mode. A printer 
 should be selected once after launching Chrome using a custom shortcut.
 
-A new icon application laucher or lauch/invoke the binary adding the `--kiosk --kiosk-printing ` option 
+A new icon application launcher or launch/invoke the binary adding the `--kiosk --kiosk-printing ` option 
 to the executable. By the way, to make the kiosk mode effecting you need to close all the chrome 
 apps and restart otherwise it doesn't work. Open a Terminal, and write the command: `google-chrome --kiosk --kiosk-printing `
 
-After enabling/configure kiosk, the osposweb print settings will be available and can be configured.
+After enabling/configure kiosk, the ospos print settings will be available and can be configured.
 
 Go to Store config and reselect the printers, occasionally had to select a different printer. Submit. 
 Then go back and select the correct printer. Then submit.
@@ -91,3 +88,4 @@ Then go back and select the correct printer. Then submit.
 Some countries need some special communications with internal chip in the printers, this feature are 
 only done locally and its not possible unless a specific ad-hoc can be done or with special device that 
 receive the raw printing and send from the browser to the printer.
+
