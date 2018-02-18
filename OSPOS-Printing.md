@@ -1,19 +1,23 @@
-The printing depends of the print setup and the print behaviour.. The recommend receipt 
+The printing depends of the print setup and the print behavior.. The recommend receipt 
 is the Star TSP 100 ECO using the Firefox or Chrome browsers, with this if there's no fiscal kit, 
 we can print directly. Our recommended label printer is the Zebra LP 2824 Plus printer with 2 x 1 labels. 
 Other customers have had success with other printers from companies. If you plan to purchase a different receipt printer than the recommend, try to get one that prints on paper that is 72 mm or greater.
 
 Obviously prints depends of the browser, so must be first configure here, and then in ospos 
 the printing configuration has some options, only enable with some changes over the browser.
-For the Zebra its recomended also search at https://www.peninsula-group.com/mac-thermal-printer-driver/ 
-the CUPS interface for Unixes comes with basic enought support that works as its.
+For the Zebra its recommended also search at https://www.peninsula-group.com/mac-thermal-printer-driver/ 
+the CUPS interface for Unixes comes with basic enough support that works as its.
 
 ## General Printing
 
 First need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Receipt**, here the most important settings are *Format* and *Font size*.
 
+![printing settings:](https://user-images.githubusercontent.com/10962177/36354930-c33ea10c-1498-11e8-8b0b-a4eb2b2ecbdb.png)
+
 * **Format** defines how the number of the receipt will be printed. Order can be help with some printing settings.
-* *FontSize* defines size of the font this must be set in correct size number depending of the output of the printing.
+* **FontSize** defines size of the font this must be set in correct size number depending of the output of the printing.
+
+Then the **default receipt shows more info than the short (order)** receipt. So **for printing in 78mm printers and related, must use "order" as format**.
 
 The **Autoprinting** are explained here in below specific section.
 
