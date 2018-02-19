@@ -26,7 +26,7 @@
 
 * *Quantity in stock*
 
-* *Receiving quantity*
+* *Receiving quantity "cannot be set to 0"*
 
 * *Reorder Level*
 
