@@ -1,45 +1,38 @@
-This document are made for quick deploy/usage, for detailed instructions please read the [OSPOS Technicall documentation](OSPOS-development-index#tech-installation) 
-at the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation)
+This document are made for quick deploy/usage, for detailed instructions please read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation) wiki page
 
-More controled option its made own deploy locally with own Linux stack server for quick production testing. 
-Quickly and easyle can be deployed at the [Digitalocean](https://m.do.co/c/ac38c262507b) cloud using their preconfigured LAMP stack, its the most easily and faster way.
-
-* [Local Deploy installation](#local-deploy-install)
-* [Cloud Deploy installation](#cloud-deploy-installation)
-* [More advance and customized installations](#cloud-deploy-installation)
+* [Quick Own Local Deploy installation](#local-deploy-install)
+* [Fast Cloud Deploy installation](#cloud-deploy-installation)
+* [More advance and customized installations](#more-advance-and-customized-installations)
 
 # Local Deploy install
 ----------------------
 
 Its the best option to most customized and controlled, also as counterpart you are on your own, 
-but its totally free of charge of course! and most cheap and optimized.
+but its totally free of charge of course! and most cheap and optimized. We must use Linux 
+a [Debian live image ready to use](https://www.debian.org/CD/live/#live-install-stable) or 
+a [Devuan live image ready to use](https://devuan.org/os/documentation/install) derivate distribution OS, 
+for more detailed instructions read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation).
 
-We must assumed a ready to use linux, and as Debian or Debian related distribution! For more detailed instructions 
-read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation).
-
-1. Install **apache2**, **php** and **mariadb** `apt-get install apache2 mariadb-server php php-curl php-gd php-intl`
-2. Log in to the OS and/or open a terminal, type `sudo su` to scale privileges.
+1. Log in to the OS and/or open a terminal, type `sudo su` to scale privileges.
+2. Install **apache2**, **php** and **mariadb** `apt-get install apache2 mariadb-server php php-curl php-gd php-intl`
 3. run download command `wget https://github.com/opensourcepos/opensourcepos/archive/3.1.1.tar.gz -O ospos311.tar.gz`
 4. uncompress with command `tar zxvf ospos311.tar.gz  --strip 1 -C /var/www/html`
 5. create the database with `mysql -u root -e 'CREATE SCHEMA ospos'`
 6. populate database with command `mysql -u root ospos < /var/www/html/application/database/database.sql`
-7. config user credentials to database with `sed -i "s/admin/root/g" /var/www/html/application/config/database.php`
-7. config password database with `sed -i "s/pointofsale//g" /var/www/html/application/config/database.php`
+7. configure user credentials to database with `sed -i "s/admin/root/g" /var/www/html/application/config/database.php`
+7. configure password database with `sed -i "s/pointofsale//g" /var/www/html/application/config/database.php`
 7. open the web browser and run from `http://localhost/public` of `http://YOURIPADDRESS/public`
 8. login by using username as **admin**  and the password are **pointofsale**
-9. Enjoy and remenber to point YOURIPADDRESS to your installation server.
+9. Enjoy and remenber to point `YOURIPADDRESS` to your installation server.
 
+**IMPORTANT** first login will have a delay due "send statics" are activated in `"Office->Store config->General->Send statics"`, deactivate when login if you not have enough network or internet.
+
+This was a quick fast local installation, for professional install more steps must be take in care such database protection and web server performance.
 
 # Cloud Deploy installation
 -------------
 
-If you want to run a quick demo of OSPOS or run it permanently in the cloud, then we
-suggest using Docker cloud together with the `DigitalOcean` hosting platform. This way all the
-configuration is done automatically and the install will just work, but its not free and must pay in counterpart.
-
-If you choose *DigitalOcean* [through this link](https://m.do.co/c/ac38c262507b), 
-you will get a *$10 credit* for a first month of uptime on the platform. 
-A full setup will only take about 2 minutes by following steps below.
+If you want to run a quick demo of OSPOS the most quick way its using [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b), a full setup will only take about 2 minutes by following steps below.
 
 1. Create a [Digitalocean account](https://m.do.co/c/ac38c262507b)
 2. Create a [docker cloud account](https://cloud.docker.com)
@@ -52,8 +45,9 @@ A full setup will only take about 2 minutes by following steps below.
 9. Login with default username/password admin/pointofsale
 10. DNS name for this server can be easily configured in the DigitalOcean control panel
 
-More info [on maintaining a docker](https://github.com/opensourcepos/opensourcepos/wiki/Docker-cloud-maintenance) install can be found on the wiki
+**IMPORTANT** first login will have a delay due "send statics" are activated this only happened at the first login.
 
+More info [on maintaining a docker](https://github.com/opensourcepos/opensourcepos/wiki/Docker-cloud-maintenance) install can be found on the wiki
 
 # More advance and customized installations
 
