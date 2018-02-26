@@ -1,6 +1,23 @@
-The printing depends of the print setup and the print behavior.. The recommend receipt 
-is the Star TSP 100 ECO using the Firefox or Chrome browsers, with this if there's no fiscal kit, 
-we can print directly. Our recommended label printer is the Zebra LP 2824 Plus printer with 2 x 1 labels. 
+The printing depends of the print setup and the print behavior.. 
+
+  * [General Printing Support](#general-printing-support)
+  * [Device Printing Support](#device-printing-support)
+* [How to printing](#how-to-printing)
+  * [Preparation printing for firefox/palemoon](#preparation-printing-for-firefoxpalemoon)
+  * [Preparing printing for Chome/Chromium](#preparing-printing-for-chomechromium)
+* [Advanced and Autoprinting](#advanced-and-autoprinting)
+  * [Firefox, Palemon, Icecat](#firefox-palemoon-icecat)
+  * [Chrome](#chrome)
+  * [Fiscal printing](#fiscal-printing)
+
+
+## General Printing Support
+
+Currently OSPOS can print in any environment, you can use a installed printer. The only limitation its Fiscal KIT's due on that need AD-HOC special setup depends on each country requirements.
+
+## Device Printing Support
+
+The recommend receipt is the Star TSP 100 ECO using the Firefox or Chrome browsers, with this if there's no fiscal kit, we can print directly. Our recommended label printer is the Zebra LP 2824 Plus printer with 2 x 1 labels. 
 Other customers have had success with other printers from companies. If you plan to purchase a different receipt printer than the recommend, try to get one that prints on paper that is 72 mm or greater.
 
 Obviously prints depends of the browser, so must be first configure here, and then in ospos 
@@ -8,9 +25,9 @@ the printing configuration has some options, only enable with some changes over 
 For the Zebra its recommended also search at https://www.peninsula-group.com/mac-thermal-printer-driver/ 
 the CUPS interface for Unixes comes with basic enough support that works as its.
 
-## General Printing
+# How to printing
 
-First need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Receipt**, here the most important settings are *Format* and *Font size*.
+Either for normal printing or for devices/receipt printing, first need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Receipt**, here the most important settings are *Format* and *Font size*.
 
 ![printing settings:](https://user-images.githubusercontent.com/10962177/36354930-c33ea10c-1498-11e8-8b0b-a4eb2b2ecbdb.png)
 
@@ -22,6 +39,14 @@ Then the **default receipt shows more info than the short (order)** receipt. So 
 The **Autoprinting** are explained here in below specific section.
 
 Unless margings and show dialog printing rest of the options are self explanatory, please read section below for.
+
+  * [Preparation printing for firefox/palemoon](#preparation-printing-for-firefoxpalemoon)
+  * [Preparing printing for Chome/Chromium](#preparing-printing-for-chomechromium)
+* [Advanced and Autoprinting](#advanced-and-autoprinting)
+  * [Firefox, Palemon, Icecat](#firefox-palemoon-icecat)
+  * [Chrome](#chrome)
+  * [Fiscal printing](#fiscal-printing)
+
 
 ### Preparation printing for firefox/palemoon
 
@@ -58,6 +83,10 @@ Remember that the printer its recommended 75mm paper setup.
 Advanced printing allows set margins, and the "direct printer" to, only by selecting the "Order" format.
 
 This feature is currently available in combination with browsers Palemoon, Icecat, Iceweasel, Firefox and with some little changes in Chrome. For most modern browsers another way to do by changing deep settings in firefox `about:config` interface options.
+
+  * [Firefox, Palemon, Icecat](#firefox-palemoon-icecat)
+  * [Chrome](#chrome)
+  * [Fiscal printing](#fiscal-printing)
 
 ### Firefox, Palemoon, Icecat
 
