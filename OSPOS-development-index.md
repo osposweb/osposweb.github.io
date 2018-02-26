@@ -5,6 +5,7 @@ OSPOS is an open source application as evolution of [PHP Point Of Sale](https://
 We hope you already read the README before coming here, that should give you already a good hint **of what this software is about using MySQL DBMS as data backend and Apache2 as WEBSERVER render frontend**.
 
 * [Tech: Installation](#tech-installation)
+  * [Requirements: Software and Hardware](#requirements)
   * [1 - Officially supported](#1---officially-supported)
   * [2 - Unofficially unsupported](#2---unofficially-or-unsupported)
   * [3 - Deploy for/to Development:](#3---deploy-forto-development)
@@ -12,7 +13,37 @@ We hope you already read the README before coming here, that should give you alr
 
 ## Tech: Installation
 
-(WIP) Choice depends on your deployment:
+The installation will depend also of the kind of deployment, can be at the cloud, docker instance or locally server by own. Also can be using a unofficial software that perform similar to those officially supported.
+
+### Requirements
+
+Due OSPOS its a web based software, cons of **two parts, a client rendering side and a server side**. So there's two kinds of requirements, those at the client browsing usage and those at the server runtime.
+
+#### Client side requirements
+
+**The hardware where OSPOS will be consume an use it by employee**, could be any that runs Firefox or any modern web browser, theres the officially tested supported web browsers requirements:
+
+|name       | minimal version | observations                          |
+|---------- | --------------- | ---------------------------------------- |
+|**firefox**    | 34 (ESR) | Recommended and officially supported |
+|**palemoon**    | 25 | Performs well as firefox does |
+|chromiun    | 40 | not recomended |
+|chrome    | 40 | not recomended |
+|safary    | ? | not supported, seems work |
+|opera   | ? | not supported, seems work |
+|midory    | ? | not supported, does not performs well |
+|qupzilla/razen    | ? | not supported, does not work |
+
+#### Server side requirements
+
+**The hardware where OSPOS will run and serve to client side**, could be any that runs php, mysql and the webserver. Inclusively can run on Androit or RasberryPi hardware.
+
+|name       | software/hardware  | minimal version | recomended | observations                          |
+|---------- | ------------- | --------------- | ---------- | -------------------------------------- |
+|webserver  | Apache2  | 2.2.12   | 2.4 | Only apache2 are officially supported  |
+|database   | MySQL or MariaDB | 5.5 | 5.6 / 10.0.1 | Only MySQL related DBMS are compatible such Percona Server also works |
+|websoftware  | PHP  | 5.6   | 7.0 | Need sockets, mycrypt/openssl, curl and mysql modules actived.  |
+|Machine    | PC/MAC/RasberryPi/Daruma | year of 2010    | year of 2012 | Recent hardware with enought RAM and fast storage  |
 
 ### 1 - Officially supported: 
 
