@@ -85,7 +85,10 @@ This software is about using **MySQL DBMS as data** backend and (for now) **Apac
   * [1 - Architecture workflow](#1---architecture-workflow)
   * [2 - How to start to develop](#2---how-to-start-develop)
   * [3 - Database desing and layout](#3---database-design-and-important-tables)
-  * [Development Environment and git init repository](OSPOS-Environment-Development)
+  * [Development code tips and help](#development-code-tips-and-help)
+  * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
+  * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
+  * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
 
 OSPOS is a project **code based on CodeIgniter**, so a good starting point to understand the architecture of the software 
 is to read a [Codeigniter tutorial (https://www.codeigniter.com/user_guide/tutorial/)](https://www.codeigniter.com/user_guide/tutorial/static_pages.html).
@@ -162,8 +165,11 @@ WIP
 
 ## Development code tips and help
 
-Some important information to start coding and make usefully changes in the project.
+Some important information to start coding and make usefully changes in the project:
 
+  * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
+  * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
+  * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
 
 ### About the Secure Controller and Controllers
 
