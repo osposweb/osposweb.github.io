@@ -1,4 +1,9 @@
-This document try to sumarise most important topics to developers.
+This document try to sumarise most important topics to developers for ussage of the repository initializations and some code tools.
+
+Take in consideration:
+
+1. Please read the [Development index and architecture](../OSPOS-development-index#tech-architecture) first before read here
+2. After read this document please read the [Development code tips and help](../OSPOS-development-index#development-code-tips-and-help)
 
 ## Workflow
 
@@ -9,6 +14,8 @@ Obviously as github does, by pull request, there's no extended process of "revie
 OSPOS tries to adhere to [CodeIgniter indentation style](https://www.codeigniter.com/user_guide/general/styleguide.html), must read carefully.
 
 **IMPORTANT**: as discussed in #389, but due OSPOS was a migration from CI2 some portions of the code might not complain yet. Please do not made pull request only to format old code, do this only if new features are involved.
+
+Always check the [Development code tips and help](OSPOS-development-index#development-code-tips-and-help) for how to code the controllers and views respect the models.
 
 ## Code documentation
 
@@ -54,6 +61,8 @@ As a final step you can run bower, npm and grunt from the newly created image. T
 
 `docker run -v $(pwd):/data -f Dockerfile.test opensourcepos:test bower install && npm install && grunt`
 
+Now at this poin you can follow the [Development code tips and help](OSPOS-development-index#development-code-tips-and-help) to start made new features to the opensoourcepos.
+
 ## Debugging PHP using XDebug and Docker
 
 The PHP side of this application can also be debugged using a prebuilt Docker container. This container will add the XDebug PHP module that can be used from within IntelliJ or Eclipse. First check the ip address on your host's docker interface as it needs to be configured in the `docker-compose.dev.yml` file. Next you can use docker-compose to start the application with xdebug enabled by entering following command from the CLI (head for ospos directory first)
@@ -62,3 +71,7 @@ The PHP side of this application can also be debugged using a prebuilt Docker co
 
 After the container is launched the xdebug connection should be available on port 9000 of the docker ip address. Add [this to the configuration in IntelliJ or Eclipse](https://gist.github.com/chadrien/c90927ec2d160ffea9c4) and you should be good to go.
 
+# See also: 
+
+* [Development index](../OSPOS-development-index#tech-architecture)
+* [Development code tips and help](../OSPOS-development-index#development-code-tips-and-help)
