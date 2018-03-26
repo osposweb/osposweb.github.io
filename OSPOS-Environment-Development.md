@@ -2,8 +2,8 @@ This document try to sumarise most important topics to developers for ussage of 
 
 Take in consideration:
 
-1. Please read the [Development index and architecture](../OSPOS-development-index#tech-architecture) first before read here
-2. After read this document please read the [Development code tips and help](../OSPOS-development-index#development-code-tips-and-help)
+1. Please read the [Development index and architecture](OSPOS-development-index#tech-architecture) first before read here
+2. After read this document please read the [Development code tips and help](OSPOS-development-index#development-code-tips-and-help)
 
 ## Workflow
 
@@ -73,5 +73,5 @@ After the container is launched the xdebug connection should be available on por
 
 # See also: 
 
-* [Development index](../OSPOS-development-index#tech-architecture)
-* [Development code tips and help](../OSPOS-development-index#development-code-tips-and-help)
+* [Development index](OSPOS-development-index#tech-architecture)
+* [Development code tips and help](OSPOS-development-index#development-code-tips-and-help)
