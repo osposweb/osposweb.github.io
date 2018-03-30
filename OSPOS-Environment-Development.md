@@ -48,6 +48,12 @@ This will call npm to install all required dependencies and subsequently run gru
 
 In case you face an issue during the npm install (e.g. `npm ERR! phantomjs@1.9.20 install: node install.js`) do `sudo apt-get install nodejs-legacy` and run again `npm install --only=dev`.
 
+## Proper way to see js minifications changes
+
+JS and CSS are cached, you just need to reload your page keeping the shift button pressed in your web browser.
+
+this procedure are also recommended if you perform a update.
+
 ## Dotfiles for easy environment setup
 The addition of the dotenv composer library makes it easy to configure different staging environments with database credentials and environment bound variables. Copy the config/.env.example file to config/.env and fill in variable values as needed. Php display_errors will be set to 1 which will ease troubleshooting errors and debugging when things go awry.
 
