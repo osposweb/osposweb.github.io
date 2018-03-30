@@ -2,6 +2,11 @@
 
 But those are not activated by default, there's two places to see error log: **at the server side** and **at the client side**.The php errors are generally at the server side, and js error are generally at the client side, with some exceptions that are at server side.
 
+* [Error Log at Client side](#error-log-at-client-side)
+* [Error Log at Server side](#error-log-at-server-side)
+  * [Application error log, db error log, etc](#application-error-log)
+  * [WebServer error log, php errors, etc](#webserver-error-log)
+
 ## Error Log at Client side
 
 Depends totally of the browser, mostly firefox/palemoon the officially supported or those _webkit_ based (chromium/chrome, qupzilla, etc by example).
