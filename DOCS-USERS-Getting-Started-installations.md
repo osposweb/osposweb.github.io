@@ -4,6 +4,8 @@ This document are made for quick deploy/usage, for detailed instructions please 
 * [Fast Cloud Deploy installation](#cloud-deploy-installation)
 * [More advance and customized installations](#more-advance-and-customized-installations)
 
+**After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)**
+
 # Local Deploy install
 ----------------------
 
@@ -28,10 +30,17 @@ This was a quick fast local installation, that ships a pre-3.2.0 release of OSPO
 
 In other linux distributions or standar live disck, more steps must be take in care such database protection and web server performance, install **apache2**, **php** and **mariadb** `apt-get install apache2 mariadb-server php php-curl php-gd php-intl` then perform tune up steps for security. 
 
+## See also:
+
+* [Getting Started with Open Source POS](home)
+  * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
+  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+
 # Cloud Deploy installation
 -------------
 
-If you want to run a quick demo of OSPOS the most quick way its using [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b), a full setup will only take about 2 minutes by following steps below.
+If you want to run a quick demo of OSPOS the most quick way its using [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b), remenber also read [Extras for Docker cloud maintenance](DOCS-USER-Extras-for-Docker-cloud-maintenance) and take in consideration that a docker maintenance need some level of linux related operating system usage.
 
 1. Create a [Digitalocean account](https://m.do.co/c/ac38c262507b)
 2. Create a [docker cloud account](https://cloud.docker.com)
@@ -54,3 +63,10 @@ Please refers to the [OSPOS installation development requirements wiki page (cli
 
 > If you like the project, and you are making money out of it on a daily basis, then consider buying us a coffee so I can keep adding features. [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MUN6AEG7NY6H8)
 
+## See also:
+
+* [Getting Started with Open Source POS](home)
+  * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
+  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+* [Extras for Docker cloud maintenance](DOCS-USER-Extras-for-Docker-cloud-maintenance)
