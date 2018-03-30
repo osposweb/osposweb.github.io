@@ -1,4 +1,5 @@
-This document are made for quick deploy/usage, for detailed instructions please read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation) wiki page
+This document are made for quick deploy/usage, for detailed instructions please read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation) wiki page and later for special software and operating system combinations refers to the [OSPOS installations index (click here)](OSPOS-development-index#1---officially-supported) for complete info about different installations. Here where detail a specific quick procedure only.
+
 
 * [Quick Own Local Deploy installation](#local-deploy-install)
 * [Fast Cloud Deploy installation](#cloud-deploy-installation)
