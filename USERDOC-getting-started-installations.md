@@ -7,27 +7,26 @@ This document are made for quick deploy/usage, for detailed instructions please 
 # Local Deploy install
 ----------------------
 
-Its the best option to most customized and controlled, also as counterpart you are on your own, 
-but its totally free of charge of course! and most cheap and optimized. We must use Linux 
-a [Debian live image ready to use](https://www.debian.org/CD/live/#live-install-stable) or 
-a [Devuan live image ready to use](https://devuan.org/os/documentation/install) derivate distribution OS, 
-for more detailed instructions read the section of [Installation and requirements (click here)](OSPOS-development-index#tech-installation).
+Its the best option to most customized and controlled, as counterpart you are on your own.
 
-1. Log in to the OS and/or open a terminal, type `sudo su` to scale privileges.
-2. Install **apache2**, **php** and **mariadb** `apt-get install apache2 mariadb-server php php-curl php-gd php-intl`
-3. run download command `wget https://github.com/opensourcepos/opensourcepos/archive/3.1.1.tar.gz -O ospos311.tar.gz`
-4. uncompress with command `tar zxvf ospos311.tar.gz  --strip 1 -C /var/www/html`
-5. create the database with `mysql -u root -e 'CREATE SCHEMA ospos'`
-6. populate database with command `mysql -u root ospos < /var/www/html/application/database/database.sql`
-7. configure user credentials to database with `sed -i "s/admin/root/g" /var/www/html/application/config/database.php`
-7. configure password database with `sed -i "s/pointofsale//g" /var/www/html/application/config/database.php`
-7. open the web browser and run from `http://localhost/public` of `http://YOURIPADDRESS/public`
-8. login by using username as **admin**  and the password are **pointofsale**
-9. Enjoy and remenber to point `YOURIPADDRESS` to your installation server.
+Due most vendor uses Linux the procedure will use it, a [Debian live image ready to use with all included **without OS install need**](https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download) can be downloaded with all need components and sofware ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download
 
-**IMPORTANT** first login will have a delay due "send statics" are activated in `"Office->Store config->General->Send statics"`, deactivate when login if you not have enough network or internet.
+1. **Download** the ready to use live disc from https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download .
+2. **Boot** this live disc OS in a virtual Machine (no need to burn or put in usb), a note, only if you have a low performance machine, **can be use direclty without install the OS** by putting the ISO file in a media by burning in a media optical disk, the downloaded file `debian-venenux-8-osposweb-i386.hybrid.iso` its a booteable live disk image Operatin system ready to use. Also hardware for boot, a usb boot its a easy solution (in linux command are `cp debian-venenux-8-osposweb-i386.hybrid.iso /dev/<usbdisk>` but will erase all data there)
+3. **Wait** until the system shows the desktop screen with the firefox browser opened, will the show minimal instruction
+4. **Open** terminal from left corner Menu, as `Menu`->`System tools`->`Sakura` or as `Menu`->`System tools`->`Terminal` an a window will raised with black backgroud for typing commands.
+5. **Gain** access to administration user `root` by executing in the `Terminal` that command: `sudo su`, it's strong recommended to maximize the terminal window to see more clear the messages.
+6. **Create** database and access by executing in that terminal this command complety: `mysql -u root -e "CREATE SCHEMA ospos;CREATE USER 'root'@'%' IDENTIFIED BY 'toor';GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'toor' WITH GRANT OPTION;"`
+7. **Populate** database with that other command in same terminal `mysql -u root ospos < /var/www/html/application/database/database.sql`
+7. **Configure** the OSPOS user credentials access to database with that two commands in same terminal: `sed -i "s/admin/root/g" /var/www/html/application/config/database.php` and the second command are password database with `sed -i "s/pointofsale//g" /var/www/html/application/config/database.php`
+8. **Browsing** using the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
+8. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
 
-This was a quick fast local installation, for professional install more steps must be take in care such database protection and web server performance.
+**IMPORTANT** first login will have a delay due "send statics" are activated in pre 3.2.0 releases, can be partially `"Office->Store config->General->Send statics"`, deactivate when login if you not have enough network or internet.
+
+This was a quick fast local installation, that ships a pre-3.2.0 release of OSPOS, if you wish to use lasted must before step 3, erase all the dataa with `rm -rf /var/www/http/*`, then run download command `wget https://github.com/opensourcepos/opensourcepos/archive/lasted.tar.gz -O osposlasted.tar.gz` and uncompress with command `tar zxvf osposlasted.tar.gz  --strip 1 -C /var/www/html` taking in cosideration that a 3.2.0 release was suceed.
+
+In other linux distributions or standar live disck, more steps must be take in care such database protection and web server performance, install **apache2**, **php** and **mariadb** `apt-get install apache2 mariadb-server php php-curl php-gd php-intl` then perform tune up steps for security. 
 
 # Cloud Deploy installation
 -------------
