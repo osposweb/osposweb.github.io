@@ -20,30 +20,30 @@ Here are varios components in action, in first place there's the application log
 
 ### Application error log:
 
-(WIP)
+It's disabled by default, since 3.1 OSPOS, can be enabled in a directive in `application/config/config.php` named `$config['log_threshold']` that are set to `0` by default, set to `1` to enable info log only, **for reporting and submit issues please set to `4` and attach only relevant part.
+
+Will default the location of the results logs at `application/logs/`, that can be also customized where logging takes place by the directive `$config['log_path']`
 
 #### Database SQL Logging
 
-In config.php we can also set where database logging takes place. Leaving it blank will default the location to .../application/logs.  It also needs to be enabled before any logging actually takes place.  I used this quite a bit in my first explorations in order to understand the database.
-```
-$config['log_path'] = ''; 
-```
+It's disabled by default, since 3.1 OSPOS, can be enabled in a directive in `application/config/config.php` named `$config['db_log_enabled']` that are set to `FALSE` by default, set to TRUE to enable. Will default the location of the results logs in the same log file of application at `application/logs/`.
   
 ### WebServer error log:
 
-NOTE: _Remenber that apache2 its the main currently oficially suported_
+In standar distributions if you can access server files or have setup a local installation, a general file that will register all error happened to php script procesing will be always present. 
 
-In standar **Apache2** distributions if you can access server files ow have setup a local installation a general file that will register all error happened to php script procesing. 
+* In standar Server or Linux installations that file will be under `/var/log/<WEBSERVERNAME>/error.log` 
+* In standar binaries of apache2 instalations that file will be under `${INSTALL_DIR}/logs/error.log`
+* In standar binaries of nginx/lightttpd/otyhers that files will be also under `${INSTALL_DIR}/logs/error.log`
 
-In standar binaries of apache2 instalations that file will be under `${INSTALL_DIR}/logs/error.log`
-In standar Server or Linux installations that file will be under `/var/log/apache2/error.log` 
-
-You can customize that in the apache2.conf or http.conf file configuration of the apache2 webserver with those directives:
+By example, you can customize that in the apache2.conf or http.conf file configuration of the apache2 webserver with those directives:
 
 ```
 ErrorLog "${INSTALL_DIR}/logs/apache_error.log"
 CustomLog "${INSTALL_DIR}/logs/access.log" common
 ```
+
+**IMPORTANT** Please refers to the web server documentation to customize that..
 
 #### PHP Errors
 
@@ -56,10 +56,6 @@ define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'developm
 
 The PHP configuration file (php.ini) is used to describe the error log.   The php.ini file is typically found in the root folder of the PHP installation, however it doesn't have to be located there (as described on page http://php.net/manual/en/configuration.file.php).
 
-In my php.ini file there is a directive setting shown below that establishes where the PHP error log will be found.  I think this is the error log being referred to in the issue.  This explains why this particular error log isn't found in the public folder (in my environment).
-```
-error_log ="c:/wamp64/logs/php_error.log"
-```
-
+The php ini files in modern instalations set error log path to emnpty value so will be managed by the webserver, for toher you must consult the php proper documentation of each binary distribution.
 
   
