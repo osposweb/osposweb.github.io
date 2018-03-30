@@ -155,7 +155,7 @@ So then you will need:
 4. Clone the repository and ....
 5. ...read the [Development Environment documentation](OSPOS-Environment-Development) to start the git repo cloned.
 6. Start to coding with the [Development coding tips and help](#development code tips and help)
-7. Debug errors, please must read [OSPOS DEVEL: Error Logging How to](OSPOS-DEVEL:-Error-Logging-in-OSPOS)
+7. Debug errors, please must read [OSPOS DEVEL: Error Logging How to](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
 
 IF you don want to do that can try a local installation deploy and sync with git only the changes.
 
