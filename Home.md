@@ -2,17 +2,13 @@
 
 **A web-base POS application** and **requiring just a web browser** at your point of sale point, that allows you to manage your stock, sales, issuing receipts or invoices and providing you reports of sales and stock.
 
-**OSPOS features evolved in a robust application thanks to active contributors**, that small shops can use:
+**OSPOS features evolved in a robust application thanks to active contributors**, There's a complete list of features, please visit the [OSPOS complete feature data sheet](OSPOS-complete-feature-datasheet) page for more information:
 
 - Multilanguage and Multiuser with module access control and different UI themes
 - Stock management (Items and Kits) with Barcode generation, Suppliers and Customers database
-- Sale register with transactions logging and printing support
-- Receipt and invoice printing and/or emailing
-- Reporting on sales, orders, inventory status
-- Restaurant support, with Table management
+- Sale/Return register with transactions logging and printing support
+- Receipt and invoice printing and/or emailing also Restaurant support, with Table management
 - Expenses module integrated with simple ui registers.
-
-There's a complete list of features, please visit the [OSPOS complete feature data sheet](OSPOS-complete-feature-datasheet) page for more information.
 
 # Documentation
 
