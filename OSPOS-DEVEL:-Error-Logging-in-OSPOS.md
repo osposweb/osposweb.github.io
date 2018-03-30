@@ -1,9 +1,24 @@
-## Overview
-_Work in progress_
+# Error Log Overview
 
-When user input isn't correct OSPOS will normally respond with an error message included with the response to the Web page.
+When input/config isn't correct OSPOS will normally respond with an error message included with the response to the Web page, and if the error are too great webserver also will registered.
 
-However, if you are trying to chase down something that is causing a more serious issue then you might need more information from the system. You will need to activate and/or take advantage one of the handful of error logs that OSPOS or the supporting platforms generate.
+But those are not activated by default, there's two places to see error log: **at the server side** and **at the client side**.
+
+## Error Log at Client side
+
+Depends totally of the browser, mostly firefox/palemoon the officially supported or those _webkit_ based (chromium/chrome, qupzilla, etc by example).
+
+1. After loading the OSPOS page, hit the F12 key
+2. the scree will split in two parts, that second new part its the web-browser devel tool
+3. that second part has a "netwok" tab, go/hit in that network tab
+4. all the web traffic to the ospos will be displayed, all the request and response
+5. each request will have a line entry and also same for each response
+
+![hot F12 at the web browser and see the new split window](https://github.com/venenux/osposos/raw/master/debianOspos/screenshot-ospos-devel-f12-client-log-error.png)
+
+## Error Log at Server side
+
+Here are varios components in action
 
 ## PHP Errors
 
