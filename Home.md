@@ -20,11 +20,11 @@ You'll find a ordered list of comprehensive guides and documentation to help you
 
 ## User Documentation
 
-* [Getting Started with Open Source POS](USERDOC-getting-started-with-ospos)
+* [Getting Started with Open Source POS](DOCS-USER:-getting-started-with-ospos)
   * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
-  * [Getting Started Installations](USERDOC-getting-started-installations)
+  * [Getting Started Installations](DOCS-USER:-getting-started-installations)
 * [OSPOS hardware support](OSPOS-hardware-supported-datasheet)
-  * [OSPOS Printing general info](OSPOS-Printing)
+  * [OSPOS Printing general info](DOCS-USER:-OSPOS-Printing)
 
 ## Support and help
 
