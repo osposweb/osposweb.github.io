@@ -1,4 +1,6 @@
-Docker cloud instances can be directly maintained through the docker-cloud command tool. Most of the basic operations are available from the docker-cloud web frontend. 
+Docker cloud instances can be directly maintained through the docker-cloud command tool. Most of the basic operations are available from the docker-cloud web frontend.
+
+**NOTE** This its not end-user oriented task, need some level of knowledge specially in unix-linux like operating systems.
 
 Maintaining a Docker cloud install
 ----------------------------------
