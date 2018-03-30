@@ -1,3 +1,12 @@
+This it's a organized datasheet about most notable features respect the available modules in the ospos. 
+
+After read this, Read also:
+
+  * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
+  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+
+
 WIP
 
 > idea: paste the list and each item in list on clikc go to documentation with images.. due this section its more related to user usage rather thant developers
