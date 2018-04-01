@@ -1,6 +1,6 @@
-OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before becoming a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use.
+OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use.
 
-We hope you already read the README before coming here, that should give you already a good hint **of what this software is about using MySQL DBMS as data backend and Apache2 as WEBSERVER render frontend**.
+We hope you already read the README before coming here, that should give you already a good hint **of what this software is about using MySQL as DBMS and Apache2 as webserver**.
 
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
@@ -9,47 +9,47 @@ We hope you already read the README before coming here, that should give you alr
   * [3 - Deploy for/to Development:](#3---deploy-forto-development)
 * [Tech: Architecture](#tech-architecture)
   * [1 - Architecture workflow](#1---architecture-workflow)
-  * [2 - How to start to develop](#2---how-to-start-develop)
-  * [3 - Database desing and layout](#3---database-design-and-important-tables)
+  * [2 - How to start development](#2---how-to-start-develop)
+  * [3 - Database design and layout](#3---database-design-and-important-tables)
   * [Development Environment](OSPOS-Environment-Development)
-* [Development code tips and help](#development-code-tips-and-help)
+* [Development help](#development-code-tips-and-help)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
-  * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
+  * [Translations and languages](#always-use-translations-event-hardcoded-strings)
 
 ## Tech: Installation
 
-The installation will depend also of the kind of deployment, can be at the cloud, docker instance or locally server by own. Also can be using a unofficial software that perform similar to those officially supported.
+The installation will depend of the kind of deployment which can be the cloud, a docker instance or a locally server.
 
 ### Requirements
 
-Due OSPOS its a web based software, cons of **two parts, a client rendering side and a server side**. So there's two kinds of requirements, those at the client browsing usage and those at the server runtime.
+OSPOS is a web applications software, **two parts, a client rendering side and a server side**. So there's two kinds of requirements, those at the client browsing usage and those at the server runtime.
 
 #### Client side requirements
 
-**The hardware where OSPOS will be consume an use it by employee**, could be any that runs Firefox or any modern web browser, theres the officially tested supported web browsers requirements:
+**The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser, theres the officially tested supported web browsers:
 
 |name       | minimal version | observations                          |
 |---------- | --------------- | ---------------------------------------- |
 |**firefox**    | 34 (ESR) | Recommended and officially supported |
-|**palemoon**    | 25 | Performs well as firefox does |
-|chromiun    | 40 | not recomended |
-|chrome    | 40 | not recomended |
-|safary    | ? | not supported, seems work |
+|**palemoon**    | 25 | Performs as well as firefox does |
+|chromium    | 40 | Recommended |
+|chrome    | 40 | Recommended |
+|safari    | ? | not supported, seems work |
 |opera   | ? | not supported, seems work |
 |midory    | ? | not supported, does not performs well |
 |qupzilla/razen    | ? | not supported, does not work |
 
 #### Server side requirements
 
-**The hardware where OSPOS will run and serve to client side**, could be any that runs php, mysql and the webserver. Inclusively can run on Androit or RasberryPi hardware.
+**The hardware where the PHP part will run**, could be any OS that runs php, mysql and the webserver. Inclusively can run on Android or RasberryPi hardware.
 
 |name       | software/hardware  | minimal version | recomended | observations                          |
 |---------- | ------------- | --------------- | ---------- | -------------------------------------- |
 |webserver  | Apache2  | 2.2.12   | 2.4 | Only apache2 are officially supported  |
 |database   | MySQL or MariaDB | 5.5 | 5.6 / 10.0.1 | Only MySQL related DBMS are compatible such Percona Server also works |
-|websoftware  | PHP  | 5.6   | 7.0 | Need sockets, mycrypt/openssl, curl and mysql modules actived.  |
-|Machine    | PC/MAC/RasberryPi/Daruma | year of 2010    | year of 2012 | Recent hardware with enought RAM and fast storage  |
+|websoftware  | PHP  | 5.6   | 7.0 | Need mycrypt/openssl, curl and mysql modules actived.  |
+|Machine    | PC/MAC/RasberryPi/Daruma | year of 2010    | year of 2012 | Recent hardware with enough RAM and fast storage  |
 
 ### 1 - Officially supported: 
 
@@ -57,7 +57,7 @@ Currently only Apache & MySql/MariaDB see this wiki https://github.com/opensourc
 
 ### 2 - Unofficially or unsupported
 
-Can run inclusive better, but currently there's some issues on this.
+Can be setup at will, but currently has no support from the project.
 
 For lighttpd and MAriaDB:
 
@@ -68,11 +68,11 @@ For  Nginx/ & MySql/MariaDB:
 * https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
 * https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
 
-### 3 - Deploy for/to Development:
+### 3 - Deploy for Development:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Development-setup
 
-Some users reports that can install and run in others not supported or that fit enough quality to deploy:
+Other examples of custom production deployments:
 
 * https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
 * https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows
@@ -80,7 +80,7 @@ Some users reports that can install and run in others not supported or that fit 
 
 ## Tech: Architecture
 
-This software is about using **MySQL DBMS as data** backend and (for now) **Apache2 as WEBSERVER render** frontend. So not so importat, your should be **enought knowledge about enabling, activate and manage those** software.
+This software is about using **MySQL DBMS as data** backend and (for now) **Apache2 as WEBSERVER render** frontend. So not so important, your should be **enought knowledge about managing those**.
 
   * [1 - Architecture workflow](#1---architecture-workflow)
   * [2 - How to start to develop](#2---how-to-start-develop)
@@ -90,8 +90,7 @@ This software is about using **MySQL DBMS as data** backend and (for now) **Apac
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
 
-OSPOS is a project **code based on CodeIgniter**, so a good starting point to understand the architecture of the software 
-is to read a [Codeigniter tutorial (https://www.codeigniter.com/user_guide/tutorial/)](https://www.codeigniter.com/user_guide/tutorial/static_pages.html).
+OSPOS is a project **based on CodeIgniter**, so a good starting point to understand the architecture of the software is to read a [Codeigniter tutorial (https://www.codeigniter.com/user_guide/tutorial/)](https://www.codeigniter.com/user_guide/tutorial/static_pages.html).
 
 Among `Codeigniter`, also has usage of some other web software technologies such like `JQuery` and `Bootstrap`, 
 the [Development Environment wiki (click here)](OSPOS-Environment-Development) has some related info 
@@ -110,14 +109,11 @@ Take a reading of [CI workflow MVC](https://www.codeigniter.com/userguide3/overv
 on top of the MVC concept `CodeIgniter` uses the URL to point to `Class/Functions` 
 and it uses a routing table to facilitate navigation through the `views` and according to the `URL` path. 
 
-The OSPOS has some little modifications: firts autoload the models, then excecute the hooks, and later loads class and/or controllers, 
-that implicts that first load config model and later the hooks that tracks and checks session and routing 
-so the configuration instance are available for all the environment.
+The OSPOS has some little modifications: first autoload the models, then execute any hooks, and later loads class and/or controllers. This means that first load config model and later the hooks that tracks and checks session and routing so the configuration instance are available for all the environment.
 
 **About models**
 
-All the models are autoloading, the order are in the autoload config file, the `Appconfig` model are the firts.
-The `Employee` and `Reports` models are also importans, due are parents of others.
+All the models are autoloading, the order are in the autoload config file, the `Appconfig` model are the first. The `Employee` and `Reports` models are also important, as they are parents of others.
 Not all the models consult the DB, the `enums/Routing` model are a pure class.
 
 **About controllers**
@@ -133,36 +129,31 @@ Each controller has their own view directory.
 **About hooks**
 
 So in fact, after reading [hooks in CI](https://www.codeigniter.com/userguide3/general/hooks.html), 
-there's fourth hooks in the OSPOS:
+there are four hooks in the OSPOS:
 
-* a loading config so the configuration setting are available to developer as CI config array part
-* a loading statics so always will try to send data to net no care if user disable it.
-* a db logging facility, if enabled from config file, will try to log all the sql querys.
+* a loading config so the configuration settings are available to developer as CI config array part
+* a db logging facility, if enabled from config file, will log all the sql querys.
 * a env dot file, from application config, if foud a `.env` filename for docker installation devel.
 
-The statictics are mandatory at first login, if those are not calculated respect the running session, 
-the application check will not pass and the shadow disabling will happened.
+### 2 - How to start Development
 
-### 2 - How to start Develop
-
-In order to start to develop first must understand how to use a git workflow, then how to work a server-client web software (take care of the request and response concepts) and the read the specific [Development Environment documentation (click here)](OSPOS-Environment-Development) for.
+In order to start to develop first must understand how to use a git workflow, then how to work a server-client web software (take care of the request and response concepts) and read the specific [Development Environment documentation (click here)](OSPOS-Environment-Development) for.
 
 So then you will need:
 
-1. Install `git`, `npm`, `bower`, `composer`, `apache`, `mysql`, `php` and a web browser with good debugging tool.
+1. Install `git`, `npm`, `bower`, `composer`, `apache`, `mysql`, `php` and a web browser with good debugging tools.
 2. Understand the web client-server concepts of `request` and `response`
 3. Understand the `Codeigniter` applications framework at https://www.codeigniter.com/user_guide
 4. Clone the repository and ....
-5. ...read the [Development Environment documentation](OSPOS-Environment-Development) to start the git repo cloned.
-6. Start to coding with the [Development coding tips and help](#development code tips and help)
-7. Debug errors, please must read [OSPOS DEVEL: Error Logging How to](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
+5. ...read the [Development Environment documentation](OSPOS-Environment-Development).
+6. Start coding with the [Development coding tips and help](#development code tips and help)
+7. To debug errors, please read [OSPOS DEVEL: Error Logging How to](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
 
 IF you don want to do that can try a local installation deploy and sync with git only the changes.
 
 ### 4 - Database Design and important tables: 
 
 WIP
-
 
 ## Development code tips and help
 
@@ -223,7 +214,7 @@ and sanitize values before load in a modal dialog form:
     }
 ```
 
-### How to invokes that function with anchor as a modal dialog and what will have it
+### How to invoke a function with anchor as a modal dialog
 
 This fuction/member `change_password` was called in home or employee controllers with a especial CSS class, that 
 makes the load of the form html a modal dialog, lest see :
