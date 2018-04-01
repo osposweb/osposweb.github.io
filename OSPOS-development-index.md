@@ -254,22 +254,3 @@ in this case its: `employees_lang.php`.
 so the file are in `application/languaje/es/employees_lang.php` and the string ARE part of the lang array.
 3. So in conclusion you must use the lang strings defined here for each frontend message string to the user. 
 Of course only predefined strings, pleas follow this document to lear about manage lang strings.
-
-### How to make translations and manage lang strings
-
-Add translations using Weblate (post 3.0.0), find our [Weblate website here: http://weblate.jpeelaer.net](http://weblate.jpeelaer.net) 
-and sign up to help translating this fine application. After registering you can subscribe to different 
-languages and you will be notified once a new translation is added. The web interface are very "un-flexible" but very user-friendly.
-
-**For current strings**, the web interface will present all the defined lang strings as 
-inputs to translated to each defined languaje, each defined languaje are a directoy inside `application/languaje`.
-
-**For new strings**, must be using git pull resquest workflow, must be added to corresponding lang array in 
-respective php file agains the controller name, by example a string for `employees` controller must be added 
-to the `<codelang>/employeees_lang.php` where `<codelang` are **each directory* languaje.
-
-Yes, you must added the new string lang to all the directory languajes in all respective controller file.
-
-### Set and Get a config item
-
-(WIP)
