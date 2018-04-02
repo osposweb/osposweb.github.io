@@ -13,6 +13,7 @@ We hope you already read the README before coming here, that should give you alr
   * [3 - Database design and layout](#3---database-design-and-important-tables)
   * [Development Environment](OSPOS-Environment-Development)
 * [Development help](#development-code-tips-and-help)
+  * [Code and API Documentation](#development-code-tips-and-help)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and languages](#always-use-translations-event-hardcoded-strings)
@@ -163,12 +164,18 @@ Some important information to start coding and make usefully changes in the proj
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
 
+### Code and API Documentation
+
+OSPOS tries to follow the in code documentation generated automatically by ApiGen (see https://github.com/ApiGen/ApiGen). The documentation is saved under docs and if you check https://dan4cat.github.io/opensourcepos/ you can browse it straight from GitHub. Code documentation can be read pointing the browser to `opensourcepos/docs/index.html` if was generated in your local repo (however it's suggested to remove that dir in a production environment).
+
+Read here how to enable that in your repo: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/ ApiGen is also part of grunt script so we should have fresh code documentation every time we run grunt script..
+
 ### About the Secure Controller and Controllers
 
 The `Secure_Controller` loads the `Employee` model, verify the login in in database and not in session object.
 
 All the controller/calls to modules has preloaded and extends from `Secure_Controller` so 
-after that the module access are checked and each module represents a controller.
+after that the module access are checked and each module represents a controller. For more info about controllers API check code documentation at https://dan4cat.github.io/opensourcepos/
 
 ### Get information about current user: the employee
 
@@ -189,7 +196,7 @@ $employee = $this->Employee->get_logged_in_employee_info();
 $employee_id = $employee->person_id;
 ```
 
-to avoid multiple object call and work in pure ram.
+to avoid multiple object call and work in pure ram. For more info check code API at https://dan4cat.github.io/opensourcepos/
 
 ### Using a predefined loaded object and used in new function
 
@@ -213,6 +220,7 @@ and sanitize values before load in a modal dialog form:
         $this->load->view('employees/form_change_password', $data);	// load a form and parse the information
     }
 ```
+For more info check code API at https://dan4cat.github.io/opensourcepos/
 
 ### How to invoke a function with anchor as a modal dialog
 
