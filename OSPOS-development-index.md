@@ -94,11 +94,7 @@ This software is about using **MySQL DBMS as data** backend and (for now) **Apac
 OSPOS is a project **based on CodeIgniter**, so a good starting point to understand the architecture of the software is to read a [Codeigniter tutorial (https://www.codeigniter.com/user_guide/tutorial/)](https://www.codeigniter.com/user_guide/tutorial/static_pages.html).
 
 Among `Codeigniter`, also has usage of some other web software technologies such like `JQuery` and `Bootstrap`, 
-the [Development Environment wiki (click here)](OSPOS-Environment-Development) has some related info 
-of how to start the different parts of the software needs.
-
-Now with development environment in tune, start to code understanding the architecture workflow (following the info) 
-and the database (below there some info), and also some coding tips about both.
+please read the section [2 - How to start develop](#2---how-to-start-development) of this page wiki to lear more and how to start tune up the development environment. But first please learn a little about the architecture workflow.
 
 ### 1 - Architecture workflow
 
@@ -138,7 +134,7 @@ there are four hooks in the OSPOS:
 
 ### 2 - How to start Development
 
-In order to start to develop first must understand how to use a git workflow, then how to work a server-client web software (take care of the request and response concepts) and read the specific [Development Environment documentation (click here)](OSPOS-Environment-Development) for.
+In order to start to develop first must understand how to use a git workflow, then how to work a server-client web software (take care of the request and response concepts) and read the specific [Development Environment documentation](OSPOS-Environment-Development) for. Please follow the next steps in short:
 
 So then you will need:
 
@@ -152,9 +148,13 @@ So then you will need:
 
 IF you don want to do that can try a local installation deploy and sync with git only the changes.
 
+Extended info about tunning some related info of how to start the different parts of the software needs can be fount in the [Development Environment page wiki (click here)](OSPOS-Environment-Development)
+
+Now with development environment in tune, start to code with the [Development code tips and help (section below)](#development-code-tips-and-help).
+
 ### 4 - Database Design and important tables: 
 
-WIP
+WIP: database structure info and some tips must be necessary if plans to make new features close to the infrastructure.
 
 ## Development code tips and help
 
