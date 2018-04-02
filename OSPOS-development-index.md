@@ -160,6 +160,7 @@ WIP
 
 Some important information to start coding and make usefully changes in the project:
 
+  * [About the Secure Controller and Controllers](#about-the-secure-controller-and-controllers)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
