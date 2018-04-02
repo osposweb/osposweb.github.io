@@ -158,7 +158,7 @@ WIP: database structure info and some tips must be necessary if plans to make ne
 
 ## Development code tips and help
 
-Some important information to start coding and make usefully changes in the project:
+Before read this section, remenber that must take care of the information in the [Technology and Architecture](#tech-architecture) section above. Some important information to start coding and make usefully changes in the project:
 
   * [About the Secure Controller and Controllers](#about-the-secure-controller-and-controllers)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
