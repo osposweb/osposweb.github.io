@@ -7,11 +7,19 @@ Docker cloud instances can be directly maintained through the docker-cloud comma
 
 From now on ospos can be deployed using Docker on Linux, Mac or Windows. This setup dramatically reduces the number of possible issues as all setup is now done in a Dockerfile. Docker runs natively on mac and linux, but will require more overhead on windows. Please refer to the docker documentation for instructions on how to set it up on your platform.
 
-To build and run the image, issue following commands in a terminal with docker installed
+To build and run the image, download a prebuilt zip from bintray (as from https://bintray.com/package/files/jekkos/opensourcepos/opensourcepos?order=desc&sort=fileLastModified&basePath=&tab=files) and then launch docker-compose from that folder which should work right away by issue following commands in a terminal with docker installed
 
     docker-compose build
     docker-compose up 
 
+If you want to build from source (as cloning the github repository), use docker first to minify javascript
+ 
+ ``` bash
+  docker run --rm -v $(pwd):/app composer/composer install
+  docker run --rm -v $(pwd):/app -w /app lucor/php-cli php bin/install.php translations develop
+  docker run --rm -it -v $(pwd):/app -w /app digitallyseamless/nodejs-bower-grunt "sh -c npm install && bower install"
+```
+**NOTE**
 
 # 2. Cloud install using Docker
 --------------------------
