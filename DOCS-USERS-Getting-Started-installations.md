@@ -1,5 +1,3 @@
-This document are made for quick deploy/usage, for detailed instructions please read [OSPOS installations index (click here)](OSPOS-development-index#1---officially-supported).
-
 * 🖫 [Local Install](#local-install)
   * 💻 [Own Local Deploy Install](#local-deploy-install)
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
@@ -12,7 +10,7 @@ This document are made for quick deploy/usage, for detailed instructions please 
 # Local Install
 ----------------------
 
-Its the best option to most customized and controlled, as counterpart you are by your own. We recommended using the way of system package vendor, due Docker option needs advanced Linux/Mac knowledge.
+Its the best option to most customized and controlled, as counterpart you are by your own.
 
 ## Local Deploy install
 
@@ -35,10 +33,10 @@ Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage
 
 ## Local Docker install
 
-Docker deploy its a *nix like environment due Docker runs natively on mac and linux. Please refer to the docker documentation for instructions on how to set it up on your platform.
+Docker deploy its a *nix like environment due Docker runs natively on mac and linux.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access only for next step with `sudo su` command
-2. **Dependences** install: docker.io, in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
+2. **Dependences** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
 3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdicker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
 4. **Download** executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/archive/lasted.tar.gz -O osposlastedstable.tar.gz` to later move to the htdoc directory.
 5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdicker` this will populate all the docker root image directory only for the software.
@@ -66,11 +64,11 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
 # Cloud Install
 -------------
 
-Best choice its free/private VPS, this due free hosting and mayority of private dont provide necesary enabled php modules such "openssl" and "curl" as examples, only some very older accounts still can access those modules. We recomended Digital Ocean
+Best choice its free/private VPS, this due free hosting and mayority of private dont provide necesary enabled php modules such "openssl" and "curl" as examples, only some very older accounts still can access those modules. We recomended Digital Ocean. Ancient accounts of Hostinger have those all enabled.
 
 ## Cloud Deploy installation
 
-For Cloud hosting the most compatible way it's using [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) as the recommended way if need hosting related.
+For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related.
 
 1. **Create** a [Digitalocean account](https://m.do.co/c/ac38c262507b) and once complete go log in.
 2. **Choose** a Debian Droplet by click the Create button in the top right hand corner, and later from the dropdown menu.
@@ -89,7 +87,7 @@ Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage
 
 ## Cloud Docker install
 
-Not recomended for begginers. We recomended Digital Ocean:
+Not recomended for begginers. We recomended Digital Ocean way:
 
 1. Create a [Digitalocean account](https://m.do.co/c/ac38c262507b)
 2. Create a [docker cloud account](https://cloud.docker.com)
