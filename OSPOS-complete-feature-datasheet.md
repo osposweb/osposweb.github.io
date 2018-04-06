@@ -12,15 +12,22 @@ For detailed functionality and how to usage of each feature, you can click over 
 # Quick Overview Of Features
 ----------------------------
 
-| ❔ Wanted feature... | 🚀 What can do... | X What cannot do...
+| ❔ Wanted feature... | 🚀 What can do... | ℹ️ What cannot do... |
 | --- | --- | --- |
-| Point of Sale (POS) | sell vehicles, parts, and services  and apply multiple payments to the sale | Credit accounting sales |
-| Customer Relationship Management (CRM) | add customers, and market to them via email marketing and SMS marketing | Bulk message and document sending |
-| Inventory Management | create stock (any product) and non-stock items (articles), ...with custom fields | Multiple prices and cost over single stock item |
-| Reporting | Over customers, Inventory and Transactions (sales or returns) | Specific/Ondemand reports (but Reportico integration on way see #1433 |
+| Point of Sale (POS) | Sell productos or/and services  and apply multiple payments (inclusivelly different types) to the sale, include a featured Restaurant Tables module | Advanced Transaction Types such as Special Orders, Back Orders and Layaways, Credit accounting sales |
+| Customer Relationship Management (CRM) | Add customers, maintain customer profiles and view full sales history, and market to them via email marketing and SMS marketing | Accounts Receivable / House Accounts, OSPOS has CRM features but no A.R. features |
+| Inventory Management | Create stock (any product) and non-stock items (articles), ...with custom fields | Inventory Matrix, Track items features, colors, materiasl, etc |
+| Multilanguaje Web Interface (i18n GUI) | Multilanguaje support with regionalization, Selectable Boostrap (Bootswatch) based UI theme | End-user customize interface like wordpress but with little coding can be done. No regionalization per items attributes |
+| Reporting | Customers, Inventory and Transactions (sales or returns) |  There are reports, but no dashboard that shares Top Sales, Top Suppliers, Best Selling Items, Top Customers, etc. See #1433 |
+| Data Importer | Can import data to the modules of Inventory Items products also the customes | Employee imports and Supplieer can be done with minimal code changes |
+| Expense Modules | Added and sumarize basic expenses, no accounting needs | Accounting with expenses over the sales are out of scope |
+| Gift Card and Rewards | Issue gift cards from as a payment method, Customers rewards | Management of accounting gift cards, expired dates on rewards |
+
 
 # Complete List of Features
 ---------------------------
+
+(WIP) feature complete list with links to guides of functionality of each one
 
 * Web interface
    * Employee access Login 
