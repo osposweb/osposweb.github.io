@@ -1,9 +1,15 @@
-  * [Wiki Home](Home)
+* **Feature index table**:
+  * [Quick Overview of Features](#quick-overview-of-features)
+  * [Complete List of Features](#complete-list-of-features)
+* **See also**:
   * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
   * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+  * [Wiki Home](Home)
 
-# Quick overview of features
+For detailed functionality and how to usage of each feature, you can click over them
+
+# Quick Overview Of Features
 ----------------------------
 
 | ❔ Wanted feature... | 🚀 What can do... | X What cannot do...
@@ -13,6 +19,8 @@
 | Inventory Management | create stock (any product) and non-stock items (articles), ...with custom fields | Multiple prices and cost over single stock item |
 | Reporting | Over customers, Inventory and Transactions (sales or returns) | Specific/Ondemand reports (but Reportico integration on way see #1433 |
 
+# Complete List of Features
+---------------------------
 
 * Web interface
    * Employee access Login 
