@@ -1,7 +1,6 @@
 # Introduction
 
 > **A web-based POS application that allows manage stock, sales, issuing receipts or invoices with reports**
-< hr >
 
 **OSPOS features evolved in a robust application thanks to active contributors**, There's a complete list of features, please visit the [OSPOS complete feature data sheet](OSPOS-complete-feature-datasheet) page for more information:
 
