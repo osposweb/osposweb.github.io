@@ -1,15 +1,18 @@
-This it's a organized datasheet about most notable features respect the available modules in the ospos. 
-
-After read this, Read also:
-
+  * [Wiki Home](Home)
   * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
   * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 
+# Quick overview of features
+----------------------------
 
-WIP
+| ❔ Wanted feature... | 🚀 What can do... | X What cannot do...
+| --- | --- | --- |
+| Point of Sale (POS) | sell vehicles, parts, and services  and apply multiple payments to the sale | Credit accounting sales |
+| Customer Relationship Management (CRM) | add customers, and market to them via email marketing and SMS marketing | Bulk message and document sending |
+| Inventory Management | create stock (any product) and non-stock items (articles), ...with custom fields | Multiple prices and cost over single stock item |
+| Reporting | Over customers, Inventory and Transactions (sales or returns) | Specific/Ondemand reports (but Reportico integration on way see #1433 |
 
-> idea: paste the list and each item in list on clikc go to documentation with images.. due this section its more related to user usage rather thant developers
 
 * Web interface
    * Employee access Login 
