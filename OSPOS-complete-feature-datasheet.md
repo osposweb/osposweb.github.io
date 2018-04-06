@@ -23,6 +23,13 @@ For detailed functionality and how to usage of each feature, you can click over 
 | Expense Modules | Added and sumarize basic expenses, no accounting needs | Accounting with expenses over the sales are out of scope |
 | Gift Card and Rewards | Issue gift cards from as a payment method, Customers rewards | Management of accounting gift cards, expired dates on rewards |
 
+* **See also**:
+  * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
+  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+  * [Wiki Home](Home)
+
+The following section has the complete list of each feature and comprensive guides to use thems:
 
 # Complete List of Features
 ---------------------------
@@ -79,3 +86,11 @@ For detailed functionality and how to usage of each feature, you can click over 
    * Barcode Printing
    * PDF Printing export
    * Printing Item Labels
+
+
+## See also
+
+  * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
+  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+  * [Wiki Home](Home)
