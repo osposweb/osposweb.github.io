@@ -7,14 +7,12 @@
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
   * [Wiki Home](Home)
 
-For detailed functionality and how to usage of each feature, you can click over them
-
 # Quick Overview Of Features
 ----------------------------
 
 | ❔ Wanted feature... | 🚀 What can do... | ℹ️ What cannot do... |
 | --- | --- | --- |
-| Point of Sale (POS) | Sell productos or/and services  and apply multiple payments (inclusivelly different types) to the sale, include a featured Restaurant Tables module | Advanced Transaction Types such as Special Orders, Back Orders and Layaways, Credit accounting sales |
+| Point of Sale (POS) | Sell productos or/and services  and apply multiple payments (inclusivelly different types) to the sale, include a featured Restaurant Tables module, Purchase Orders | Advanced Transaction Types such as Special Orders, Back Orders and Layaways, Credit accounting sales |
 | Customer Relationship Management (CRM) | Add customers, maintain customer profiles and view full sales history, and market to them via email marketing and SMS marketing | Accounts Receivable / House Accounts, OSPOS has CRM features but no A.R. features |
 | Inventory Management | Create stock (any product) and non-stock items (articles), ...with custom fields | Inventory Matrix, Track items features, colors, materiasl, etc |
 | Multilanguaje Web Interface (i18n GUI) | Multilanguaje support with regionalization, Selectable Boostrap (Bootswatch) based UI theme | End-user customize interface like wordpress but with little coding can be done. No regionalization per items attributes |
@@ -36,43 +34,47 @@ The following section has the complete list of each feature and comprensive guid
 
 (WIP) feature complete list with links to guides of functionality of each one
 
-* Web interface
+* Interface
+   * Web interface responssive, mobile and desktop view capable
    * Employee access Login 
    * Multiuser module permission control
    * reCAPTCHA option to protect login page from brute force attacks
    * Multilanguage
+   * USer interface Internalization
    * Selectable Boostrap (Bootswatch) based UI theme
 * Employees
    * Employees Manage
-   * Employees Importing and Exporting to Spreadsheets
+   * Importing from CSV file
+   * Exporting to Spreadsheets
 * Sales
    * Sales Management: Receip
    * Sales Management: Return
    * Sales Management: Quote
    * Sales Management: Suspend
-   * Sale register with transactions logging
-   * Receipt and invoice printing and/or emailing
+   * Sales Transactions logging
+   * Sales Receipt and invoice printing and/or emailing
    * Receivings
-   * Giftcard
-   * Rewards
-   * Restaurant tables
+   * Giftcard Support
+   * Rewards on customers
+   * Restaurant Tables
    * Purchase Orders
-* Stock Management
-   * Items Stock interface
-   * Items Kits of Items
+* Inventory
+   * Suppliers Management
+   * Items Stock Management
+   * Items Kits for Items groups
+   * Barcode support, Barcode generation
+   * Inventory counting
    * Items Management: Category Naming and Image
-   * Items Management: Inventory counting
    * Items Management Taxation
    * Items Price Management
    * Managing Stock for multi location
-   * Barcode support, Barcode generation
-   * Items Importing and Exporting to Spreadsheets
-   * Inventory Counting
+   * Items Importing from CSV
+   * Exporting to Spreadsheets
 * Customers
    * Customer Manage
-   * Customer Import and Export
-   * VAT, customer and multi tiers taxation
-   * Suppliers and Customers database
+   * Customer Import from CSV
+   * Exporting to Spreadsheets
+   * VAT and multi tiers taxation
 * Expenses
    * Expenses logging by Simple and faster UI
 * Reporting
@@ -86,7 +88,9 @@ The following section has the complete list of each feature and comprensive guid
    * Barcode Printing
    * PDF Printing export
    * Printing Item Labels
-
+* Store Office
+   * Store Configuration
+   * Regionalization
 
 ## See also
 
