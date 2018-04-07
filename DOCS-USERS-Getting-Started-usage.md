@@ -5,9 +5,11 @@ All those icons are **Modules** that can enabled or disabled per **Employees** o
 2. [Employees](#2-employees)
 3. [Permissions](#3-permissions)
 4. [Inventory](#4-inventory)
+   1. [Items](#41-items)
+   2. [Kits](#42-kits)
 5. [Sales](#5-sales)
-5.1. [Normal Sales]
-5.2. [Restaurant Sales]
+   1. [Register](#51-sales-normal)
+   2. [Restaurant](#52-sales-restaurant)
 
 # 1. Configuration
 
@@ -34,11 +36,23 @@ There are several tabs related to inventory control.  Before you can add invento
 
 # 4. Inventory
 
+This module lets you load in the **Items** and **Kits**. This its a very complex module, Open Source Point of Sale are well integrated, from the **Sales** module, for instance, you can create new Inventory Item on the fly. Also a special **Sale** module its the **Return** sale mode that can manage also the Inventory Stock that can be covert in the next module documentation.
+
+## 4.1. Items
+
+Allow to employee load a product to the inventory so then have some stock. Start by clicking the Items button. This will load up your list of items if there any loaded. Please refers to the [OSPOS DOCS USERS Inventory Items](DOCS-USERS-Inventory-Items) wiki page to learn how to do that.
+
+## 4.2. Kits
+
+Allow to employee group products from inventory so then can sell as combo product by example. Start by clicking the **Items Kits** module button. This will load up your list of item kits if there any configured. Please refers to the [OSPOS DOCS USERS Inventory Kits](DOCS-USERS-Inventory-Kits) wiki page to learn how to do that.
+
 # 5. Sales
 
-This its a very complex module in the Open Source POS, due implicates many artifacts and modes, methods of payments and expend receipts. Also needs to print those.
+This module lets you ring up Sales and Returns. This its a very complex module in the Open Source POS, due implicates many artifacts and modes, methods of payments and expend receipts. Also of course can print those.
 
 ## 5.1. Sales Modes
+
+Open Source Point of Sale includes a Cash Register / Point of Sale module. Please refers to the [OSPOS DOCS USERS Sales Modes](DOCS-USERS-Sales-Modes) wiki page to learn how to do that.
 
 ## 5.2. Sales Restaurant
 
