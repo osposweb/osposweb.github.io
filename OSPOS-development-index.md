@@ -1,12 +1,7 @@
 OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use.
 
-We hope you already read the README before coming here, that should give you already a good hint **of what this software is about using MySQL as DBMS and Apache2 as webserver**.
-
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
-  * [1 - Officially supported](#1---officially-supported)
-  * [2 - Unofficially unsupported](#2---unofficially-or-unsupported)
-  * [3 - Deploy for/to Development:](#3---deploy-forto-development)
 * [Tech: Architecture](#tech-architecture)
   * [1 - Architecture workflow](#1---architecture-workflow)
   * [2 - How to start development](#2---how-to-start-develop)
@@ -20,7 +15,7 @@ We hope you already read the README before coming here, that should give you alr
 
 ## Tech: Installation
 
-The installation will depend of the kind of deployment which can be the cloud, a docker instance or a locally server.
+The installation will depend of the kind of deployment which can be the cloud, a docker instance or a locally server. Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getting-Started-installations) wiki page for normal install. For Development install plese refers to the [Development Environment page wiki (click here)](OSPOS-Environment-Development) and then when ready go back here.
 
 ### Requirements
 
@@ -52,32 +47,7 @@ OSPOS is a web applications software, **two parts, a client rendering side and a
 |websoftware  | PHP  | 5.6   | 7.0 | Need mycrypt/openssl, curl and mysql modules actived.  |
 |Machine    | PC/MAC/RasberryPi/Daruma | year of 2010    | year of 2012 | Recent hardware with enough RAM and fast storage  |
 
-### 1 - Officially supported: 
-
-Currently only Apache & MySql/MariaDB see this wiki https://github.com/opensourcepos/opensourcepos/wiki/Installing-on-Raspberry-PI---Orange-PI-(Headless-OSPOS)
-
-### 2 - Unofficially or unsupported
-
-Can be setup at will, but currently has no support from the project.
-
-For lighttpd and MAriaDB:
-
-* [OSPOS install lighttpd and mariadb debian like](OSPOS-install-lighttpd-and-mariadb-debian-like)
-
-For  Nginx/ & MySql/MariaDB:
-
-* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
-* https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
-
-### 3 - Deploy for Development:
-
-* https://github.com/opensourcepos/opensourcepos/wiki/Development-setup
-
-Other examples of custom production deployments:
-
-* https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
-* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows
-* https://github.com/opensourcepos/opensourcepos/wiki/OSPOS-using-Xampp-(recommended-for-testing-or-local-use-only).
+Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getting-Started-installations) wiki page for normal install. For Development install plese refers to the [Development Environment page wiki (click here)](OSPOS-Environment-Development) and then when ready go back here.
 
 ## Tech: Architecture
 
