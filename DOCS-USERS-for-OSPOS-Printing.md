@@ -31,7 +31,7 @@ Either for normal printing or for devices/receipt printing, first need OS config
 
 ![printing settings:](https://user-images.githubusercontent.com/10962177/36354930-c33ea10c-1498-11e8-8b0b-a4eb2b2ecbdb.png)
 
-* **Format** defines how the number of the receipt will be printed. Order can be help with some printing settings.
+* **Format** defines amount of information to the receipt will be printed. Reduced can be help with some printing settings.
 * **FontSize** defines size of the font this must be set in correct size number depending of the output of the printing.
 
 Then the **default receipt shows more info than the short (order)** receipt. So **for printing in 78mm printers and related, must use "order" as format**.
