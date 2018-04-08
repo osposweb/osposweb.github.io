@@ -233,3 +233,7 @@ in this case its: `employees_lang.php`.
 so the file are in `application/languaje/es/employees_lang.php` and the string ARE part of the lang array.
 3. So in conclusion you must use the lang strings defined here for each frontend message string to the user. 
 Of course only predefined strings, pleas follow this document to lear about manage lang strings.
+
+# See also
+
+* [Error logging in OSPOS](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
