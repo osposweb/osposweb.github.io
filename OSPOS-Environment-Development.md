@@ -1,9 +1,7 @@
-This document try to sumarise most important topics to developers for ussage of the repository initializations and some code tools.
+Development install and preparation need follow those steps:
 
-Please we suggest follow the steps:
-
-1. Take in consideration the [Requirements in OSPOS Development index](OSPOS-development-index#tech-installation) wiki page, before read here.
-2. Please read the [Development index: architecture section](OSPOS-development-index#tech-architecture) first, before read here
+1. Read the [Requirements section in OSPOS Development index](OSPOS-development-index#tech-installation) wiki page, before read here.
+2. Read the [Development index: architecture section](OSPOS-development-index#tech-architecture) first, before read here
 2. After read this document please read the [Development index: code tips and help](OSPOS-development-index#development-code-tips-and-help)
 
 ## Workflow
