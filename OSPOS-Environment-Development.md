@@ -2,7 +2,8 @@ Development install and preparation need follow those steps:
 
 1. Read the [Requirements section in OSPOS Development index](OSPOS-development-index#tech-installation) wiki page, before read here.
 2. Read the [Development index: architecture section](OSPOS-development-index#tech-architecture) first, before read here
-2. After read this document please read the [Development index: code tips and help](OSPOS-development-index#development-code-tips-and-help)
+3. After read this document please read the [Development index: code tips and help](OSPOS-development-index#development-code-tips-and-help)
+4. Recomended to learn later the [Error logging in OSPOS](OSPOS-DEVEL-for-Error-Logging-in-OSPOS) to proper debug issues.
 
 ## Workflow
 
@@ -80,3 +81,4 @@ After the container is launched the xdebug connection should be available on por
 
 * [Development index](OSPOS-development-index#tech-architecture)
 * [Development code tips and help](OSPOS-development-index#development-code-tips-and-help)
+* [Error logging in OSPOS](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
