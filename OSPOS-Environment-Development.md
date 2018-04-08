@@ -1,9 +1,10 @@
 This document try to sumarise most important topics to developers for ussage of the repository initializations and some code tools.
 
-Take in consideration:
+Please we suggest follow the steps:
 
-1. Please read the [Development index and architecture](OSPOS-development-index#tech-architecture) first before read here
-2. After read this document please read the [Development code tips and help](OSPOS-development-index#development-code-tips-and-help)
+1. Take in consideration the [Requirements in OSPOS Development index](OSPOS-development-index#tech-installation) wiki page, before read here.
+2. Please read the [Development index: architecture section](OSPOS-development-index#tech-architecture) first, before read here
+2. After read this document please read the [Development index: code tips and help](OSPOS-development-index#development-code-tips-and-help)
 
 ## Workflow
 
@@ -25,14 +26,14 @@ Code documentation can be read pointing the browser to opensourcepos/docs/index.
 
 ## Basic Tool installation
 
-Node.js, Grunt and Bower are used and need to be installed:
+The tools was described in the [Development index: architecture section](OSPOS-development-index#tech-architecture): Node.js, Grunt and Bower are used and need to be installed:
 
     sudo apt-get install nodejs
     sudo apt-get install npm
     sudo npm install -g grunt
     sudo npm install -g bower
 
-Also composer needs to be installed, see a tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-16-04).
+Also composer needs to be installed, by example Debian derived distribution can see this tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-16-04.
 
 Once the basic tools are installed run `bin/devinstall.sh`, which will install all the npm, composer and bower packages and run the grunt script automatically at the end. It will also generate the source code documentation under docs/ using ApiGen tool (all installed automatically).
 
