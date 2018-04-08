@@ -5,6 +5,9 @@
 * 📶 [Cloud Install](#cloud-install)
   * 🖧 [Cloud Deploy Installation](#cloud-deploy-installation)
   * 🖯 [Cloud Docker Installation](#cloud-docker-install)
+* [Professional Install](#professional-install)
+  * [Local Professional Install](#professional-local-install)
+  * [Others OSs Install guides](#others-oss-install-guides)
 
 **After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)** 
 
@@ -106,6 +109,32 @@ Not recomended for begginers. We recomended Digital Ocean way:
 Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
 
 More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extras-for-Docker-cloud-maintenance) must be read.
+
+# Professional Install
+-----------------------
+
+This section its dedicated to those that will deploy in secure and serious production environments.
+
+## Professional Install Local
+
+Professional install will assumed behing a complex network, that will **redirect the port and the path of the OSPOS installation** due a front webserver will receive the request and firewall/reverseproxy will redirect to the ospos server install place.
+* If you **will use reverse proxy redirection** due there's no need of a installed firewall in the local webserver OS, that are under a DMZ zone.
+* If you **dont want hiyacked all the root of your webserver**, can defined  new port and to that port a new webroot htdocs place where the OSPOS software will reside away of the normal webserver installation.
+
+(WIP)
+
+# Other Install guides
+
+Currently only Apache & MySql/MariaDB are officialy supported but this will or may be changed in the future:
+
+* https://github.com/opensourcepos/opensourcepos/wiki/Installing-on-Raspberry-PI---Orange-PI-(Headless-OSPOS)
+* [OSPOS install lighttpd and mariadb debian like](OSPOS-install-lighttpd-and-mariadb-debian-like)
+* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP
+* https://github.com/opensourcepos/opensourcepos/wiki/Deployment-of-OSPOS-with-LEMP-on-Raspberry-Pi-3-Model-B
+* https://github.com/opensourcepos/opensourcepos/wiki/Development-setup
+* https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost
+* https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows
+* https://github.com/opensourcepos/opensourcepos/wiki/OSPOS-using-Xampp-(recommended-for-testing-or-local-use-only).
 
 # See also:
 
