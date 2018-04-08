@@ -1,3 +1,4 @@
+
 * 🖫 [Local Install](#local-install)
   * 💻 [Own Local Deploy Install](#local-deploy-install)
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
@@ -6,6 +7,8 @@
   * 🖯 [Cloud Docker Installation](#cloud-docker-install)
 
 **After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)** 
+
+For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
 
 # Local Install
 ----------------------
@@ -27,9 +30,9 @@ We assumed a *nix like environment, (as MAc or Linux does) due most vendors and 
 9. **Browsing** using the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
 10. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
 
-For those that only want to try an easy option could be a live operating system image ready to use with all included **without OS install need** that can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
-
 Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+
+For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
 
 ## Local Docker install
 
@@ -112,3 +115,5 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 * [OSPOS requirements data sheet](OSPOS-development-index#requirements)
 * [Extras for Docker cloud maintenance](DOCS-USER-Extras-for-Docker-cloud-maintenance)
+
+For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
