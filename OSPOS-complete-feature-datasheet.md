@@ -68,11 +68,11 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * Items Management Taxation
    * Items Price Management
    * Managing Stock for multi location
-   * Items Importing from CSV
+   * [Items Importing from CSV](DOCS-USERS-Import-data-from-CSV-file#importing-items)
    * Exporting to Spreadsheets
 * Customers
    * Customer Manage
-   * Customer Import from CSV
+   * [Customer Import from CSV](DOCS-USERS-Import-data-from-CSV-file#importing-customers)
    * Exporting to Spreadsheets
    * VAT and multi tiers taxation
 * Expenses
