@@ -1,4 +1,4 @@
-After sussessfully install and login in, will display a started welcome menu screen.
+After sussessfully [install (click if not)](DOCS-USERS-Getting-Started-installations) and login in, will display a started welcome menu screen. If you still not install can read the [Getting Started installations](DOCS-USERS-Getting-Started-installations) page wiki and then get back here.
 
 All those icons are **Modules** that can enabled or disabled per **Employees** only.
 1. [Configuration](#1-configuration)
