@@ -1,6 +1,6 @@
-After sussessfully [install (click if not)](DOCS-USERS-Getting-Started-installations) and login in, will display a started welcome menu screen. If you still not install can read the [Getting Started installations](DOCS-USERS-Getting-Started-installations) page wiki and then get back here.
+After successfully [install (click if not)](DOCS-USERS-Getting-Started-installations) and login in, will display a started welcome menu screen. If you still not install can read the [Getting Started installations](DOCS-USERS-Getting-Started-installations) page wiki and then get back here.
 
-All those icons are **Modules** that can enabled or disabled per **Employees** only.
+All those icons are **Modules** that can enabled or disabled per **Employees** only. The complete list of features per modules are described in the [OSPOS-complete-feature-datasheet](OSPOS-complete-feature-datasheet#complete-list-of-features) wiki page.
 1. [Configuration](#1-configuration)
 2. [Employees](#2-employees)
 3. [Permissions](#3-permissions)
@@ -18,7 +18,7 @@ Please refers to the [OSPOS DOCS USERS Configuration](DOCS-USERS-Configuration) 
 
 ![MainScreen->Office->click](https://gitlab.com/webvnz/osposos/raw/master/debianOspos/screenshot-ospos-docs-1-startingmenu.png)
 
-Olders versions of the OSPOS dont have the Office module icon so will be as the following screen:
+Older versions of the OSPOS don't have the Office module icon so will be as the following screen:
 
 ![MainScreen->StoreConfig->click](http://www.opensourceposguide.com/sites/default/files/configuration-new/welcome.jpg)
 
