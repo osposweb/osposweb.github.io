@@ -12,8 +12,8 @@
 
 | ❔ Wanted feature... | 🚀 What can do... | ℹ️ What cannot do... |
 | --- | --- | --- |
-| Point of Sale (POS) | Sell products or/and services  and apply multiple payments (inclusivelly different types) to the sale, include a featured Restaurant Tables module, Purchase Orders | Advanced Transaction Types such as Special Orders, Back Orders and Layaways, Credit accounting sales |
-| Customer Relationship Management (CRM) | Add customers, maintain customer profiles and view full sales history, and market to them via email marketing and SMS marketing | Accounts Receivable / House Accounts, OSPOS has CRM features but no A.R. features |
+| Point of Sale (POS) | **Sell** products or/and services  and apply **multiple payments** (inclusivelly different types) to the sale, include a featured **Restaurant Tables** module, Purchase Orders | Advanced Transaction Types such as Special Orders, Back Orders and **Layaways**, Credit **accounting** sales |
+| Customer Relationship Management (CRM) | Add customers, **maintain customer** profiles and view full **sales history**, and market to them via **email** marketing and **SMS marketing** | Accounts Receivable / House Accounts, OSPOS has CRM features but **no A.R**. features, No **multi tenancy** with one deployment. |
 | Inventory Management | Create stock (any product) and non-stock items (articles), ...with custom fields. Generate amd read barcodes | Inventory Matrix, Track items features, colors, materiasl. Support QR codes (see #1935) |
 | Multilingual Web Interface (i18n GUI) | Multilingual support with regionalisation, Selectable Boostrap (Bootswatch) based UI theme | End-user customize interface like Wordpress but with little coding can be done. No regionalisation per items attributes |
 | Reporting | Customers, Inventory and Transactions (sales or returns) |  There are reports, but no dashboard that shares Top Sales, Top Suppliers, Best Selling Items, Top Customers, etc. See #1433 |
