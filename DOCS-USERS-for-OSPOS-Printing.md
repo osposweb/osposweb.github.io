@@ -25,6 +25,10 @@ the printing configuration has some options, only enable with some changes over 
 For the Zebra its recommended also search at https://www.peninsula-group.com/mac-thermal-printer-driver/ 
 the CUPS interface for Unixes comes with basic enough support that works as its.
 
+## Barcode Printing
+
+This feature don't need special settings, of course a printer must be corrrectly configured, continue reading for that. For how to print after, refers to the [DOCS USERS Getting Started: Inventory](DOCS-USERS-Getting-Started-usage#3-inventory) wiki page section.
+
 # How to printing
 
 Either for normal printing or for devices/receipt printing, first need OS configuration/installation printer, then browser configuration and lasted go to **Office->StoreConfig->Receipt**, here the most important settings are *Format* and *Font size*.
@@ -122,3 +126,8 @@ Some countries need some special communications with internal chip in the printe
 only done locally and its not possible unless a specific ad-hoc can be done or with special device that 
 receive the raw printing and send from the browser to the printer.
 
+You can ask here for some services by few bucks, adaptations are made easy for some countries. Open an issue [a support ticket Issue (by click here)](https://github.com/opensourcepos/opensourcepos/issues/new) just few words ahead to your solution!
+
+# See also:
+
+* [DOCS USERS Getting Started usage](DOCS-USERS-Getting-Started-usage)
