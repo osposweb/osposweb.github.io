@@ -2,6 +2,7 @@ The printing depends of the print setup and the print behavior..
 
   * [General Printing Support](#general-printing-support)
   * [Device Printing Support](#device-printing-support)
+  * [Barcode Printing Support](#barcode-printing)
 * [How to printing](#how-to-printing)
   * [Preparation printing for firefox/palemoon](#preparation-printing-for-firefoxpalemoon)
   * [Preparing printing for Chome/Chromium](#preparing-printing-for-chomechromium)
@@ -28,6 +29,9 @@ the CUPS interface for Unixes comes with basic enough support that works as its.
 ## Barcode Printing
 
 This feature don't need special settings, of course a printer must be corrrectly configured, continue reading for that. For how to print after, refers to the [DOCS USERS Getting Started: Inventory](DOCS-USERS-Getting-Started-usage#3-inventory) wiki page section.
+
+But remenber as we previously mentioned, Our recommended label printer is the Zebra LP 2824 Plus printer with 2 x 1 labels. Other customers have had success with other printers from companies.
+
 
 # How to printing
 
