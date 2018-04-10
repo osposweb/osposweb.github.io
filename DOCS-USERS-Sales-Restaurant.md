@@ -1,5 +1,7 @@
 The Open Source Point Of Sale has a featured "Table" inside the **Sale**  module among the lot of rest of features, this brief describe how to use for a restaurant. Rest of docs for others modules are in the [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage) wiki page.
 
+Complete module list at [OSPOS Complete Feature Datasheet](OSPOS-complete-feature-datasheet#complete-list-of-features)
+
 The clients are grouped in "Tables", the table then is just act like label for the transaction so can sell to a table with no client or with client... ideal for combination of meetings:
 
 * First in the **Office** the Restaurant Tables must be enabled.
@@ -17,4 +19,5 @@ It's awkward and maybe counter-intuitive method, but it works. In near future wi
 # See Also:
 
 * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+* [OSPOS Complete Feature Datasheet](OSPOS-complete-feature-datasheet#complete-list-of-features)
 * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
