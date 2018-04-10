@@ -56,7 +56,7 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * Receiving
    * Gift card Support
    * Rewards on customers
-   * Restaurant Tables
+   * [Restaurant Tables](DOCS-USERS-Sales-Restaurant)
    * Purchase Orders
 * Inventory
    * Suppliers Management
@@ -83,11 +83,12 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
 * Communications
    * Messaging (SMS)
    * Mailchimp integration
-* Printing
-   * Device printing
-   * Barcode Printing
+* [Printing](DOCS-USERS-for-OSPOS-Printing)
+   * [Device printing](DOCS-USERS-for-OSPOS-Printing#device-printing-support)
+   * [Barcode Printing](DOCS-USERS-for-OSPOS-Printing#barcode-printing)
    * PDF Printing export
-   * Printing Item Labels
+   * [Printing Item Labels](DOCS-USERS-for-OSPOS-Printing#device-printing-support)
+   * [Fiscal Printing](DOCS-USERS-for-OSPOS-Printing#fiscal-printing)
 * Store Office
    * Store Configuration
    * Regionalisation
