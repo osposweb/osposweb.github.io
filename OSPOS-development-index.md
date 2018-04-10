@@ -1,4 +1,5 @@
-OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use.
+OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use. [![GitHub version](https://badge.fury.io/gh/jekkos%2Fopensourcepos.svg)](https://badge.fury.io/gh/jekkos%2Fopensourcepos)
+[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
@@ -218,9 +219,10 @@ as a dialog, will load as new page.
 
 ### Always use translations event hardcoded strings
 
-It's important that always used the languaje translation functions, as example 
-event put "Password" as a tittle, the correect way its: `$this->lang->line('employees_change_password')`
-so the code wil look as:
+It's important that always used the language translation functions 
+[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget), as example 
+event put "Password" as a tittle, the correct way its: `$this->lang->line('employees_change_password')`
+so the code will look as:
 
 ``` php
 echo anchor('home/change_password/'.$user_info->person_id, $user_info->first_name, array('class' => 'modal-dlg', 'data-btn-submit' => $this->lang->line('employees_save'), 'title' => $this->lang->line('employees_change_password')));
