@@ -144,6 +144,8 @@ Before read this section, remenber that must take care of the information in the
 
 Obviously as github does, by pull request, there's no extended process of "reviews", the pull are accepted once any developer of OSPOS revised and confirm works, but try to adhere to coding standard and documentation as described in this document.
 
+![](https://s3.amazonaws.com/github-images/blog/2012/easy-pull-request-creation.png)
+
 After pushing a branch to GitHub, you (and only you) will see that branch at the top of your repo’s page, **along with buttons to create a Pull Request for it or compare it with master**. Then a interface to select branchs and source/destiny targets will display, please toggle with "across folks" if not, be sure use destiny targe the ospos repository and source target your repository branch.
 
 Remenber that if you made all the changes in directly master branch of your repository, dont made more commits unrelated to the specific pull request to/already created. If not, try to make a branch from the top commit and re-send a new pull from.
