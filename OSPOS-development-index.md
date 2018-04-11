@@ -1,6 +1,8 @@
 OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use. [![GitHub version](https://badge.fury.io/gh/jekkos%2Fopensourcepos.svg)](https://badge.fury.io/gh/jekkos%2Fopensourcepos)
 [![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
+The overall of how to contribute are by issues, by sahred ideas in the issue or reporting bugs, for code contributions, please read this wiki page or for impatients go to [Workflow Contributions](#workflow-contributions) section directly
+
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
 * [Tech: Architecture](#tech-architecture)
@@ -9,6 +11,7 @@ OSPOS is an open source application as evolution of [PHP Point Of Sale](https://
   * [3 - Database design and layout](#3---database-design-and-important-tables)
   * [Development Environment](OSPOS-Environment-Development)
 * [Development help](#development-code-tips-and-help)
+  * [Workflow Contributions](#workflow-contributions)
   * [Code and API Documentation](#development-code-tips-and-help)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
@@ -131,10 +134,19 @@ WIP: database structure info and some tips must be necessary if plans to make ne
 
 Before read this section, remenber that must take care of the information in the [Technology and Architecture](#tech-architecture) section above. Some important information to start coding and make usefully changes in the project:
 
+  * [Workflow Contributions](#workflow-contributions)
   * [About the Secure Controller and Controllers](#about-the-secure-controller-and-controllers)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
+
+### Workflow Contributions
+
+Obviously as github does, by pull request, there's no extended process of "reviews", the pull are accepted once any developer of OSPOS revised and confirm works, but try to adhere to coding standard and documentation as described in this document.
+
+After pushing a branch to GitHub, you (and only you) will see that branch at the top of your repo’s page, **along with buttons to create a Pull Request for it or compare it with master**. Then a interface to select branchs and source/destiny targets will display, please toggle with "across folks" if not, be sure use destiny targe the ospos repository and source target your repository branch.
+
+Remenber that if you made all the changes in directly master branch of your repository, dont made more commits unrelated to the specific pull request to/already created. If not, try to make a branch from the top commit and re-send a new pull from.
 
 ### Code and API Documentation
 
