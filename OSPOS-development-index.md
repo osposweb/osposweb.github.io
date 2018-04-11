@@ -1,7 +1,7 @@
 OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use. [![GitHub version](https://badge.fury.io/gh/jekkos%2Fopensourcepos.svg)](https://badge.fury.io/gh/jekkos%2Fopensourcepos)
 [![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
-The overall of how to contribute are by issues, by sahred ideas in the issue or reporting bugs, for code contributions, please read this wiki page or for impatients go to [Workflow Contributions](#workflow-contributions) section directly
+The overall of how to contribute are primary [creating issues](https://github.com/opensourcepos/opensourcepos/issues/new), sharing ideas in the [issue creation](https://github.com/opensourcepos/opensourcepos/issues/new)/[commenting](https://github.com/opensourcepos/opensourcepos/issues) or reporting bugs, **for code contributions, please read this** wiki page or for **impatients go to [Workflow Contributions (click here)](#workflow-contributions) section** directly
 
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
