@@ -5,9 +5,19 @@ Development install and preparation need follow those steps:
 3. After read this document please read the [Development index: code tips and help](OSPOS-development-index#development-code-tips-and-help)
 4. Recomended to learn later the [Error logging in OSPOS](OSPOS-DEVEL-for-Error-Logging-in-OSPOS) to proper debug issues.
 
+For **impatients SORRY but must read [OSPOS development index](OSPOS-development-index)** wikipage and also.
+
 ## Workflow
 
 Obviously as github does, by pull request, there's no extended process of "reviews", the pull are accepted once any developer of OSPOS revised and confirm works, but try to adhere to coding standard and documentation as described in this document.
+
+After pushing a branch to GitHub, you (and only you) will see that branch at the top of your repo’s page, **along with buttons to create a Pull Request for it or compare it with master**. Then a interface to select branchs and source/destiny targets will display, please toggle with "across folks" if not, be sure use destiny targe the ospos repository and source target your repository branch.
+
+You must have more knowledge of git to do that, if you dont have it, code sending will be delayed due the time availability of the develiopers.
+
+PLease read the [OSPOS development index code tips and help](OSPOS-development-index#development-code-tips-and-help) wiki page section for more detailed information on.
+
+Remenber that if you made all the changes in directly master branch of your repository, dont made more commits unrelated to the specific pull request to/already created. If not, try to make a branch from the top commit and re-send a new pull from.
 
 ## Code style
 
