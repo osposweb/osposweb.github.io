@@ -9,10 +9,10 @@ That interface its named [Weblate (http://weblate.jpeelaer.net)](http://weblate.
 
 ## Translation status
 
-[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/multi-green.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
-
 * [DOCS USERS Getting Started usage](DOCS-USERS-Getting-Started-usage)
 * [OSPOS Complete feature list](OSPOS-complete-feature-datasheet)
+
+[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/multi-green.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
 # Translations Guideline
 
