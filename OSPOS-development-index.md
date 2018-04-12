@@ -12,10 +12,11 @@ The overall of how to contribute are primary [creating issues](https://github.co
   * [Development Environment](OSPOS-Environment-Development)
 * [Development help](#development-code-tips-and-help)
   * [Workflow Contributions](#workflow-contributions)
-  * [Code and API Documentation](#development-code-tips-and-help)
+  * [Code and API Documentation](#code-and-api-documentation)
+  * [About the Secure Controller and Controllers](#about-the-secure-controller-and-controllers)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
-  * [Translations and languages](#always-use-translations-event-hardcoded-strings)
+  * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
 
 ## Tech: Installation
 
@@ -135,7 +136,9 @@ WIP: database structure info and some tips must be necessary if plans to make ne
 Before read this section, remenber that must take care of the information in the [Technology and Architecture](#tech-architecture) section above. Some important information to start coding and make usefully changes in the project:
 
   * [Workflow Contributions](#workflow-contributions)
+  * [Code and API Documentation](#code-and-api-documentation)
   * [About the Secure Controller and Controllers](#about-the-secure-controller-and-controllers)
+  * [Get information about current user: The Employee](#get-information-about-current-user-the-employee)
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
