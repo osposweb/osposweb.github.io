@@ -1,10 +1,19 @@
-# Add translations using Weblate (post 3.0.0)
+The translation process are made by two ways. In normal way translations are made in a web interface, an later this interface API integrates to github.
 
-Find our [Weblate website here](http://weblate.jpeelaer.net) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
+1. New strings must be added manually to each file in `language` directory and then the interface will sync those new strings.
+2. Already untranslated string are not added manually to the files in language directory, must be made in the interface.
 
-[![Translation status](http://weblate.opensourcepos.org/widgets/ospos/-/287x66-grey.png)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
+That interface its named [Weblate (http://weblate.jpeelaer.net)](http://weblate.jpeelaer.net) and sign up to help translating this fine application. After registering you can subscribe to different languages and you will be notified once a new translation is added.
+
+[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
+
+## Translation status
+
+[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/multi-green.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
 # Translations Guideline
+
+**WIP**
 
 While not all guidelines will apply straight to all languages, we'd like to propose a few "Translation Guidelines" to be used and recommended for all translations:
 
