@@ -39,8 +39,8 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * Employee access Login 
    * Multiuser module permission control
    * reCAPTCHA option to protect login page from brute force attacks
-   * Multi-language
-   * User interface Internalization
+   * [Multi-language](OSPOS-DEVEL-Adding-translations#translation-status)
+   * [User interface Internalization](OSPOS-DEVEL-Adding-translations#translation-status)
    * Selectable Boostrap (Bootswatch) based UI theme
 * Employees
    * Employees Manage
