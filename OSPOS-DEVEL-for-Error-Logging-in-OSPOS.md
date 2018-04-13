@@ -29,9 +29,11 @@ It's disabled by default, since 3.1 OSPOS, can be enabled in a directive in `app
 
 Will default the location of the results logs at `application/logs/`, that can be also customized where logging takes place by the directive `$config['log_path']`
 
+**IMPORTANT** check directory permissiion, resspect the CI framework or user access must be `www-data`. If this are not correct log files will not be present.
+
 #### Database SQL Logging
 
-It's disabled by default, since 3.1 OSPOS, can be enabled in a directive in `application/config/config.php` named `$config['db_log_enabled']` that are set to `FALSE` by default, set to TRUE to enable. Will default the location of the results logs in the same log file of application at `application/logs/`.
+**WIP info, do no use , wil be corrected** It's disabled by default, since 3.1 OSPOS, can be enabled in a directive in `application/config/config.php` named `$config['db_log_enabled']` that are set to `FALSE` by default, set to TRUE to enable. Will default the location of the results logs in the same log file of application at `application/logs/`.
   
 ### WebServer error log:
 
