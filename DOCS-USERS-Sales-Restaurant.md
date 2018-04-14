@@ -14,6 +14,8 @@ The clients are grouped in "Tables", the table then is just act like label for t
 
 It's awkward and maybe counter-intuitive method, but it works. In near future will be improved and make it less of a fuss, Open Source POS contributions make it a solid POS alternative for restaurants.
 
+**BUGS**: https://github.com/opensourcepos/opensourcepos/issues/1933#issuecomment-379600903 only works with 2 tables
+
 ![ChoseSaleMode->ChooseTableNumber](https://user-images.githubusercontent.com/38166071/38460567-fa9a8bfa-3a92-11e8-968f-b08ce70851e6.gif)
 
 # See Also:
