@@ -20,15 +20,15 @@ The overall of how to contribute are primary [creating issues](https://github.co
 
 ## Tech: Installation
 
-The installation will depend of the kind of deployment which can be the cloud, a docker instance or a locally server. Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getting-Started-installations) wiki page for normal install. For Development install plese refers to the [Development Environment page wiki (click here)](OSPOS-Environment-Development) and then when ready go back here.
+The installation will depend of the kind of deployment which can be the cloud, a docker instance or a locally server. **Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getting-Started-installations) wiki page for normal install.** For Development install plese refers to the [Development Environment page wiki (click here)](OSPOS-Environment-Development) and then when ready go back here.
 
 ### Requirements
 
-OSPOS is a web applications software, **two parts, a client rendering side and a server side**. So there's two kinds of requirements, those at the client browsing usage and those at the server runtime.
+OSPOS is a web applications software, **two parts, a client rendering side and a server side**. So there's two kinds of requirements, those at the client browsing usage and those at the server runtime. ([For wiki page install (click here)](DOCS-USERS-Getting-Started-installations))
 
 #### Client side requirements
 
-**The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser, theres the officially tested supported web browsers:
+**The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser. Real install are in the server side (below the requirements, continue reading), theres the officially tested supported web browsers:
 
 |name       | minimal version | observations                          |
 |---------- | --------------- | ---------------------------------------- |
@@ -43,7 +43,7 @@ OSPOS is a web applications software, **two parts, a client rendering side and a
 
 #### Server side requirements
 
-**The hardware where the PHP part will run**, could be any OS that runs php, mysql and the webserver. Inclusively can run on Android or RasberryPi hardware.
+**The hardware where the PHP part will run**, could be any OS that runs php, mysql and the webserver. Inclusively can run on Android or RasberryPi hardware. After read this can go to ([wiki page install (click)](DOCS-USERS-Getting-Started-installations)) of if plans to developt, continue reading ...
 
 |name       | software/hardware  | minimal version | recomended | observations                          |
 |---------- | ------------- | --------------- | ---------- | -------------------------------------- |
