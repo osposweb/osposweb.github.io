@@ -13,6 +13,8 @@
 
 For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
 
+**WARNING** Ospos need special requirements not all hosting providers have necesary requirements. For more detailed **requirements see it in: [OSPOS requirements datasheet](OSPOS-development-index#requirements) and then go back here**
+
 # Local Install
 ----------------------
 
