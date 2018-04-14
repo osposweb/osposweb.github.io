@@ -30,16 +30,12 @@ OSPOS is a web applications software, **two parts, a client rendering side and a
 
 **The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser. Real install are in the server side (below the requirements, continue reading), theres the officially tested supported web browsers:
 
-|name       | minimal version | observations                          |
-|---------- | --------------- | ---------------------------------------- |
-|**firefox**    | 34 (ESR) | Recommended and officially supported |
-|**palemoon**    | 25 | Performs as well as firefox does |
-|chromium    | 40 | Recommended |
-|chrome    | 40 | Recommended |
-|safari    | ? | not supported, seems work |
-|opera   | ? | not supported, seems work |
-|midory    | ? | not supported, does not performs well |
-|qupzilla/razen    | ? | not supported, does not work |
+|name                                                 | minimal version | observations                         |
+|---------------------------------------------------- | --------------- | ------------------------------------ |
+|**firefox** or **palemoon**                          | 34(ESR) or 25   | Recommended and officially supported |
+|chromium/chrome/iridium/comodo/coolnovo              | 40/40/?/?/?     | Recommended but does not perfom well |
+|waterfox/seamonkey/netscape/piratebrowser/etc        | ?               | Not supported, but seems work |
+|maxthon/safari/opera/midory/qupzilla/razen/others-etc| ?               | not supported, does not work |
 
 #### Server side requirements
 
