@@ -1,8 +1,6 @@
 # Introduction
 
-**A web-based POS application that allows manage stock, sales, issuing receipts or invoices with reports**
-
-**OSPOS features evolved in a robust application thanks to active contributors**, There's some of the features:
+**A web-based POS application that allows manage stock, sales, issuing receipts or invoices**
 
 - Multilanguage (UI) and Multiuser (MU) with module access control and different UI themes
 - Stock management (Items and Kits) and Inventory Control with Barcode generation
@@ -14,7 +12,9 @@
 
 # Documentation
 
-You'll find a ordered list of comprehensive guides (🚀) and documentation (ℹ️) to help (❔) you start working with Open Source Point Of Sale as quickly as possible.
+##### Support and help:
+
+If you need assistance you can create [a support ticket Issue by click here](https://github.com/opensourcepos/opensourcepos/issues/new) just few words ahead to your solution! **But be carefully to fill all the screen template information first!**
 
 ### User Documentation
 
@@ -26,10 +26,6 @@ You'll find a ordered list of comprehensive guides (🚀) and documentation (ℹ
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 * [Technical and Development](#technical-and-development)
   * [OSPOS-development-index](OSPOS-development-index)
-
-#### Support and help:
-
-If you need assistance you can create [a support ticket Issue by click here](https://github.com/opensourcepos/opensourcepos/issues/new) just few words ahead to your solution! **But be carefully to fill all the screen template information first!**
 
 ### Technical and Development Documentation
 
