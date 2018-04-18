@@ -1,7 +1,6 @@
-**This is work in progress.  This is the start of the documentation that I volunteered to provide - so it will grow as I learn ... hopefully it won't take too long.**
+**This is work in progress.  Support for temporary items is being added to the system. **
 
 ## 1. Items Features
-
 
 
 ## 2. Definitions/Structure
@@ -40,7 +39,8 @@
 
 * *Stock Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  The valid values are `0 - Stock`, `1 - Non-stock`.  The default Stock Type is `Stock`.
 
-* *Item Type* defines whether or not the item is a standard item which can either be an item that is stocked in inventory or an item that represents a single service that is provided.   A second type is an Kit which is an Item that represents a a collection of other non-kit items.  The valid values are `0 - Standard`, `1 - Kit`.  The default item type is `Standard`.
+* *Item Type* defines whether or not the item is a standard item which can either be an item that is stocked in inventory or an item that represents a single service that is provided.   A second type is an Kit which is an Item that represents a a collection of other non-kit items. A Temporary Item is a type of non-stock item that can be used to quickly define an item on the fly to handle a sale.  This can be useful in situations where items are fabricated to order.  When a temporary item is added to an order the user will be prompted to override the temporary name, barcode, and description.  A temporary item must be a non-stock item.
+** The valid values are `0 - Standard`, `1 - Kit`, `2 - Temporary`.  The default item type is `Standard`.
 
 * *Deleted*
 
