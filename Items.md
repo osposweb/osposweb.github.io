@@ -58,8 +58,13 @@
 
 - If an Item of type Item Kit is added the system will check to see if there is an Item Kit that already exists with the same description.  If the existing Item Kit references a different Item then the new Item cannot be added.  Either the item description needs to be changed or the Item Kit referenced item needs to be cleared.   This is to insure that we do not accidentally end up with two item kits for the same item.  However, if this is something that is required then it is possible by changing the description after the item is added.
 
+- {IN DEVELOPMENT} An item type of Temporary Item can only be non-stock.  A generic description identifying the item as a temporary item is recommended.  Since the sales system must have a unique internal item number then you should set up as many temporary items as you expect on a single order.  You can override the UPC code, item name, description, cost, price, and discount at the point of sale.
+
+- {IN DEVELOPMENT} Normally an item is inventoried, sold, and costed in the retail pack (the lowest number of units per pack).  The proposal that I'm putting on the table is to allow two or more items to be defined for the same product with each representing a different quantity per package.   This ability will be controlled by a system setting and will default to disabled. 
  
  
 ---
 
-**This is just the start.  Please don't judge too harshly.  I have a copy of this, so don't hesitate to delete it if it shouldn't be here.**
+Change Log
+
+4/18/2018 - Started adding suggestions for Temporary Item Type and Support for Multiple Package Types per Item.
