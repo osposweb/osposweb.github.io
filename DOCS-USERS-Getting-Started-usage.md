@@ -64,4 +64,6 @@ The OSPOS can be enabled to with a little change work as a POS system for Restau
 
 # 5. Expenses
 
+Si9nce 3.2 there's a **very basic** expenses module, const of simple registration of the expenses, no accounting are linked on or any accounting operations. Please refers to the [OSPOS DOCS USERS Expenses](DOCS-USERS-Expenses) wiki page to learn how to use it.
+
 ![](https://user-images.githubusercontent.com/38244786/39165614-f3a5c586-47a2-11e8-8775-89dd952bd678.png)
