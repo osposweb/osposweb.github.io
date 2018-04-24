@@ -76,8 +76,8 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * [Customer Import from CSV](DOCS-USERS-Import-data-from-CSV-file#importing-customers)
    * Exporting to Spreadsheets
    * VAT and multi tiers taxation
-* Expenses
-   * Expenses logging by Simple and faster UI
+* [Expenses](DOCS-USERS-Expenses)
+   * [Expenses logging by Simple and faster UI](DOCS-USERS-Expenses)
 * Reporting
    * Reporting on sales, orders, expenses, inventory status
    * Exporting to Spreadsheets
