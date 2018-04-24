@@ -10,6 +10,8 @@ All those icons are **Modules** that can enabled or disabled per **Employees** o
 4. [Sales](#4-sales)
    1. [Register](#41-sales-normal)
    2. [Restaurant](#42-sales-restaurant)
+5. [Expenses](#5-expenses)
+
 
 # 1. Configuration
 
@@ -60,3 +62,6 @@ The OSPOS can be enabled to with a little change work as a POS system for Restau
 
 ![type:sale->then->tablechoose](https://user-images.githubusercontent.com/38166071/38460567-fa9a8bfa-3a92-11e8-968f-b08ce70851e6.gif)
 
+# 5. Expenses
+
+![](https://user-images.githubusercontent.com/38244786/39165614-f3a5c586-47a2-11e8-8775-89dd952bd678.png)
