@@ -81,6 +81,7 @@ First, it is associated with a single order and is attached the order only when 
 Next, the temporary item id has a negative value for the item id.  This is done to isolate temporary items from the rest of the set of items.  This also provides a visual clue when looking at items that the item is a temporary item (in addition to the fact that the item_type has a value of '3' to indicate that it is a temporary item).
 
 The approach taken to support temporary items is to insure the integrity of the reporting system which is dependent on joins from the sales_items table to the items table to retrieve item information.  You can think of temporary items more as an extension of the sales_items table since that item only exists for the purpose of holding information about the temporary item for that sales_item. 
+
 ---
 
 *Change Log*
