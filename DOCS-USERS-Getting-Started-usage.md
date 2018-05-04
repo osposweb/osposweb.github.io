@@ -51,6 +51,7 @@ Allow to employee group products from inventory so then can sell as combo produc
 # 4. Sales
 
 This module lets you ring up Sales and Returns. This its a very complex module in the Open Source POS, due implicates many artifacts and modes, methods of payments and expend receipts. Also of course can print those.
+There's also a temporary item feature, that can be detailed ar the [DOCS-USERS-Temporary-Item](DOCS-USERS-Temporary-Item) specify page wiki.
 
 ## 4.1. Sales Modes
 
