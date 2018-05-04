@@ -55,6 +55,7 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * Sales Transactions logging
    * Sales Receipt and invoice printing and/or emailing
    * Receiving
+   * [Temporary Item](DOCS-USERS-Temporary-Item)
    * Gift card Support
    * Rewards on customers
    * [Restaurant Tables](DOCS-USERS-Sales-Restaurant)
