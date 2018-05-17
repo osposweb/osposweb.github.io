@@ -13,18 +13,18 @@
 
 ## Installation notes for impatients
 
-For those that want to try an easy option can be **downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download** and can later boot in a virtualBox machine by example.
+For those that want to try an easy option that can be **downloaded with all needed components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download** and can later boot in a virtualBox machine by example.
 
-**WARNING** Ospos need special requirements not all hosting providers have necesary requirements. For more detailed **requirements see it in: [OSPOS requirements datasheet](OSPOS-development-index#requirements) and then go back here** by example **softaculus** are not supported and nothing to do with that project.
+**WARNING** Ospos has specific requirements and not all hosting providers will offer what is needed. For more detailed **requirements see: [OSPOS requirements datasheet](OSPOS-development-index#requirements) and then go back here**. For example **softaculus** is not supported by this community and has nothing to do with the project.
 
 # Local Install
 ----------------------
 
-Its the best option to most customized and controlled, as counterpart you are by your own.
+We advise to follow instructions here as closely as possible, otherwise we won't be able to support you in case of issues.
 
 ## Local Deploy install
 
-We assumed a *nix like environment, (as MAc or Linux does) due most vendors and hosting only provided that kind of environment.
+We assume a *nix like environment, (like Mac or Linux) as this is the most comonly used for web application deployments.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access with `sudo su` command
 2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all included in MAMP, in Linux for Deb and RPM based distribution are `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd` respectively, recent debian not use "php5" only "php" in their names of the packages. Now enable the mod-rewrite module by `a2enmod rewrite` command.
