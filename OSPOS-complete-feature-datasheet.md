@@ -73,7 +73,7 @@ A quick overview of those modules can be found at the [DOCS USERS: Getting Start
    * [Items Importing from CSV](DOCS-USERS-Import-data-from-CSV-file#importing-items)
    * Exporting to Spreadsheets
 * Customers
-   * Customer Manage
+   * Customer Manage, including registration consent repect GPDR regulations
    * [Customer Import from CSV](DOCS-USERS-Import-data-from-CSV-file#importing-customers)
    * Exporting to Spreadsheets
    * VAT and multi tiers taxation
