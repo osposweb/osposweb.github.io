@@ -39,9 +39,7 @@ There are several tabs related to inventory control.  Before you can add invento
 # 3. Inventory
 
 This module lets you load in the **Items** and **Kits**. This its a very complex module, Open Source Point of Sale are well integrated, from the **Sales** module, for instance, you can create new Inventory Item on the fly. Also a special **Sale** module its the **Return** sale mode that can manage also the Inventory Stock that can be covert in the next module documentation.
-
 ![items with kits in sale](https://user-images.githubusercontent.com/23066623/40659853-6ca19664-631d-11e8-8a64-172e7fbaad4d.png)
-
 ## 3.1. Items
 
 Allow to employee load a product to the inventory so then have some stock. Start by clicking the Items button. This will load up your list of items if there any loaded. Please refers to the [OSPOS DOCS USERS Inventory Items](DOCS-USERS-Inventory-Items) wiki page to learn how to do that.
