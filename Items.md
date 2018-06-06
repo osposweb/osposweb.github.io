@@ -76,15 +76,16 @@ Temporary Items are created for the purpose selling an item that we do not want 
 
 Internally, a temporary item is maintained in the item file just like any other item.  However, it has unique properties (other than an item type of "Temporary"). 
 
-First, it is associated with a single order and is attached the order only when clicking on the New button from the sales register.  Items that are added to the register can be deleted.  If a temporary item is deleted from the register it is also removed from the items table.
+First, it is associated with a single order and is attached the order only when clicking on the New button from the sales register.  Items that are added to a sale via the register can be deleted.  If a temporary item is deleted from the register it is also removed from the items table.
 
-Next, the temporary item id has a negative value for the item id.  This is done to isolate temporary items from the rest of the set of items.  This also provides a visual clue when looking at items that the item is a temporary item (in addition to the fact that the item_type has a value of '3' to indicate that it is a temporary item).
+The approach taken to support temporary items is to insure the integrity of the reporting system which is dependent on joins from the sales_items table to the items table to retrieve item information.  You can think of temporary items more as an extension of the sales_items table since that item only exists for the purpose of holding information about the temporary item for that sales_item.
 
-The approach taken to support temporary items is to insure the integrity of the reporting system which is dependent on joins from the sales_items table to the items table to retrieve item information.  You can think of temporary items more as an extension of the sales_items table since that item only exists for the purpose of holding information about the temporary item for that sales_item. 
+Although temporary items are not included in the "normal" list of items, there is a filter option that allows you to list just temporary items.  From the list of temporary items it is now possible to change the item type to a standard item or a kit item.  This is a one way change.  Once you convert a temporary item to a standard or kit item it cannot be changed back to a temporary item.
 
 ---
 
 *Change Log*
 
+6/5/2018 - Updated documentation for temporary items.
 4/19/2018 - Added the three new fields to be added to the items table to support multiple package types per item.
 4/18/2018 - Started adding suggestions for Temporary Item Type.
