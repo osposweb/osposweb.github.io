@@ -87,5 +87,7 @@ Although temporary items are not included in the "normal" list of items, there i
 *Change Log*
 
 6/5/2018 - Updated documentation for temporary items.
+
 4/19/2018 - Added the three new fields to be added to the items table to support multiple package types per item.
+
 4/18/2018 - Started adding suggestions for Temporary Item Type.
