@@ -39,18 +39,18 @@
 
 * *Stock Type* defines whether or not the item is physical item that is tracked in inventory or is non-stocked item (for example a labor service).  The valid values are `0 - Stock`, `1 - Non-stock`.  The default Stock Type is `Stock`.
 
-* *Item Type* defines whether or not the item is a standard item which can either be an item that is stocked in inventory or an item that represents a single service that is provided.   A second type is an Kit which is an Item that represents a a collection of other non-kit items. A Temporary Item is a type of non-stock item that can be used to quickly define an item on the fly to handle a sale.  This can be useful in situations where items are fabricated to order.  When a temporary item is added to an order the user will be prompted to override the temporary name, barcode, and description.  A temporary item must be a non-stock item.
-** The valid values are `0 - Standard`, `1 - Kit`, `2 - Temporary`.  The default item type is `Standard`.
+* *Item Type* defines whether or not the item is a standard item which can either be an item that is stocked in inventory or an item that represents a single service that is provided.   A second type is an Kit which is an Item that represents a a collection of other non-kit items.  Another type of item is a standard item however instead of ordering by quantity the item can be ordered by dollar amount.  A temporary item is a type of non-stock item that can be used to quickly define an item on the fly to handle a sale.  This can be useful in situations where items are fabricated to order.  When a temporary item is added to an order the user will be prompted to override the temporary name, barcode, and description.  A temporary item must be a non-stock item.
+** The valid values are `0 - Standard`, `1 - Kit`, `2 - Item Amount Entry`, `3 - Temporary`.  The default item type is `Standard`.
 
 * *Deleted*
 
 The following elements are being proposed to be added to the `items` table in support 
 
-* NEW *Quantity per Pack* is the number of low sell units per pack.
+* *Quantity per Pack* is the number of low sell units per pack.
 
-* NEW *Pack Name* is the name of the of the type of pack.  If no pack name is specified but the pack name is used then it will default to "EACH".  Typical names might be "CASE", "CARTON", "BOTTLE", or "GALLONS".
+* *Pack Name* is the name of the of the type of pack.  If no pack name is specified but the pack name is used then it will default to "EACH".  Typical names might be "CASE", "CARTON", "BOTTLE", or "GALLONS".
 
-* NEW *Low Sell Item Id* is the item id for the item that represents the smallest pack of the given product.  For example if 281 is the item id for an individual candy bar then the Low Sell Item Id for that item would also be 281, the quantity per Pack would be 1 and the Pack Name would be "EACH".  If there is a small carton containing 6 of those candy bars then that would be a different item id (say 817) with a quantity per pack of 6, a pack name of CARTON, and the Low Sell Item Id would be 281.  A similar scenario would exist for a different item if it was also sold by the case where there might be 10 cartons per case.  In that scenario the quantity per pack would be 60 (10 cartons times 6 each's per carton). 
+* *Low Sell Item Id* is the item id for the item that represents the smallest pack of the given product.  For example if 281 is the item id for an individual candy bar then the Low Sell Item Id for that item would also be 281, the quantity per Pack would be 1 and the Pack Name would be "EACH".  If there is a small carton containing 6 of those candy bars then that would be a different item id (say 817) with a quantity per pack of 6, a pack name of CARTON, and the Low Sell Item Id would be 281.  A similar scenario would exist for a different item if it was also sold by the case where there might be 10 cartons per case.  In that scenario the quantity per pack would be 60 (10 cartons times 6 each's per carton). 
 
 
 
