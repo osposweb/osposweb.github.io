@@ -32,7 +32,7 @@
 ## [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
 ## [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
 ## [Sales Tax by Customer](https://github.com/opensourcepos/opensourcepos/wiki/Sales-Tax-by-Customer)
-## [Work Orders]https://github.com/opensourcepos/opensourcepos/wiki/Work-Orders
+## [Work Orders](https://github.com/opensourcepos/opensourcepos/wiki/Work-Orders)
 ## [Items](https://github.com/opensourcepos/opensourcepos/wiki/Items)
 ## [Item Kits](https://github.com/opensourcepos/opensourcepos/wiki/Item-Kits)
 ## [Purchasing](https://github.com/opensourcepos/opensourcepos/wiki/Purchasing)
