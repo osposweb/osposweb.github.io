@@ -1,6 +1,6 @@
 # Installation Guide
 
-## [Getting Started](https://github.com/opensourcepos/opensourcepos/wiki/DOCS-USERS-Getting-Started-installations#local-docker-install)
+## [Getting Started](https://github.com/opensourcepos/opensourcepos/wiki/DOCS-USERS-Getting-Started-installations)
 ### [Docker](https://github.com/opensourcepos/opensourcepos/wiki/DOCS-USERS-Extras-for-Docker-cloud-maintenance)
 ### [Installing "opensourcepos" in windows and localhost](https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost)
 ### [Local Deployment using LEMP](https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP)
