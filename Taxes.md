@@ -1,18 +1,23 @@
-*A pull request has been submitted for this feature.  This page will be updated over the new few days to document the changes that are being introduced by the feature*
+*Changes are underway to add support for India's GST Tax system.  As development progresses this page will be updated to reflect the changes that are coming.*
+
+# Base System Support for Taxes
+
+If your tax requirements are simple this may be the best approach for you.
+
+The base system of OSPOS includes support for two tax types for each item.  The tax can be treated as a sales tax or it can be treated as a value added tax.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
 
 
-## Sales Tax by Customer
+# Customer Sales Tax
 
-The sales tax support provided by OSPOS is item based which and is primarily to support VAT tax calculations where the tax is included in the sales price.  However, it a limited scope it can also used to calculate a sales tax.  The problem with this is that in the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules are governed by the taxing jurisdiction.
+In the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
 
-The changes are introduced to try to be as "low impact" as possible to OSPOS while providing sales tax by customer feature
+The Customer Sales Tax feature is built to handle this more complicated tax reporting scenario if your need to collect and report taxes by multiple tax jurisdictions.
 
-## Structure
+#India Goods and Services Tax
 
-To support Sales Tax by Customer four new tables will are added and four tables are changed.
+In 2017 India introduced new tax reporting laws that have similar requirements to the US Sales Tax system except that it still remains VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
 
-
-## Definitions
+# Definitions
 
 **Sales Tax Code** A code assigned to a customer that identifies the group of taxing jurisdictions which should be applied to the sale.  
 
@@ -31,7 +36,7 @@ To support Sales Tax by Customer four new tables will are added and four tables 
 **Tax Group** A tax group represents the summary of taxes to be collected for a particular sale, for one or more tax authorities that have agreed to be collected at the same time as a group (even though for purpose of tax reporting they might be reported independently).  (i.e. state, county, city, etc).  At this point in time all state laws that I know about allow the individual tax jurisdiction tax rates to be added and collected as a single tax rate.  A future tax reporting module will be developed to support reporting to individual tax jurisdictions regarding taxes collected. 
 
 
-## Rules and Constraints
+# Rules and Constraints
 
 **Once the Customer Sales Tax feature is enabled, the current default tax rate fields should not be used for the purpose of sales tax.** OSPOS currently has two default tax percent fields.  When this module is enabled these will not be used.  There are still plans on the table to support a combination of VAT tax and Sales tax but since there isn't anyone currently lobbying for this then i will work on it as time allows.
 
@@ -42,9 +47,9 @@ To support Sales Tax by Customer four new tables will are added and four tables 
 **Tax rates should be locked in when sale is completed.** When an invoice is reprinted it needs to be able to calculate sales tax based on the tax rates that were in place when the invoice was originally printed.
 
 
-## Rules of Operation
+# Rules of Operation
 
-### Configuring for Sales Tax
+## Configuring for Sales Tax
 
 You are not required to immediately start using the customer sales tax module.  Your current sales tax setup should continue to work.  If you use VAT tax it should also continue to operate without any intrusive changes.  If either of those statements are false then please report the bug.
 
@@ -54,7 +59,7 @@ Under the General Configuration tab the "Customer Sales Tax Support" will need t
 
 To be able to add a customer sales tax you will need to authorize the employee to the Taxes module.  Go to the employee permissions page and select the "Taxes" module. There are two check boxes labeled Taxes.  Be sure to select the Tax module and not the Tax reporting option.
 
-### Adding a New Sales Tax
+## Adding a New Sales Tax
 
 An employee must be authorized to the tax module to be able to set up tax rates.
 
@@ -74,7 +79,7 @@ The following information is provided for each tax.  You should always set up th
 
 **Category Exceptions**  The standard sales tax can be overridden for a particular tax category of items.  For example spirits, liquor and beer often have a higher tax rate.  Service items are often non-taxable.  This is implemented by assigning the tax category to the item and then adding the tax category exception to the tax rate definition.
 
-## Migration
+# Migration
 
 One goal of the Customer Sales Tax project was to insure that the sales taxes for a sale were computed and rounded according to the rules of the relevant taxing jurisdiction.  Since there are so many rules, the taxes cannot easily be computed "on the fly" and it isn't practical to try to develop an SQL only equivalent for the tax calculation programs.
 
@@ -90,10 +95,13 @@ To run the migration click on the Migrations module and then click on the Start 
 
 
 
-## Comments
+# Comments
 
 Prior to this feature the tax rate 1 field was required.  With the introduction of this feature the tax rate 1 field is now optional.
 
 There may be additional changes required for sales tax reporting in order to break it down by jurisdiction, but that probably should be a "back office" application.  Until then the current tax reports, with a little tweaking, should be adequate for generating tax reports that can be used to do manual tax by jurisdiction reporting.
 
 For tax reporting the tax code can be used to break out tax collected by jurisdiction.  I intend on writing a tax reporting application for a back office but that's not going to come quick but should be available within six months.
+
+#Change History
+6/13/2018 - Started adding documentation for India's Goods and Services Tax 
