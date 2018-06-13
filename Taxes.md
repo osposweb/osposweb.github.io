@@ -7,7 +7,9 @@ If your tax requirements are simple this may be the best approach for you.
 The base system of OSPOS includes support for two tax types for each item.  The tax can be treated as a sales tax or it can be treated as a value added tax.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
 
 
-# Destination Based Tax (originally known as Customer Sales Tax because it is dependent on the location of the customer).
+# Destination Based Tax
+
+*This was originally known as Customer Sales Tax because it is dependent on the location of the customer.*
 
 In the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
 
@@ -20,6 +22,7 @@ In 2017 India introduced new tax reporting laws that have similar requirements t
 So far the changes that need to be made include:
 1. Rebrand Customer Sales Tax to Destination Based Tax (to reduce confusion)
 1. Add support for VAT Tax to the Destination Based Tax
+1. Proceed with adding Tax Jurisdiction tracking.  This was dropped from the original development but might possibly be needed here and helpful elsewhere.
 
 # Definitions
 
