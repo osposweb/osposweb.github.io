@@ -103,5 +103,5 @@ There may be additional changes required for sales tax reporting in order to bre
 
 For tax reporting the tax code can be used to break out tax collected by jurisdiction.  I intend on writing a tax reporting application for a back office but that's not going to come quick but should be available within six months.
 
-#Change History
+# Change History
 6/13/2018 - Started adding documentation for India's Goods and Services Tax 
