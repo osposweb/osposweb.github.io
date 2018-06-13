@@ -7,7 +7,7 @@ If your tax requirements are simple this may be the best approach for you.
 The base system of OSPOS includes support for two tax types for each item.  The tax can be treated as a sales tax or it can be treated as a value added tax.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
 
 
-# Customer Sales Tax
+# Location Based Tax (originally known as Customer Sales Tax because it is dependent on the location of the customer).
 
 In the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
 
@@ -16,6 +16,10 @@ The Customer Sales Tax feature is built to handle this more complicated tax repo
 # India Goods and Services Tax
 
 In 2017 India introduced new tax reporting laws that have similar requirements to the US Sales Tax system except that it still remains VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
+
+So far the changes that need to be made include:
+1. Rebrand Customer Sales Tax to Location Based Tax (to reduce confusion)
+1. Add support for VAT Tax to the Location Based Tax
 
 # Definitions
 
