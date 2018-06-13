@@ -4,7 +4,7 @@
 
 If your tax requirements are simple this may be the best approach for you.
 
-The base system of OSPOS includes support for two tax types for each item.  The tax can be treated as a sales tax or it can be treated as a value added tax.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
+The base system of OSPOS includes support for two taxes for each item.  Taxes are treated as a sales tax or it can be treated as a value added tax - it cannot be mixed.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
 
 
 # Destination Based Tax
