@@ -13,7 +13,7 @@ In the United States the sales tax to be collected could be based on the origin 
 
 The Customer Sales Tax feature is built to handle this more complicated tax reporting scenario if your need to collect and report taxes by multiple tax jurisdictions.
 
-#India Goods and Services Tax
+# India Goods and Services Tax
 
 In 2017 India introduced new tax reporting laws that have similar requirements to the US Sales Tax system except that it still remains VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
 
