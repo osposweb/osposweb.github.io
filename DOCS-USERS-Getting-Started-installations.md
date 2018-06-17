@@ -4,7 +4,6 @@
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
 * 📶 [Cloud Install](#cloud-install)
   * 🖧 [Cloud Deploy Installation](#cloud-deploy-installation)
-  * 🖯 [Cloud Docker Installation](#cloud-docker-install)
 * [Professional Install](#professional-install)
   * [Local Professional Install](#professional-local-install)
   * [Others OSs Install guides](#others-oss-install-guides)
@@ -92,23 +91,6 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 10. **Configure** the OSPOS index page and encription key, this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
 11. **Browsing** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
 12. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
-
-Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
-
-## Cloud Docker install
-
-Not recomended for begginers. We recomended Digital Ocean way:
-
-1. Create a [Digitalocean account](https://m.do.co/c/ac38c262507b)
-2. Create a [docker cloud account](https://cloud.docker.com)
-3. Login to docker cloud
-4. Associate your docker cloud account with your previously created digital ocean account under settings
-5. Create a new node on DigitalOcean through the `Infrastructure > Nodes` tab. Fill in a name (ospos) and choose a region near to you. We recommend to choose a node with minimum 1G RAM for the whole stack
-6. Click [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/opensourcepos/opensourcepos) 
-7. Othewise create a new stack under `Applications > Stacks` and paste the [contents of docker-cloud.yml](https://github.com/opensourcepos/opensourcepos/blob/master/docker-cloud.yml) from the source repository in the text field and hit `Create and deploy` 
-8. Find your website url under `Infrastructure > Nodes > <yournode> > Endpoints > web`
-9. Login with default username/password admin/pointofsale
-10. DNS name for this server can be easily configured in the DigitalOcean control panel
 
 Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
 
