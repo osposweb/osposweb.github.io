@@ -19,6 +19,8 @@ The Destination Based Tax feature is built to handle this more complicated tax r
 
 In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system except that it still remains VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
 
+This is also a destination based tax, so it will reuse the infrastructure even though in reality it is a simplified version of it.
+
 So far the changes that need to be made include:
 1. Rebrand Customer Sales Tax to Destination Based Tax (to reduce confusion)
 1. Add support for VAT Tax to the Destination Based Tax
