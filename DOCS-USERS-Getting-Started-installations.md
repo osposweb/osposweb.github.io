@@ -6,7 +6,7 @@
   * 🖧 [Cloud Deploy Installation](#cloud-deploy-installation)
 * [Professional Install](#professional-install)
   * [Local Professional Install](#professional-local-install)
-  * [Others OSs Install guides](#others-oss-install-guides)
+  * [Others OSs Install guides](#other-install-guides)
 
 **After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)** 
 
