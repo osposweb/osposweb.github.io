@@ -138,6 +138,15 @@ Before read this section, remenber that must take care of the information in the
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
+* Technicall Development Specifications:
+    * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
+    * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
+    * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
+    * [Taxes](https://github.com/opensourcepos/opensourcepos/wiki/Taxes)
+    * [Work Orders](https://github.com/opensourcepos/opensourcepos/wiki/Work-Orders)
+    * [Items](https://github.com/opensourcepos/opensourcepos/wiki/Items)
+    * [Item Kits](https://github.com/opensourcepos/opensourcepos/wiki/Item-Kits)
+    * [Purchasing](https://github.com/opensourcepos/opensourcepos/wiki/Purchasing)
 
 ### Workflow Contributions
 
@@ -252,3 +261,12 @@ Of course only predefined strings, pleas follow this document to lear about mana
 # See also
 
 * [Error logging in OSPOS](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
+* Technicall Development Specifications:
+    * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
+    * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
+    * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
+    * [Taxes](https://github.com/opensourcepos/opensourcepos/wiki/Taxes)
+    * [Work Orders](https://github.com/opensourcepos/opensourcepos/wiki/Work-Orders)
+    * [Items](https://github.com/opensourcepos/opensourcepos/wiki/Items)
+    * [Item Kits](https://github.com/opensourcepos/opensourcepos/wiki/Item-Kits)
+    * [Purchasing](https://github.com/opensourcepos/opensourcepos/wiki/Purchasing)
