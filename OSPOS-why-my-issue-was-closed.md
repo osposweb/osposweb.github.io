@@ -1,4 +1,4 @@
-Please read carefully **the wiki at https://github.com/opensourcepos/opensourcepos/wiki#documentation** or if you dont like fill the ambigous template, can ask asistant to alternate fork at https://gitlab.com/osposweb/osposweb
+Please read carefully **the wiki at [DOCS-USERS-Getting-Started-installations#installation-notes-for-impatients](DOCS-USERS-Getting-Started-installations#installation-notes-for-impatients)** or if you dont like fill the ambigous template, can ask asistant to alternate fork at https://gitlab.com/osposweb/osposweb
 
 # The OSPOS contribution users and developers are glad to help to you, but we need also you help us to find your problem with proper information from you, easyle by providing info about version software installed and ospos version installed as minimun.. please fill the second section of issue template!
 
