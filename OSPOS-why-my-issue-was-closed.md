@@ -1,6 +1,6 @@
 As user, if you need better asistant, always must read carefully, **before talk or write! read the wiki at https://github.com/opensourcepos/opensourcepos/wiki#documentation** or if you dont like the support and the ambigous template, can ask asistant to alternatye fork at https://gitlab.com/osposweb/osposweb
 
-# The OSPOS contribution users and developers are glad to help to you, but we need a proper information from you as userm, AND proper usage of the workflow as any support line. So then please PLEASE FILL THE TEMPLATE AS POSSIBLE the most important part its the last second section about technicalls installations details.
+# The OSPOS contribution users and developers are glad to help to you, but we need a proper information from you also, AND proper usage of the workflow as any support line. So then please PLEASE FILL THE TEMPLATE AS POSSIBLE the most important part its the last second section about technicalls installations details.
 
 **A IMPORTANT NOTE:** if you no have any idea how to start, please there's some points:
 
