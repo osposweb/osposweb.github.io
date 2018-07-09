@@ -1,4 +1,4 @@
-As user, if you need better asistant, always must read carefully, **before talk or write! read the wiki at https://github.com/opensourcepos/opensourcepos/wiki#documentation** or if you dont like the support and the ambigous template, can ask asistant to alternatye fork at https://gitlab.com/osposweb/osposweb
+Please read carefully **the wiki at https://github.com/opensourcepos/opensourcepos/wiki#documentation** or if you dont like fill the ambigous template, can ask asistant to alternate fork at https://gitlab.com/osposweb/osposweb
 
 # The OSPOS contribution users and developers are glad to help to you, but we need also you help us to find your problem with proper information from you, easyle by providing info about version software installed and ospos version installed as minimun.. please fill the second section of issue template!
 
