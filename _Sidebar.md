@@ -1,23 +1,23 @@
 # Quick start:
 
- * [A. Get OSPOS and install](DOCS-USERS-Getting-Started-installations)
- * [B. How to use OSPOS](DOCS-USERS-Getting-Started-usage)
- * [C. Quick Demo Server on-line](https://demo.opensourcepos.org/)
+ * [A. Get and install](DOCS-USERS-Getting-Started-installations)
+ * [B. How to use](DOCS-USERS-Getting-Started-usage)
+ * [C. Quick Demo on-line](https://demo.opensourcepos.org/)
 
 ***
 
-# Documentation Index
+# Documentation
 
-## [Installation documentation](DOCS-USERS-Getting-Started-installations)
+## [Installation](DOCS-USERS-Getting-Started-installations)
 
   * [OSPOS Local Install](DOCS-USERS-Getting-Started-installations#local-install)
   * [OSPOS Cloud Install](DOCS-USERS-Getting-Started-installations#cloud-install)
   * [Docker extra documentation](DOCS-USERS-Extras-for-Docker-cloud-maintenance)
   * [Other Operating systems and user guides](#installation-extra-guides)
 
-## [Usage documentation](Home#documentation)
+## [Usage docs](Home#documentation)
 
-  * [Getting Started Usage index](DOCS-USERS-Getting-Started-usage)
+  * [Getting Started usage](DOCS-USERS-Getting-Started-usage)
     * [Configurations](DOCS-USERS-Configuration)
       * [Printer configuration](DOCS-USERS-for-OSPOS-Printing)
     * [Employees: the users](DOCS-USERS-Employees)
@@ -26,19 +26,19 @@
       * [Items](DOCS-USERS-Inventory-Items)
       * [Kits](DOCS-USERS-Inventory-Kits)
     * [Sales](DOCS-USERS-Getting-Started-usage#4-sales)
-      * [Sales restaurant](DOCS-USERS-Sales-Restaurant)
+      * [Sales Restaurant](DOCS-USERS-Sales-Restaurant)
     * [Expenses](DOCS-USERS-Expenses)
   * [OSPOS hardware support](OSPOS-hardware-supported-datasheet)
     * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 
 ***
 
-# Developer Documentation
+# Developer Docs
 
-   * [Technical details](OSPOS-development-index#tech-installation)
+   * [Technicals](OSPOS-development-index#tech-installation)
    * [Architecture](OSPOS-development-index#tech-architecture)
-   * [Developer guide and help](OSPOS-development-index#development-code-tips-and-help)
-   * Technicall Development Specifications:
+   * [Developer guide](OSPOS-development-index#development-code-tips-and-help)
+   * Development Specifications:
      * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
      * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
      * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
@@ -52,7 +52,7 @@
 
 # FAQ
 
-  * [Feature datasheet and usage](OSPOS-complete-feature-datasheet)
+  * [Feature datasheet](OSPOS-complete-feature-datasheet)
   * [Why my issue was closed?](OSPOS-why-my-issue-was-closed)
 
 ***
