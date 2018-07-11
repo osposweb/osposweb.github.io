@@ -13,7 +13,7 @@
   * [OSPOS Local Install](DOCS-USERS-Getting-Started-installations#local-install)
   * [OSPOS Cloud Install](DOCS-USERS-Getting-Started-installations#cloud-install)
   * [Docker extra documentation](DOCS-USERS-Extras-for-Docker-cloud-maintenance)
-  * [Other Operating systems and user guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
+  * [Other install user guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
 
 ## [Usage docs](Home#documentation)
 
@@ -38,7 +38,7 @@
    * [Technicals](OSPOS-development-index#tech-installation)
    * [Architecture](OSPOS-development-index#tech-architecture)
    * [Developer guide](OSPOS-development-index#development-code-tips-and-help)
-   * Development Specifications:
+   * Specifications:
      * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
      * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
      * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
