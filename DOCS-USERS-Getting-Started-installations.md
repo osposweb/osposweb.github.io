@@ -23,7 +23,7 @@ We advise to follow instructions here as closely as possible, otherwise we won't
 
 ## Local Deploy install
 
-We assume a *nix like environment, (like Mac or Linux) as this is the most comonly used for web application deployments.
+We assume a *nix like environment, (like Mac or Linux) as this is the most comonly used for web application deployments. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access with `sudo su` command
 2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all included in MAMP, in Linux for Deb and RPM based distribution are `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd` respectively, recent debian not use "php5" only "php" in their names of the packages. Now enable the mod-rewrite module by `a2enmod rewrite` command.
@@ -42,7 +42,7 @@ For those that want to try an easy option can be downloaded with all need compon
 
 ## Local Docker install
 
-Docker deploy its a *nix like environment due Docker runs natively on mac and linux.
+Docker deploy its a *nix like environment due Docker runs natively on mac and linux.. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access only for next step with `sudo su` command
 2. **Dependences** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
@@ -77,7 +77,7 @@ Best choice its free/private VPS, this due free hosting and mayority of private 
 
 ## Cloud Deploy installation
 
-For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related.
+For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
 1. **Create** a [Digitalocean account](https://m.do.co/c/ac38c262507b) and once complete go log in.
 2. **Choose** a Debian Droplet by click the Create button in the top right hand corner, and later from the dropdown menu.
@@ -106,12 +106,13 @@ This section its dedicated to those that will deploy in secure and serious produ
 Professional install will assumed behing a complex network, that will **redirect the port and the path of the OSPOS installation** due a front webserver will receive the request and firewall/reverseproxy will redirect to the ospos server install place.
 * If you **will use reverse proxy redirection** due there's no need of a installed firewall in the local webserver OS, that are under a DMZ zone.
 * If you **dont want hiyacked all the root of your webserver**, can defined  new port and to that port a new webroot htdocs place where the OSPOS software will reside away of the normal webserver installation.
+* **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
 (WIP)
 
 # Other Install guides
 
-Currently only Apache & MySql/MariaDB are officialy supported but this will or may be changed in the future:
+**Those guides DONT HAVE OFFICIAL SUPPORT SO DONT SEND ISSUES ABOUT IT** . **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
   * [Installing "opensourcepos" in windows and localhost](https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost)
   * [Local Deployment using LEMP](https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP)
