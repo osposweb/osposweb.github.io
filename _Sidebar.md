@@ -59,6 +59,8 @@
 
 ## [Installation Extra Guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
 
+(NO official support ok, use official wiki steps)
+
   * [Installing "opensourcepos" in windows and localhost](https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost)
   * [Local Deployment using LEMP](https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP)
   * [Local Deployment using MAMP for Windows](https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-MAMP-for-Windows)
