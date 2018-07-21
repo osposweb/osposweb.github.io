@@ -19,14 +19,14 @@
 # Local Install
 ----------------------
 
-We advise to follow instructions here as closely as possible, otherwise we won't be able to support you in case of issues. **Dont use github direclty!!**
+We advise to follow instructions here as closely as possible, otherwise we won't be able to support you in case of issues. **Dont use github directly!!**
 
 ## Local Deploy install
 
-We assume a *nix like environment, (like Mac or Linux) as this is the most comonly used for web application deployments. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
+We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments. **If you don't want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
-1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access with `sudo su` command
-2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all included in MAMP, in Linux for Deb and RPM based distribution are `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd` respectively, recent debian not use "php5" only "php" in their names of the packages. Now enable the mod-rewrite module by `a2enmod rewrite` command.
+1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, it's best to elevate to root access with `sudo su` command
+2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
 3. **Htdocs** working directory: this it's change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remenber this depends of the Operating System Apache2 install
 4. **Download** please **Dont use github direclty!!** and then executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory. 
 5. **Uncompress** to htdocs the download: `cd /var/www/html;unzip osposlastedstable.zip` this will populate all the web server htdocs root directory only for the software.
