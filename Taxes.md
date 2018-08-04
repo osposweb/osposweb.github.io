@@ -4,45 +4,46 @@
 
 If your tax requirements are simple this may be the best approach for you.
 
-The base system of OSPOS includes support for two taxes for each item.  Taxes are treated as a sales tax or it can be treated as a value added tax - it cannot be mixed.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
+The base system of OSPOS includes support for a maximum of two tax rates for each item.  Taxes are treated as a sales tax or it can be treated as a value added tax (tax included) - it cannot be mixed.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
 
 
 # Destination Based Tax
 
 *This was originally known as Customer Sales Tax because it is dependent on the location of the customer.*
 
-In the United States the sales tax to be collected could be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
+In the United States the sales tax to be collected can be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
 
-The Destination Based Tax feature is built to handle this more complicated tax reporting scenario if your need to collect and report taxes by multiple tax jurisdictions.
+The Destination Based Tax feature is built to handle this more complicated tax reporting scenario if you need to collect and report taxes by multiple tax jurisdictions.
 
 # India Goods and Services Tax
 
-In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system except that it still remains VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
+In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system except that it remains a VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
 
-This is also a destination based tax, so it will reuse the infrastructure even though in reality it is a simplified version of it.
+This is also a destination based tax and will need to support both the USA destination sales tax as well as the India destination VAT tax.
 
 So far the changes that need to be made include:
 1. Rebrand Customer Sales Tax to Destination Based Tax (to reduce confusion)
 1. Add support for VAT Tax to the Destination Based Tax
-1. Proceed with adding Tax Jurisdiction tracking.  This was dropped from the original development but might possibly be needed here and helpful elsewhere.
+1. Consolidate all tax processing in the Tax_lib.php script.
+1. Proceed with adding Tax Jurisdiction tracking.  This was dropped from the original development but is needed here and might be of value in unusual scenarios.
 
 # Definitions
 
-**Sales Tax Code** A code assigned to a customer that identifies the group of taxing jurisdictions which should be applied to the sale.  
+**Tax Code** A code assigned to a customer that identifies the group of taxing jurisdictions which should be applied to the sale.  
 
-**Origin Sales Tax Code** The origin sales tax represents the group of tax jurisdictions where the company is located.  There can only be one origin sales tax code for each company.  Currently OSPOS only allows for a single company (although there are plans to make it multi-company).  The origin sales tax code is a configured option. When multi-company is supported the sales tax code will need to be configured at the company level. 
+**Default Tax Code** The default tax code represents the group of tax jurisdictions where the store is located.  There can only be one default tax code for each company.  Currently OSPOS only allows for a single company (although there are plans to make it multi-company).  The default tax code is a configured option. If and when multi-company is supported the default tax code will need to be configured at the store level. 
 
 **Tax Rate** The tax rate is a percent value supporting up to 4 decimal places.
 
-**Item Tax Category** A given tax jurisdiction has a standard tax, but some products might require a different tax rate (for example alcohol products might have a higher sales tax rate).  To accomplish that, if a taxing jurisdiction requires a different tax rate for a particular category of items then those items must be associated with that category.
+**Item Tax Category** A given tax jurisdiction has a standard tax, but some products might require a different tax rate (for example alcohol products might have a higher sales tax rate).  To accomplish that, if a taxing jurisdiction requires a different tax rate for a particular category of items then those items must be associated with that category. For India GST the tax category centers around the Harmonized Tariff Schedule (HTS) product categories.
 
-**VAT Tax**  The value added tax is a tax that is added to the sales price of an item.  With this system a tax category is assigned to the item and represents a set of tax components for the item.
+**VAT Tax**  The value added tax is a tax that is included in the sales price of an item.
 
 **Taxing Decimals** The tax amount is computed for each tax group for each item on the invoice.  The taxing decimals indicates how many decimals the tax amount will be stored as.  The tax amount at this level will be rounded according to the rounding code.  Then when the sale is "complete" the tax amount of each item in the same tax group is accumulated and that total is rounded to the number of decimals specified by the currency decimals configuration value using the specified rounding rule (as determined by the primary taxing authority).
 
 **Cascaded Tax** Some VAT tax locations require that taxes be "cascaded".  This means that the 2nd tax amount is computed using the total of the invoice and the tax amount computed using the 1st tax.  Cascaded sales tax is not currently supported.  However, database changes have already been made to support it, so if anyone wishes to work with me to test and use this feature then it shouldn't be too much of an effort to add it.
 
-**Tax Group** A tax group represents the summary of taxes to be collected for a particular sale, for one or more tax authorities that have agreed to be collected at the same time as a group (even though for purpose of tax reporting they might be reported independently).  (i.e. state, county, city, etc).  At this point in time all state laws that I know about allow the individual tax jurisdiction tax rates to be added and collected as a single tax rate.  A future tax reporting module will be developed to support reporting to individual tax jurisdictions regarding taxes collected. 
+**Tax Group** A tax group represents the summary of taxes to be collected for a particular sale, for one or more tax authorities that have agreed to be collected at the same time as a group (even though for purpose of tax reporting they might be reported independently).  (i.e. state, county, city, etc).  At this point in time all U.S. tax laws that I know about allow the individual tax jurisdiction tax rates to be added and collected as a single tax rate.  If this is to be the case then flag the tax code for single rate taxing or simply define a single jurisdiction that represents the combined jurisdictions.  India needs to report taxes collected by jurisdiction. 
 
 
 # Rules and Constraints
