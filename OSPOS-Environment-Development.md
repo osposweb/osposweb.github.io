@@ -54,6 +54,14 @@ This will call npm to install all required dependencies and subsequently run gru
 
 In case you face an issue during the npm install (e.g. `npm ERR! phantomjs@1.9.20 install: node install.js`) do `sudo apt-get install nodejs-legacy` and run again `npm install --only=dev`.
 
+## Running CSS minification builds
+
+The following command
+
+    grunt cssmin
+
+will minify all the CSS files located in public/css and put them in a minified CSS file in public/dist/opensourcepos.min.css
+
 ## Proper way to see js minifications changes
 
 JS and CSS are cached, you just need to reload your page keeping the shift button pressed in your web browser.
