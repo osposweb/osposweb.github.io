@@ -40,7 +40,7 @@ The tools was described in the [Development index: architecture section](OSPOS-d
 
 Also composer needs to be installed, by example Debian derived distribution can see this tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-16-04.
 
-Once the basic tools are installed run `bin/devinstall.sh`, which will install all the npm, composer and bower packages and run the grunt script automatically at the end. It will also generate the source code documentation under docs/ using ApiGen tool (all installed automatically).
+Once the basic tools are installed run `bin/devinstall.sh`, which will install all the npm, composer and bower packages and run the grunt script automatically at the end. It will also generate the source code documentation under docs/ using ApiGen tool (all installed automatically). Please bear in mind that ApiGen fails with PHP 7.2. See https://github.com/opensourcepos/opensourcepos/issues/2079.
 
 ## Running js minification builds
 
