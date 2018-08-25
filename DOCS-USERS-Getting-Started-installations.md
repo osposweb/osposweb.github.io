@@ -31,8 +31,6 @@ We assume a *nix like environment, (like Mac or Linux) as this is the most commo
 
 Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
 
-For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
-
 ## Local Docker install
 
 Docker deploy are not recomended, due its a *nix like environment and on upgrades many services changes policies about running commands and maybe the build command of that docker are not up to date respect distribution services changes. Due Docker runs natively on mac and linux.. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**
@@ -65,8 +63,6 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
 
 # Cloud Install
 -------------
-
-Best choice its free/private VPS, this due free hosting and mayority of private dont provide necesary enabled php modules such "openssl" and "curl" as examples, only some very older accounts still can access those modules. We recomended Digital Ocean. Ancient accounts of Hostinger have those all enabled.
 
 ## Cloud Deploy installation
 
@@ -104,8 +100,6 @@ Professional install will assumed behing a complex network, that will **redirect
 (WIP)
 
 # Other Install guides
-
-**Those guides DONT HAVE OFFICIAL SUPPORT SO DONT SEND ISSUES ABOUT IT** . **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
   * [Installing "opensourcepos" in windows and localhost](https://github.com/opensourcepos/opensourcepos/wiki/Installing-%22opensourcepos%22-in-windows-and-localhost)
   * [Local Deployment using LEMP](https://github.com/opensourcepos/opensourcepos/wiki/Local-Deployment-using-LEMP)
