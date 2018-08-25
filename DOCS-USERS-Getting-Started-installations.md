@@ -9,12 +9,6 @@
 
 **After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)** 
 
-## Installation notes for impatients
-
-**Dont use github direclty!!** For those that want to try an easy option that can be **downloaded with all needed components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download** and can later boot in a virtualBox machine by example.
-
-**WARNING** Ospos has specific requirements and not all hosting providers will offer what is needed. For more detailed **requirements see: [OSPOS requirements datasheet](OSPOS-development-index#requirements) and then go back here**. For example **softaculus** is not supported by this community and has nothing to do with the project.
-
 # Local Install
 ----------------------
 
@@ -129,5 +123,3 @@ Professional install will assumed behing a complex network, that will **redirect
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 * [OSPOS requirements data sheet](OSPOS-development-index#requirements)
 * [Extras for Docker cloud maintenance](DOCS-USER-Extras-for-Docker-cloud-maintenance)
-
-For those that want to try an easy option can be downloaded with all need components included and software ready to use at https://sourceforge.net/projects/vegnuli/files/VenenuX-1.0/venenux-1.0-osposweb/debian-venenux-8-osposweb-i386.hybrid.iso/download and can later boot in a virtualBox machine by example.
