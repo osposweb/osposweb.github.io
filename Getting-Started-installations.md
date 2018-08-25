@@ -12,7 +12,7 @@
 # Local Install
 ----------------------
 
-We advise to follow instructions here as closely as possible, otherwise we won't be able to support you in case of issues. **Dont use github directly!!**
+We advise to follow instructions here as closely as possible, otherwise we won't be able to support you in case of issues. **Don't use github directly!!**
 
 ## Local Deploy install
 
