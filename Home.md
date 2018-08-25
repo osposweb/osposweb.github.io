@@ -6,8 +6,9 @@
 - Stock management (Items and Kits) and Inventory Control with Barcode generation
 - Point of Sale (POS), Sale/Return register with transactions logging and printing support
 - Customer Relationship Management (CRM), basic database management of Suppliers and Customers
-- Restaurant support, with Table management, Receipt and invoice printing/emailing also.
-- Expenses module integrated with simple ui registers.
+- Restaurant support, with Table management, Receipt and invoice printing/emailing also
+- Expenses module integrated with simple ui registers
+- Reporting
 - Please visit the [OSPOS complete feature data sheet](OSPOS-complete-feature-datasheet) page for more information
 
 ![](https://user-images.githubusercontent.com/39026625/39675392-1bd817ae-518d-11e8-8856-e17d867e0056.jpg)
