@@ -1,6 +1,6 @@
 # Quick start:
 
- * [A. Get and install](DOCS-USERS-Getting-Started-installations)
+ * [A. Get and install](Getting-Started-installations)
  * [B. How to use](DOCS-USERS-Getting-Started-usage)
  * [C. Quick Demo on-line](https://demo.opensourcepos.org/)
 
