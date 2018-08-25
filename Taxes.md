@@ -17,15 +17,15 @@ The Destination Based Tax feature is built to handle this more complicated tax r
 
 # India Goods and Services Tax
 
-In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system except that it remains a VAT tax.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
+In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
 
-This is also a destination based tax and will need to support both the USA destination sales tax as well as the India destination VAT tax.
+This is also a destination based tax and will need to support both the USA destination sales tax as well as the India GST.
 
 So far the changes that need to be made include:
 1. Rebrand Customer Sales Tax to Destination Based Tax (to reduce confusion)
-1. Add support for VAT Tax to the Destination Based Tax
 1. Consolidate all tax processing in the Tax_lib.php script.
 1. Proceed with adding Tax Jurisdiction tracking.  This was dropped from the original development but is needed here and might be of value in unusual scenarios.
+1. Tax types in the destination based tax module were originally identified as Sales Tax or VAT Tax.  This is being replaced by a more accurate Tax Included and Tax Excluded.  This identifies whether or not the tax is included in the sales price or not.
 
 # Definitions
 
@@ -37,7 +37,11 @@ So far the changes that need to be made include:
 
 **Item Tax Category** A given tax jurisdiction has a standard tax, but some products might require a different tax rate (for example alcohol products might have a higher sales tax rate).  To accomplish that, if a taxing jurisdiction requires a different tax rate for a particular category of items then those items must be associated with that category. For India GST the tax category centers around the Harmonized Tariff Schedule (HTS) product categories.
 
-**VAT Tax**  The value added tax is a tax that is included in the sales price of an item.
+**VAT Tax**  The taxes are tracked not just for sales but also as part of for receiving.
+
+**Tax Included** The tax is included in the sales price.
+
+**Tax Excluded** The tax is NOT included in the sales price and is
 
 **Taxing Decimals** The tax amount is computed for each tax group for each item on the invoice.  The taxing decimals indicates how many decimals the tax amount will be stored as.  The tax amount at this level will be rounded according to the rounding code.  Then when the sale is "complete" the tax amount of each item in the same tax group is accumulated and that total is rounded to the number of decimals specified by the currency decimals configuration value using the specified rounding rule (as determined by the primary taxing authority).
 
@@ -48,26 +52,26 @@ So far the changes that need to be made include:
 
 # Rules and Constraints
 
-**Once the Customer Sales Tax feature is enabled, the current default tax rate fields should not be used for the purpose of sales tax.** OSPOS currently has two default tax percent fields.  When this module is enabled these will not be used.  There are still plans on the table to support a combination of VAT tax and Sales tax but since there isn't anyone currently lobbying for this then i will work on it as time allows.
+**Once the Destination Tax feature is enabled, the current default tax rate fields should not be used for the purpose of tax.** OSPOS currently has two default tax percent fields.  When this module is enabled these will not be used.
 
-**Use origin sales tax code if there isn't an customer sales tax code.** If there isn't a sales tax code for the customer then the Origin Sales Tax Code will be used to calculate the sales tax for the order.  It will be retrieved using the sales tax code configured as the default. 
+**Use origin tax code if there isn't an customer tax code.** If there isn't a tax code for the customer then the Origin Tax Code will be used to calculate the tax for the order.  It will be retrieved using the tax code configured as the default. 
 
-**The customer sale tax origin basis depends on the register mode.** If the register mode is "Sales by Receipt" then sales tax will be computed based on the default sales tax. If the sale is "Sales by Invoice" then sales tax will be computed based on the city and state of the customer address.  No sales tax will be computed for Quotes.
+**The customer tax origin basis depends on the register mode.** If the register mode is "Sales by Receipt" then tax will be computed based on the default tax code. If the sale is "Sales by Invoice" then tax will be computed based on the city and state of the customer address.
 
-**Tax rates should be locked in when sale is completed.** When an invoice is reprinted it needs to be able to calculate sales tax based on the tax rates that were in place when the invoice was originally printed.
+**Tax rates should be locked in when sale is completed.** When an invoice is reprinted it needs to be able to calculate tax based on the tax rates that were in place when the invoice was originally printed.
 
 
 # Rules of Operation
 
-## Configuring for Sales Tax
+## Configuring for Destination Based Taxing
 
-You are not required to immediately start using the customer sales tax module.  Your current sales tax setup should continue to work.  If you use VAT tax it should also continue to operate without any intrusive changes.  If either of those statements are false then please report the bug.
+You are not required to immediately start using the destination based tax module.  Your current tax setup should continue to work.  If you use "tax included" pricing it should also continue to operate without any intrusive changes.  If either of those statements are false then please report the bug.
 
 Under the General Configuration tab the "Tax Included" option has a lot of power.  If selected then all reports assume that taxes are calculated assuming that the taxes are VAT taxes.  Deselecting "Tax Included" changes all reports to assume that all taxes are sales taxes.  To use customer sales tax be sure that this option is deselected.
 
-Under the General Configuration tab the "Customer Sales Tax Support" will need to be selected in order to use the new Tax module to compute taxes.  If it's not selected then the system will continue to use the tax percents added to the item table.
+Under the General Configuration tab the "Destination Based Tax Support" will need to be selected in order to use the new Tax module to compute taxes.  If it's not selected then the system will continue to use the tax percents added to the item table.
 
-To be able to add a customer sales tax you will need to authorize the employee to the Taxes module.  Go to the employee permissions page and select the "Taxes" module. There are two check boxes labeled Taxes.  Be sure to select the Tax module and not the Tax reporting option.
+To be able to add a destination based tax you will need to authorize the employee to the Taxes module.  Go to the employee permissions page and select the "Taxes" module. There are two check boxes labeled Taxes.  Be sure to select the Tax module and not the Tax reporting option.
 
 ## Adding a New Sales Tax
 
