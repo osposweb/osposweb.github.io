@@ -1,4 +1,3 @@
-
 * 🖫 [Local Install](#local-install)
   * 💻 [Own Local Deploy Install](#local-deploy-install)
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
@@ -46,9 +45,9 @@ Docker deploy are not recomended, due its a *nix like environment and on upgrade
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access only for next step with `sudo su` command
 2. **Dependences** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
-3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdicker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
+3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
 4. **Download** please **Dont use github direclty!!** and executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
-5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdicker` this will populate all the docker root image directory only for the software.
+5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdocker` this will populate all the docker root image directory only for the software.
 6. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideratin password administrative privilegies** for the database users.
 
 Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extras-for-Docker-cloud-maintenance) must be read.
