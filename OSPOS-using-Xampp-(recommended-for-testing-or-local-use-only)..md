@@ -1,6 +1,5 @@
 **If you are using WAMP follow the MAMP setup for the icu files.**
 
-Make sure the version you use does not use mysql 5.7. It currently does not work with OSPOS.
 Currently Php 7 is working.
 Download and Install Xampps currrent version for 3.1.0 or an earlier version of Xampp for 3.0.2. OSPOS is working great on Windows 10.
 https://www.apachefriends.org/download.html
