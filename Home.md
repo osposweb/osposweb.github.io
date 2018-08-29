@@ -23,8 +23,8 @@ If you need assistance you can create [a support ticket Issue by click here](htt
 
 * [Getting Started with Open Source POS](#)
   * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
-  * [DOCS USERS: Getting Started Installations](DOCS-USERS-Getting-Started-installations)
-  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+  * [Getting Started - Installation](Getting-Started-installations)
+  * [Getting Started - Usage](Getting-Started-usage)
 * [OSPOS hardware support](OSPOS-hardware-supported-datasheet)
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
 * [Technical and Development](#technical-and-development)
