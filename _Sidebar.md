@@ -13,7 +13,7 @@
   * [OSPOS Local Install](Getting-Started-installations#local-deploy-install)
   * [OSPOS Cloud Install](Getting-Started-installations#cloud-install)
   * [Docker extra documentation](DOCS-USERS-Extras-for-Docker-cloud-maintenance)
-  * [Other install user guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
+  * [Other install user guides](Getting-Started-installations#other-install-guides)
 
 ## [Usage docs](Home#documentation)
 
