@@ -10,8 +10,8 @@
 
 ## [Installation](DOCS-USERS-Getting-Started-installations)
 
-  * [OSPOS Local Install](DOCS-USERS-Getting-Started-installations#local-install)
-  * [OSPOS Cloud Install](DOCS-USERS-Getting-Started-installations#cloud-install)
+  * [OSPOS Local Install](Getting-Started-installations#local-deploy-install)
+  * [OSPOS Cloud Install](Getting-Started-installations#cloud-install)
   * [Docker extra documentation](DOCS-USERS-Extras-for-Docker-cloud-maintenance)
   * [Other install user guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
 
