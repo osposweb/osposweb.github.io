@@ -61,5 +61,5 @@ By using plain CSV file.
 
 # See Also
 
-* [DOCS USERS Getting Started usage](DOCS-USERS-Getting-Started-usage)
-* [OSPOS-complete-feature-datasheet](OSPOS-complete-feature-datasheet#complete-list-of-features)
+* [Getting Started usage](Getting-Started-usage)
+* [Complete feature datasheet](complete-feature-datasheet#complete-list-of-features)
