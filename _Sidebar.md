@@ -1,35 +1,35 @@
 # Quick start:
 
  * [A. Get and install](Getting-Started-installations)
- * [B. How to use](DOCS-USERS-Getting-Started-usage)
+ * [B. How to use](Getting-Started-usage)
  * [C. Quick Demo on-line](https://demo.opensourcepos.org/)
 
 ***
 
 # Documentation
 
-## [Installation](DOCS-USERS-Getting-Started-installations)
+## [Installation](Getting-Started-installations)
 
   * [OSPOS Local Install](Getting-Started-installations#local-deploy-install)
   * [OSPOS Cloud Install](Getting-Started-installations#cloud-install)
-  * [Docker extra documentation](DOCS-USERS-Extras-for-Docker-cloud-maintenance)
+  * [Docker extra documentation](Extras-for-Docker-cloud-maintenance)
   * [Other install user guides](Getting-Started-installations#other-install-guides)
 
 ## [Usage docs](Home#documentation)
 
-  * [Getting Started usage](DOCS-USERS-Getting-Started-usage)
-    * [Configurations](DOCS-USERS-Configuration)
-      * [Printer configuration](DOCS-USERS-for-OSPOS-Printing)
-    * [Employees: the users](DOCS-USERS-Employees)
-      * [User Permissions](DOCS-USERS-Employees#permissions)
-    * [Inventory](DOCS-USERS-Getting-Started-usage#3-inventory)
-      * [Items](DOCS-USERS-Inventory-Items)
-      * [Kits](DOCS-USERS-Inventory-Kits)
-    * [Sales](DOCS-USERS-Getting-Started-usage#4-sales)
-      * [Sales Restaurant](DOCS-USERS-Sales-Restaurant)
-    * [Expenses](DOCS-USERS-Expenses)
+  * [Getting Started usage](Getting-Started-usage)
+    * [Configurations](Configuration)
+      * [Printer configuration](Printing)
+    * [Employees: the users](Employees)
+      * [User Permissions](Employees#permissions)
+    * [Inventory](Getting-Started-usage#3-inventory)
+      * [Items](Inventory-Items)
+      * [Kits](Inventory-Kits)
+    * [Sales](Getting-Started-usage#4-sales)
+      * [Sales Restaurant](Sales-Restaurant)
+    * [Expenses](Expenses)
   * [OSPOS hardware support](OSPOS-hardware-supported-datasheet)
-    * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+    * [OSPOS Printing general info](Printing)
 
 ***
 
@@ -57,7 +57,7 @@
 
 ***
 
-## [Installation Extra Guides](DOCS-USERS-Getting-Started-installations#other-install-guides)
+## [Installation Extra Guides](Getting-Started-installations#other-install-guides)
 
 (NO official support ok, use official wiki steps)
 
