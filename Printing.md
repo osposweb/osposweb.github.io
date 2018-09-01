@@ -134,4 +134,4 @@ You can ask here for some services by few bucks, adaptations are made easy for s
 
 # See also:
 
-* [DOCS USERS Getting Started usage](DOCS-USERS-Getting-Started-usage)
+* [Getting Started usage](Getting-Started-usage)
