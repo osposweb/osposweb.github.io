@@ -7,7 +7,7 @@
   * [Local Professional Install](#professional-local-install)
   * [Others OSs Install guides](#other-install-guides)
 
-**After read this read also [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)** 
+**After read this read also [Getting Started Usage](Getting-Started-usage)** 
 
 # Local Install
 ----------------------
@@ -16,7 +16,7 @@ We advise to follow instructions here as closely as possible, otherwise we won't
 
 ## Local Deploy install
 
-We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments. **If you don't want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
+We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments. **If you don't want to mess with that, read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, it's best to elevate to root access with `sudo su` command
 2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
@@ -29,7 +29,7 @@ We assume a *nix like environment, (like Mac or Linux) as this is the most commo
 9. **Browsing** using the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
 10. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
 
-Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+Now next to [Getting Started Usage](Getting-Started-usage)
 
 ## Local Docker install
 
@@ -42,7 +42,7 @@ Docker deploy are not recomended, due its a *nix like environment and on upgrade
 5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdocker` this will populate all the docker root image directory only for the software.
 6. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideratin password administrative privilegies** for the database users.
 
-Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extras-for-Docker-cloud-maintenance) must be read.
+Now next to [Getting Started Usage](Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
 If you want to run from the latest git source, then use docker and composer to run the build
 
@@ -57,9 +57,9 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
 ## See also:
 
 * [Getting Started with Open Source POS](home)
-  * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
-  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
-  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+  * [Feature datasheet and usage](complete-feature-datasheet)
+  * [Getting Started Usage](Getting-Started-usage)
+  * [Printing general info](Printing)
 
 # Cloud Install
 -------------
@@ -79,11 +79,11 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 9. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/application/database/database.sql`
 10. **Configure** the OSPOS index page and encription key, this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
 11. **Browsing** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
-12. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
+12. **Login** by using username as **admin** and the password are **pointofsale** and then enjoy the software.
 
-Now next to [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
+Now next to [Getting Started Usage](Getting-Started-usage)
 
-More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extras-for-Docker-cloud-maintenance) must be read.
+More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
 # Professional Install
 -----------------------
@@ -112,8 +112,8 @@ Professional install will assumed behing a complex network, that will **redirect
 # See also:
 
 * [Getting Started with Open Source POS](home)
-  * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
-  * [DOCS USERS: Getting Started Usage](DOCS-USERS-Getting-Started-usage)
-  * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
-* [OSPOS requirements data sheet](OSPOS-development-index#requirements)
-* [Extras for Docker cloud maintenance](DOCS-USER-Extras-for-Docker-cloud-maintenance)
+  * [Feature datasheet and usage](complete-feature-datasheet)
+  * [Getting Started Usage](Getting-Started-usage)
+  * [Printing general info](Printing)
+* [Requirements data sheet](development-index#requirements)
+* [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance)
