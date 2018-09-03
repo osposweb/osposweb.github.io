@@ -9,7 +9,7 @@
 
 **After read this read also [Getting Started Usage](Getting-Started-usage)** 
 
-# Manual Installation
+# Installation
 ----------------------
 
 Please follow the instructions here as closely as possible, otherwise we won't be able to support you in case of issues.
