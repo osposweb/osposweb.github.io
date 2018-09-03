@@ -7,7 +7,7 @@
   * [Local Professional Install](#professional-local-install)
   * [Others OSs Install guides](#other-install-guides)
 
-**After read this read also [Getting Started Usage](Getting-Started-usage)** 
+**After reading this read also [Getting Started Usage](Getting-Started-usage)** 
 
 # Installation
 ----------------------
