@@ -16,7 +16,7 @@ We advise to follow instructions here as closely as possible, otherwise we won't
 
 ## Local Deploy install
 
-We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments. **If you don't want to mess with that, read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
+We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, it's best to elevate to root access with `sudo su` command
 2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
