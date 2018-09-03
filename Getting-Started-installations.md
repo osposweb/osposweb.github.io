@@ -14,7 +14,7 @@
 
 Please follow the instructions here as closely as possible, otherwise we won't be able to support you in case of issues.
 
-We will be installing a prebuilt version of OSPOS.  Do not click on the Green "Clone or Download" button found in the Code view of GitHub.  It is NOT a working copy of OSPOS.  Instead, in the following instructions, we will be retrieving and installing a prebuilt official release.
+___We will be installing a prebuilt version of OSPOS.  Do not click on the Green "Clone or Download" button found in the Code view of GitHub.  It is NOT a working copy of OSPOS.  Instead, in the following instructions, we will be retrieving and installing a prebuilt official release.___
 
 ## Local Deploy install for Unix/Linux environments.
 
