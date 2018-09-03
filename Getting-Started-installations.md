@@ -9,22 +9,22 @@
 
 **After read this read also [Getting Started Usage](Getting-Started-usage)** 
 
-# Local Install
+# Manual Installation
 ----------------------
 
-Please follow the instructions here as closely as possible, otherwise we won't be able to support you in case of issues. **Don't use github directly!!**
+Please follow the instructions here as closely as possible, otherwise we won't be able to support you in case of issues.
 
-## Local Deploy install
+We will be installing a prebuilt version of OSPOS.  Do not click on the Green "Clone or Download" button found in the Code view of GitHub.  It is NOT a working copy of OSPOS.  Instead, in the following instructions, we will be retrieving and installing a prebuilt official release.
 
-We assume a *nix like environment, (like Mac or Linux) as this is the most commonly used for web application deployments.
+## Local Deploy install for Unix/Linux environments.
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, it's best to elevate to root access with `sudo su` command.
 
-2. **Dependences** install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
+2. **Dependencies** Install: Apache2, MariaDB, PhP with openssl/mcrypt, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
 
-3. **Htdocs** working directory: this it's change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remenber this depends of the Operating System Apache2 install
+3. **Htdocs** working directory: Change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remember this depends of the Operating System Apache2 install
 
-4. **Download** please **Dont use github direclty!!** and then executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
 
 5. **Uncompress** to htdocs the download: `cd /var/www/html;unzip osposlastedstable.zip` this will populate all the web server htdocs root directory only for the software.
 
@@ -32,7 +32,7 @@ We assume a *nix like environment, (like Mac or Linux) as this is the most commo
 
 7. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/application/database/database.sql`
 
-8. **Configure** the OSPOS index page and encription key, this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
+8. **Configure** the OSPOS index page and encryption key this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
 
 9. **Browsing** using the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
 
