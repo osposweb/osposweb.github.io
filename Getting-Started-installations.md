@@ -121,9 +121,6 @@ Professional install will assumed behing a complex network, that will **redirect
 
 * If you **will use reverse proxy redirection** due there's no need of a installed firewall in the local webserver OS, that are under a DMZ zone.
 * If you **dont want hiyacked all the root of your webserver**, can defined  new port and to that port a new webroot htdocs place where the OSPOS software will reside away of the normal webserver installation.
-* **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
-
-(WIP)
 
 # Other Install guides
 
