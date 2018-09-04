@@ -1,6 +1,6 @@
 # Introduction
 
-**A web-based POS application that allows manage stock, sales, issuing receipts or invoices** See more below the [Documentation](#documentation)
+**A Web-based Point of Sale (POS) application that provides for managing stock and tracking sales. It can print receipts, quotes and invoices.** See more below the [Documentation](#documentation)
 
 - Multilanguage (UI) and Multiuser (MU) with module access control and different UI themes
 - Stock management (Items and Kits) and Inventory Control with Barcode generation
@@ -9,7 +9,7 @@
 - Restaurant support, with Table management, Receipt and invoice printing/emailing also
 - Expenses module integrated with simple ui registers
 - Reporting
-- Please visit the [OSPOS complete feature data sheet](OSPOS-complete-feature-datasheet) page for more information
+- Please visit the [Complete feature data sheet](Complete-feature-datasheet) page for more information
 
 ![](https://user-images.githubusercontent.com/39026625/39675392-1bd817ae-518d-11e8-8856-e17d867e0056.jpg)
 
