@@ -42,15 +42,13 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 ## Local Docker install
 
-Docker deploy are not recomended, due its a *nix like environment and on upgrades many services changes policies about running commands and maybe the build command of that docker are not up to date respect distribution services changes. Due Docker runs natively on mac and linux.. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**
-
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access only for next step with `sudo su` command
 
 2. **Dependences** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
 
 3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
 
-4. **Download** please **Dont use github direclty!!** and executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
 
 5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdocker` this will populate all the docker root image directory only for the software.
 
@@ -80,7 +78,7 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
 
 ## Cloud Deploy installation
 
-For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related. **If you dont want to mess with that read [installation-notes-for-impatients](#installation-notes-for-impatients) section**.
+For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related.
 
 1. **Create** a [Digitalocean account](https://m.do.co/c/ac38c262507b) and once complete go log in.
 
@@ -92,7 +90,7 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 
 5. **Install** software, apache and mysql/mariadb are already, need enable the mod-rewrite module by `a2enmod rewrite` then PHP modules by `apt-get install php7.0-intl php7.0-mcrypt php7.0-bcmath php7.0-curl` Type "Y" when it asks if you want to continue. Finally restart service by `service apache2 restart`
 
-6. **Download** please **Dont use github direclty!!**, and executing in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+6. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.2.3/opensourcepos.20180613210031.3.2.3.f1cf3d.zip -O osposlastedstable.zip` to later move to the htdoc directory.
 
 7. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C /var/www/html` this will populate all the web server htdocs root directory only for the software.
 
@@ -110,10 +108,11 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
+
 # Professional Install
 -----------------------
 
-This section its dedicated to those that will deploy in secure and serious production environments. **Dont use github direclty!!** Downloads must be using unstable bintray or stable releases checkpoints.
+This section its dedicated to those that will deploy in secure and serious production environments.
 
 ## Professional Install Local
 
