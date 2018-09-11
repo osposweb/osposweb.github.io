@@ -11,7 +11,7 @@ OSPOS uses at the moment bower and grunt. Maybe one day we switch to webpack and
 
 ## Setup using docker
 
-Docker and docker-compose are recommended to make a first full build
+Docker and docker-compose are recommended to make a first full build. If you don't want to use docker, read the Basic tool setup section further on here.
 
 `docker run --rm -v $(pwd):/app composer/composer install` \
 `docker run --rm -v $(pwd):/app -w /app lucor/php7-cli php bin/install.php translations develop` \
@@ -41,7 +41,7 @@ Code documentation can be read pointing the browser to opensourcepos/docs/index.
 
 ## Basic Tool installation
 
-The tools was described in the [Development index: architecture section](OSPOS-development-index#tech-architecture): Node.js, Grunt and Bower are used and need to be installed:
+The build tools can be installed permanently if one prefers not to user docker. Node.js, Grunt and Bower are used and need to be installed:
 
     sudo apt-get install nodejs
     sudo apt-get install npm
