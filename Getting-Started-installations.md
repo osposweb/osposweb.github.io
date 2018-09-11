@@ -56,16 +56,6 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 Now next to [Getting Started Usage](Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
-If you want to run from the latest git source, then use docker and composer to run the build
-
-`docker run --rm -v $(pwd):/app composer/composer install` \
-`docker run --rm -v $(pwd):/app -w /app lucor/php7-cli php bin/install.php translations develop` \
-`docker run --rm -it -v $(pwd):/app -w /app digitallyseamless/nodejs-bower-grunt "sh -c npm install && bower install"` \
-`docker-compose build` \
-`docker-compose up`
-
-More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extras-for-Docker-cloud-maintenance) must be read.
-
 ## See also:
 
 * [Getting Started with Open Source POS](home)
@@ -78,7 +68,7 @@ More info in the wiki page [Extras for Docker cloud maintenance](DOCS-USERS-Extr
 
 ## Cloud Deploy installation
 
-For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) if need hosting related.
+For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) where you will get a $10 free credit and send a referral back to the project as a donation!
 
 1. **Create** a [Digitalocean account](https://m.do.co/c/ac38c262507b) and once complete go log in.
 
