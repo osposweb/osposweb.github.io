@@ -9,9 +9,9 @@ For **impatients SORRY but must read [OSPOS development index](OSPOS-development
 
 OSPOS uses at the moment bower and grunt. Maybe one day we switch to webpack and it will easier/different, for the dropdows that bootstrap js plug in: https://silviomoreto.github.io/bootstrap-select/ OSPOS use In order to add a js plugin and add your changes to css, and to get all bundled in the .min forms you need to add the js plug in to bower.json and run bower install, then run grunt and etc. See here the [BAsic tool instalation](#basic-tool-installation).
 
-## Setup using dockre
+## Setup using docker
 
-Docker and docker-compose are recommmended to make a first build
+Docker and docker-compose are recommended to make a first full build
 
 `docker run --rm -v $(pwd):/app composer/composer install` \
 `docker run --rm -v $(pwd):/app -w /app lucor/php7-cli php bin/install.php translations develop` \
