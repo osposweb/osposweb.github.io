@@ -27,6 +27,7 @@ If you need assistance you can create [a support ticket Issue by click here](htt
   * [Getting Started - Usage](DOCS-USERS-Getting-Started-usage)
 * [OSPOS hardware support](Supported-hardware-datasheet)
   * [OSPOS Printing general info](DOCS-USERS-for-OSPOS-Printing)
+  * [OSPOS Weighted Barcode info](Weighted-Barcodes)
 * [Technical and Development](#technical-and-development)
   * [OSPOS-development-index](OSPOS-development-index)
 
