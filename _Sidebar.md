@@ -19,7 +19,7 @@
   * [Getting Started usage](Getting-Started-usage)
     * [Configurations](Configuration)
       * [Printer configuration](Printing)
-      * [Scale configuration](Weight)
+      * [Scale configuration](Weighted-Barcodes)
     * [Employees: the users](Employees)
       * [User Permissions](Employees#permissions)
     * [Inventory](Getting-Started-usage#3-inventory)
