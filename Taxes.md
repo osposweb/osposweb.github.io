@@ -29,9 +29,11 @@ So far the changes that need to be made include:
 
 # Definitions
 
-**Tax Code** A code assigned to a customer that identifies the group of taxing jurisdictions which should be applied to the sale.  
-
 **Default Tax Code** The default tax code represents the group of tax jurisdictions where the store is located.  There can only be one default tax code for each company.  Currently OSPOS only allows for a single company (although there are plans to make it multi-company).  The default tax code is a configured option. If and when multi-company is supported the default tax code will need to be configured at the store level. 
+
+**HSN Code** HSN code or Harmonized System Nomenclature code number is an internationally adopted commodity description and coding system developed by the World Customs Organization (WCO).
+
+**Tax Code** A code assigned to a customer that identifies the group of taxing jurisdictions which should be applied to the sale.  
 
 **Tax Rate** The tax rate is a percent value supporting up to 4 decimal places.
 
