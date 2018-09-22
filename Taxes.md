@@ -131,6 +131,10 @@ Go to Office >> Taxes >> Tax Codes
 
 * And finally enter the tax rates that will be used for each combination of tax code, tax jurisdiction, and tax category.
 
+Return to Office >> Configuration >> Tax
+
+* Enter the defaults for Tax Category, Tax Jurisdiction, and Tax Category
+
 When you set up items add the HSN code for each item and the appropriate tax category.  If an item is not assigned a tax category then the Default Tax Category will be used.
 
 For each customer assign the appropriate tax code (unless the default tax code will work for them) and if they are to receive tax invoices be sure to enter their tax id.  If the tax id is not provided then the standard invoice will be generated for the customer, otherwise a tax invoice will be generated. 
