@@ -1,3 +1,13 @@
+# Mapping the concepts
+
+* Tax Categories used to identify Tax Tiers for India GST.  Tax categories are assigned at an item level and are used to identify the tax rates to be applied by a specific tax jurisdiction.
+
+* In India there are essentially only only 3 tax jurisdictions (CGST, SGST, and IGST) (unlike the U.S. where there are numerous tax jurisdictions.  There are exceptions but the Destination Based Tax component should be able to handle those too.
+
+* Tax codes are assigned to customers to identify the taxes that set of tax jurisdictions that expect to collect taxes for the sale.  It's not necessary to assign a tax code to each customer since the customer's state should determine the tax jurisdiction.
+
+Important:  If you want a tax invoice to be printed for a customer be sure to enter the GSTIN for the customer.
+
 # Configuring for India GST
 
 Go to Office >> Configuration >> General
