@@ -8,6 +8,8 @@
 
 Important:  If you want a tax invoice to be printed for a customer be sure to enter the GSTIN for the customer.
 
+[More about Taxes](Taxes)
+
 # Configuring for India GST
 
 Go to Office >> Configuration >> General
