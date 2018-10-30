@@ -1,0 +1,1 @@
+[Kempeleen lukituspalvelu z-lock aloitti liiketoiminnan. Oven avaus, lukkojen vaihdot, rakennus ja saneeraustyöt vahvalla ammattitaidolla asiakasta kuunnellen. Päivystys 24/7 myös juhlapyhinä. ](http://www.z-lock.fi )
