@@ -21,9 +21,9 @@ This should give you a custom field before the Item Price.
 
 To add a custom field to Items table. Open application/helpers/table_helper.In newer versions this is called Tabular_helper.
 
-In function get_items_manage_table_headers() add the following `` array('custom1_name' => $CI->config->item('custom1_name')), Where you want it to show in the table. Change custom*_name as needed``
+In function get_items_manage_table_headers() add the following `` array('custom1_name' => $CI->config->item('custom1_name')),`` Where you want it to show in the table. Change custom*_name as needed.
 
-Then add the following  to function get_item_data_row($item) in return array ``	'custom1_name' => $item->custom1, change custom Where you want it to show in the table. Change custom*_name as needed``
+Then add the following  to function get_item_data_row($item) in return array ``	'custom1_name' => $item->custom1,``  Where you want it to show in the table. Change custom*_name as needed.
 
 This should give you a Custom column in Items.
 
