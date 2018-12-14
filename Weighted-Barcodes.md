@@ -17,4 +17,4 @@ The format in the above given example is:
 **02 / \d {5} / \w {6} : 02(\d{5})(\w{6})**
 
 Please set the **quantity decimals** to 2 in order to sell portions.
-For further info, we are a click away just **Fill in the Issue Template** and submit it!
+For further info, we are a click away just [**Fill in the Issue Template**](https://github.com/opensourcepos/opensourcepos/issues/new) and submit it!
