@@ -22,8 +22,10 @@ _Please add whatever features you need to have supported by the purchasing modul
 * In reporting it should show who initiate/approve the order if maker-checker functionality is enabled.
 * Purchase order should have a different reporting page as a Receiving.
 * Purchase order should have user access control
-*[ai] Would like a feature for additional charges such as freight, prepricing labels, royalties, etc. that get distributed among the cost of items based on either item volume/weight, amount (cost), or quantity.
+* [ai] Would like a feature for additional charges such as freight, prepricing labels, royalties, etc. that get distributed among the cost of items based on either item volume/weight, amount (cost), or quantity.
+
 **[daN4cat]** Please note that as purchases there are returns that result in a Credit Note. This is quite common. Faulty goods have a return request, a pick up and then pend on Credit note issuing from the Supplier.
+
 **[daN4cat]** Please note that purchase could be made in different currencies, it's not unusual here in the UK to buy good from EU zone and get invoices in Euro. Then at payment time you have the conversion and you know how much you paid in GBP. That's for the sake of tracking expenditure per supplier.
 
 ### Receiving Rules
