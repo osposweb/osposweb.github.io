@@ -162,7 +162,7 @@ Remenber that if you made all the changes in directly master branch of your repo
 
 OSPOS tries to follow the in code documentation generated automatically by ApiGen (see https://github.com/ApiGen/ApiGen). The documentation is saved under docs and if you check https://dan4cat.github.io/opensourcepos/ you can browse it straight from GitHub. Code documentation can be read pointing the browser to `opensourcepos/docs/index.html` if was generated in your local repo (however it's suggested to remove that dir in a production environment).
 
-Read here how to enable that in your repo: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/ ApiGen is also part of grunt script so we should have fresh code documentation every time we run grunt script..
+Read here how to enable that in your repo: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/ApiGen is also part of grunt script so we should have fresh code documentation every time we run grunt script..
 
 ### About the Secure Controller and Controllers
 
@@ -251,10 +251,10 @@ echo anchor('home/change_password/'.$user_info->person_id, $user_info->first_nam
 ```
 
 1. That `employees_change_password` and `employees_save` strings are defined in a php array named `lang` (that's why -> lang access), 
-of the file in `application/languaje` directory, the file will be named always `<controllername>_lang.php` 
+of the file in `application/language` directory, the file will be named always `<controllername>_lang.php` 
 in this case its: `employees_lang.php`.
-2. Each file are inside a directory with the languaje code , as example for Spanish the directory its `es` 
-so the file are in `application/languaje/es/employees_lang.php` and the string ARE part of the lang array.
+2. Each file are inside a directory with the language code , as example for Spanish the directory its `es` 
+so the file are in `application/language/es/employees_lang.php` and the string ARE part of the lang array.
 3. So in conclusion you must use the lang strings defined here for each frontend message string to the user. 
 Of course only predefined strings, pleas follow this document to lear about manage lang strings.
 
