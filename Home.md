@@ -17,7 +17,7 @@
 
 ##### Support and help:
 
-If you need assistance you can create [a support ticket Issue by click here](https://github.com/opensourcepos/opensourcepos/issues/new) just few words ahead to your solution! **But be carefully to fill all the screen template information first!**
+If you need assistance you can create [a support ticket by clicking here](https://github.com/opensourcepos/opensourcepos/issues/new). Please make sure you fill in the template information.
 
 ### User Documentation
 
