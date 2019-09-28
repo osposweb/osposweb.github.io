@@ -38,6 +38,7 @@
    * [Technicals](OSPOS-development-index#tech-installation)
    * [Architecture](OSPOS-development-index#tech-architecture)
    * [Developer guide](OSPOS-development-index#development-code-tips-and-help)
+   * [Enable error logging](https://github.com/opensourcepos/opensourcepos/wiki/OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
    * Specifications:
      * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
      * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
