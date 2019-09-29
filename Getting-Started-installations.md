@@ -3,6 +3,7 @@
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
 * 📶 [Cloud Install](#cloud-install)
   * 🖧 [Cloud Deploy Installation](#cloud-deploy-installation)
+* ⌨ [cPanel & SSH Installer](#cpanel-ssh-install)
 * [Professional Install](#professional-install)
   * [Local Professional Install](#professional-local-install)
   * [Others OSs Install guides](#other-install-guides)
@@ -101,7 +102,7 @@ More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Dock
 # cPanel & SSH install
 -----------------------
 
-## cPanel & SSH Installer 
+## cPanel SSH Install
 
 If you own on a **VPS**, **Dedicated Server**, or **Shared Hosting** running on **cPanel** with **SSH** access:
 
