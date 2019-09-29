@@ -98,7 +98,7 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
-#cPanel & SSH install
+# cPanel & SSH install
 -----------------------
 
 ## cPanel & SSH Installer 
