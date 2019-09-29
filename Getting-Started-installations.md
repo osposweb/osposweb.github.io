@@ -98,6 +98,33 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
+#cPanel & SSH install
+-----------------------
+
+## cPanel & SSH Installer 
+
+If you own on a **VPS**, **Dedicated Server**, or **Shared Hosting** running on **cPanel** with **SSH** access:
+
+You can run our Stand-alone [WS-OSPOS-Installer](https://github.com/WebShells/WS-OSPOS-Installer.git), it will handle:
+
+. Database.php config files generation.<br>
+. Creation of db User & Password depending on user's input of Dbname, Username, Password, & Hostname ( No need for phpmyadmin )<br>
+. Imports default Db SQL files in order to run the project.<br>
+
+Usage in **(SSH)**:
+
+git clone https://github.com/WebShells/WS-OSPOS-Installer.git<br>
+chmod +x WS-OSPOS-Installer/Get-POS<br>
+./WS-OSPOS-Installer/Get-POS<br>
+
+or
+
+wget https://github.com/WebShells/WS-OSPOS-Installer/archive/master.zip<br>
+unzip -qq master.zip<br>
+chmod +x WS-OSPOS-Installer-master/Get-POS<br>
+./WS-OSPOS-Installer-master/Get-POS<br>
+
+Answer **DB required questions** and you are ready to run the project on https://localhost/OSPOS/public (localhost to be replaced by the hostname provided during setup).
 
 # Professional Install
 -----------------------
