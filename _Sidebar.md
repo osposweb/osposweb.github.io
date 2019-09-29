@@ -12,6 +12,7 @@
 
   * [OSPOS Local Install](Getting-Started-installations#local-deploy-install)
   * [OSPOS Cloud Install](Getting-Started-installations#cloud-install)
+  * [OSPOS SSH/cPanel Install](Getting-Started-installations#cPanel-&-SSH-install)
   * [Other install user guides](Getting-Started-installations#other-install-guides)
 
 ## [Usage docs](Home#documentation)
