@@ -186,13 +186,17 @@ You should see confirmation that the command has been successfully executed. Now
 
 # 9. Deploy OSPOS
 
-Now download, extract and place `opensourcepos` to var/www/html. 
-Don't forget to rename it as **opensourcepos**.
-Create a new Database using Adminer.
-Rename your Application/config/database.php.tmpl to **database.php**.
-Provide database connection credentials by editing the **database.php** file.
-Type in your browser `http://localhost/opensourcepos/public`.
+Now download the latest release of OSPOS from: 
+`https://github.com/opensourcepos/opensourcepos/releases`
 
+Extract and place `opensourcepos` to var/www/html. 
+Don't forget to rename it as **opensourcepos** (Don't change the name to anything else).
+Create a new Database named **'ospos'** using Adminer.
+Create a new user named **'admin'**(if not already present) with password **'pointofsale'**.
+You can also provide your own database connection credentials by editing the **database.php** file as configuring adminer accordingly.
+Type the URL in your browser `http://localhost/opensourcepos/public`.
+If everything is successful, you should now see the Login page.
+Login with the user 'admin' with password 'pointofsale' or your own edited credentials in database.php file.
 
 **ENJOY!**
 
