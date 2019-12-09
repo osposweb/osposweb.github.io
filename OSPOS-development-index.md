@@ -160,7 +160,7 @@ Remenber that if you made all the changes in directly master branch of your repo
 
 ### Code and API Documentation
 
-OSPOS tries to follow the in code documentation generated automatically by ApiGen (see https://github.com/ApiGen/ApiGen). The documentation is saved under docs and if you check https://dan4cat.github.io/opensourcepos/ you can browse it straight from GitHub. Code documentation can be read pointing the browser to `opensourcepos/docs/index.html` if was generated in your local repo (however it's suggested to remove that dir in a production environment).
+OSPOS tries to follow the in code documentation generated automatically by ApiGen (see https://github.com/ApiGen/ApiGen) according to PSR-2 code formatting standards. The documentation is saved under docs and if you check https://dan4cat.github.io/opensourcepos/ you can browse it straight from GitHub. Code documentation can be read pointing the browser to `opensourcepos/docs/index.html` if was generated in your local repo (however it's suggested to remove that dir in a production environment).
 
 Read here how to enable that in your repo: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/ApiGen is also part of grunt script so we should have fresh code documentation every time we run grunt script..
 
