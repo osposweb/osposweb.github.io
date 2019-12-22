@@ -6,5 +6,5 @@ Usage is as follow: register button and a dialog popup window will appear, fill 
 
 # See Also:
 
-* [Getting Started usage](DOCS-USERS-Getting-Started-usage)
+* [Getting Started usage](Getting-Started-usage)
 * [OSPOS complete Features datasheet](OSPOS-complete-feature-datasheet)
