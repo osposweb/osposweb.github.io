@@ -26,6 +26,7 @@
     * [Inventory](Getting-Started-usage#3-inventory)
       * [Items](Inventory-Items)
       * [Kits](Inventory-Kits)
+      * [Stocktake](Stocktake)
     * [Sales](Getting-Started-usage#4-sales)
       * [Sales Restaurant](Sales-Restaurant)
     * [Expenses](Expenses)
