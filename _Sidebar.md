@@ -30,8 +30,8 @@
     * [Sales](Getting-Started-usage#4-sales)
       * [Sales Restaurant](Sales-Restaurant)
     * [Expenses](Expenses)
-  * [OSPOS hardware support](OSPOS-hardware-supported-datasheet)
-    * [OSPOS Printing general info](Printing)
+  * [Hardware support](OSPOS-hardware-supported-datasheet)
+    * [Printing general info](Printing)
 
 ***
 
