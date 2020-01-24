@@ -25,9 +25,38 @@ As you logged in with the newly created employee, the inventory dialog will show
 ### How to make a report of the stocktake
 After you are done with the stocktake, *you need to logout* the newly created 'stocktake' employee. After this we can run some reporting SQL to retrieve the corrected items and their inventory levels.
 
-First you need to get a hold of the 'stocktake' employee id. Then you can run following queries
+First you need to get a hold of the 'stocktake' employee id and the date you started this stocktake. Then you can run following queries for reporting. In this case change the `employee_id` (11209) and trans_date (2019-12-01) with the employee id and the date on which you started the stocktake respectively.
 
+### List of items in the stocktake
+```
+select distinct ospos_items.item_id, item_number, name, quantity, cost_price, unit_price, min(trans_date) as first_buy from ospos_items 
+join ospos_inventory on ospos_inventory.trans_items = ospos_items.item_id 
+join ospos_item_quantities on ospos_item_quantities.item_id = ospos_items.item_id 
+where ospos_items.item_id in 
+(select ospos_items.item_id from ospos_items join ospos_item_quantities on ospos_item_quantities.item_id = ospos_items.item_id 
+join ospos_inventory on ospos_inventory.trans_items = ospos_items.item_id 
+where stock_type = 0 and quantity <> 0 and item_number is not null and deleted = 0 and ospos_items.item_id and trans_user = 11209 and trans_date > date('2019-12-01') order by item_number) 
+group by item_id 
+order by item_number;
+```
 
+### List of items *not* in the stocktake
+```
+select distinct ospos_items.item_id, item_number, name, quantity, cost_price, unit_price, min(trans_date) as first_buy from ospos_items 
+join ospos_inventory on ospos_inventory.trans_items = ospos_items.item_id 
+join ospos_item_quantities on ospos_item_quantities.item_id = ospos_items.item_id 
+where quantity <> 0 and item_number is not null and ospos_items.item_id not in 
+(select ospos_items.item_id from ospos_items join ospos_item_quantities on ospos_item_quantities.item_id = ospos_items.item_id 
+join ospos_inventory on ospos_inventory.trans_items = ospos_items.item_id 
+where stock_type = 0 and quantity <> 0 and item_number is not null and deleted = 0 and ospos_items.item_id and trans_user = 11209 and trans_date > date('2019-12-01') order by item_number) 
+group by item_id 
+order by item_number;
+```
 
+### Inventory level correction
+```
+insert into ospos_inventory (trans_user, trans_comment, trans_location, trans_inventory, trans_items) select 11209, 'Inventory autocorrection', 1, (quantity - sum(trans_inventory)) as trans_inventory, item_id from ospos_item_quantities join ospos_inventory on item_id = trans_items
+group by trans_items having trans_inventory <> 0
+```
 
 
