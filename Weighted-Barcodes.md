@@ -1,6 +1,6 @@
 **OSPOS** also can be used for businesses that are based on **Weighted items**, example: Dairy Markets, Grocery Shops, Roasteries, Veggies & Fruits Market, etc...
 
-The feature was implemented back in August, 5 with a specific parameters to parse the barcode set in configuration panel as below:
+The feature was implemented back in August, 5 with a specific barcode format to parse the barcode set in configuration panel as below:
 
 ![Input Field](http://ospos.wshells.org/Wiki/Input.png)
 
@@ -10,11 +10,13 @@ Below is a filled in example:
 
 ![Input Filled](http://ospos.wshells.org/Wiki/Filled.jpg)
 
-The format in the above given example is:
+The regex format in the above given example is as follows
 
-**2 CHARC** For Department / **5 CHARC** For Items / **6 CHARC** For Weight
+```02(\d{5})(\w{6})```
 
-**02 / \d {5} / \w {6} : 02(\d{5})(\w{6})**
+* 2 first characters represent the department code
+* 5 following digits represent the item weight
+* last 6 characters represent the item barcode
 
-Please set the **quantity decimals** to 2 in order to sell portions.
-For further info, we are a click away just [**Fill in the Issue Template**](https://github.com/opensourcepos/opensourcepos/issues/new) and submit it!
+Please set the **quantity decimals** to 2 in order to make the system parse the quantities correctly.
+For further info, [we are just a click away](https://github.com/opensourcepos/opensourcepos/issues/new)!
