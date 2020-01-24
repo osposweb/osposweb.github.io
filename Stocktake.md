@@ -44,7 +44,7 @@ group by item_id
 order by item_number;
 ~~~~
 
-### List of items *not* in the stocktake
+### List of items not in the stocktake
 ~~~~sql
 select distinct ospos_items.item_id, item_number, name, quantity, cost_price, unit_price, min(trans_date) as first_buy from ospos_items 
 join ospos_inventory on ospos_inventory.trans_items = ospos_items.item_id 
@@ -60,7 +60,7 @@ order by item_number;
 ## Inventory correction
 After the reporting is done, you need to reset the inventory levels for the items that you did not encounter during the stocktake. To accomplish this task, you need to set the quantities in the `ospos_item_quantities` table to **0** for the items you did not see. Next up you need to correct the inventory table and synchronize it with this change
 
-### Set quantities to 0 for items
+### Reset quantities for items not in stocktake
 ~~~~sql
 update ospos_item_quantities set quantity = 0
 where quantity <> 0 and item_number is not null and ospos_items.item_id not in 
@@ -70,7 +70,7 @@ where stock_type = 0 and quantity <> 0 and item_number is not null and deleted =
 group by item_id 
 order by item_number;
 ~~~~
-### Inventory level correction
+### Inventory level correction after reset
 ~~~~sql
 insert into ospos_inventory (trans_user, trans_comment, trans_location, trans_inventory, trans_items) select 11209, 'Inventory autocorrection', 1, (quantity - sum(trans_inventory)) as trans_inventory, item_id from ospos_item_quantities join ospos_inventory on item_id = trans_items
 group by trans_items having trans_inventory <> 0
