@@ -29,7 +29,10 @@ It's important to also add a *0* in case the quantity is correct, so next time y
 ## Inventory reporting
 After you are done with the stocktake, *you need to logout* the newly created 'stocktake' employee. After this we can run some reporting SQL to retrieve the corrected items and their inventory levels.
 
-First you need to get a hold of the 'stocktake' employee id and the date you started this stocktake. Then you can run following queries for reporting. In this case change the `employee_id` (11209) and trans_date (2019-12-01) with the employee id and the date on which you started the stocktake respectively.
+First you need to get a hold of the 'stocktake' employee id and the date you started this stocktake. Then you can run following queries for reporting. In this case change the following parameters in the queries below
+
+* `trans_employee = 11209` with `trans_employee = <youremployeeid>
+* `trans_date > date('2019-12-01')` with `trans_date > date('<dateyoustartedthestocktake'>)`.
 
 ### List of items in the stocktake
 ~~~~sql
