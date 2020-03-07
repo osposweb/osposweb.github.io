@@ -69,7 +69,7 @@ Now next to [Getting Started Usage](Getting-Started-usage) More info in the wiki
 
 ## Cloud Deploy installation
 
-For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) where you will get a $10 free credit and send a referral back to the project as a donation!
+For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/ac38c262507b) where you will get a **$100 free credit** and send a referral back to the project as a donation!
 
 1. **Create** a [Digitalocean account](https://m.do.co/c/ac38c262507b) and once complete go log in.
 
