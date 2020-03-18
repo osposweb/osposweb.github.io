@@ -5,19 +5,15 @@ The following Import features are supported:
 
 # Importing Items
 
-You can manually insert each product one by one, but when you have a lot of product it's not fun.
+You can manually insert each product one by one, but this becomes cumbersome with large numbers of products.  For this reason, a Comma-Separated Values (CSV) import function has been introduced.
 
 ## Prerequisites and file format
 
-Plain CSV file
+CSV file to RFC-4180 specification with commas as the delimeter.  See https://en.wikipedia.org/wiki/Comma-separated_values for more details.
 
-Each column in file to load and import must be separated by comma and no quotes for text or any fields.
+OSPOS will generate your CSV template based on your current data structure.  You can generate this file by going to Items->CSV Import and clicking the link (Download Import CSV Template (CSV))
 
-Do you plan to use multi-stock locations? Don't forget to create a stock at **Store Config** -> STOCK
-* Stock location 1 rst time created is "location_id = 1" in that field column
-* Stock location 5 th time created is "location_id = 5" in that field column
-
-So when all locations are created remember the number we use them on file to import.
+CSV files with the Byte-Order Mark (BOM) or without it will be processed by the software.
 
 ## Item Columns and field mapping
 
