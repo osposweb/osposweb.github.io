@@ -13,6 +13,8 @@ CSV file to RFC-4180 specification with commas as the delimeter.  See https://en
 
 OSPOS will generate your CSV template based on your current data structure.  You can generate this file by going to Items->CSV Import and clicking the link (Download Import CSV Template (CSV))
 
+Empty rows will be ignored.
+
 CSV files with the Byte-Order Mark (BOM) or without it will be processed by the software.
 
 ## Item Columns and field mapping
