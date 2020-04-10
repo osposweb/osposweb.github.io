@@ -34,3 +34,10 @@ If you need assistance you can create [a support ticket by clicking here](https:
 ### Technical and Development Documentation
 
 The documentation of [installation, development and technical and / or advanced aspects](OSPOS-development-index) is in the specific documentation wiki [OSPOS-development-index](OSPOS-development-index), it is warned that for this area it is required to read a lot and be attentive to the respective information.
+
+### Minimum Server Requirements
+
+* PHP version 5.6+
+* MySQL 5.1+ or MariaDB
+* Apache 2+
+
