@@ -39,5 +39,5 @@ The documentation of [installation, development and technical and / or advanced 
 
 * PHP version 5.6+ (openssl, curl, gd, intl and bcmath)
 * MySQL 5.1+ or MariaDB 5.1+
-* Apache 2+
+* Apache 2+, lighttpd or nginx
 
