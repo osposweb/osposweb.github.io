@@ -1,38 +1,27 @@
-*Changes are underway to add support for India's GST Tax system.  As development progresses this page will be updated to reflect the changes that are coming.*
-
 # Base System Support for Taxes
 
-If your tax requirements are simple this may be the best approach for you.
+If your tax requirements are simple then the base system tax is the easiest approach for you.
 
-The base system of OSPOS includes support for a maximum of two tax rates for each item.  Taxes are treated as a sales tax or it can be treated as a value added tax (tax included) - it cannot be mixed.  Whether or not it is to be treated as a sales tax or a VAT tax should be established up front.  After sales are made any attempt to switch between the two will result in invalid report data.
+The base system of OSPOS includes support for a maximum of two tax rates for each item.  Taxes are treated as a sales tax or it can be treated as a value added tax (tax included) - it cannot be mixed.  Whether or not it is to be treated as a sales tax or a VAT tax is established up front.  After sales are made any attempt to switch between the two will result in incorrect numbers in your reports.
 
 
 # Destination Based Tax
 
-*This was originally known as Customer Sales Tax because it is dependent on the location of the customer.*
-
 In the United States the sales tax to be collected can be based on the origin address, ship to address, or bill to address (if the product is being shipped).   The rules for collecting taxes are governed by the taxing jurisdiction.
 
-The Destination Based Tax feature is built to handle this more complicated tax reporting scenario if you need to collect and report taxes by multiple tax jurisdictions.
+If you need to collect and report taxes by multiple tax jurisdictions then the Destination Based Tax feature is a good fit for you. 
+
 
 # India Goods and Services Tax
 
-In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system.  In version 3.3 of OSPOS we are going to introduce support for India's GST system.
-
-This is also a destination based tax and will need to support both the USA destination sales tax as well as the India GST.
-
-So far the changes that need to be made include:
-1. Rebrand Customer Sales Tax to Destination Based Tax (to reduce confusion)
-1. Consolidate all tax processing in the Tax_lib.php script.
-1. Proceed with adding Tax Jurisdiction tracking.  This was dropped from the original development but is needed here and might be of value in unusual scenarios.
-1. Tax types in the destination based tax module were originally identified as Sales Tax or VAT Tax.  This is being replaced by a more accurate Tax Included and Tax Excluded.  This identifies whether or not the tax is included in the sales price or not.
+In 2017 India introduced new tax reporting laws that have similar requirements to the US Destination Based Sales Tax system.
 
 More information about configuring the Destination Based Tax feature specifically to support India GST can be found at [More about India GST](India-GST).
 
 
 # Definitions
 
-**Default Tax Code** The default tax code represents the group of tax jurisdictions where the store is located.  There can only be one default tax code for each company.  Currently OSPOS only allows for a single company (although there are plans to make it multi-company).  The default tax code is a configured option. If and when multi-company is supported the default tax code will need to be configured at the store level. 
+**Default Tax Code** The default tax code represents the group of tax jurisdictions where the store is located.  There can only be one default tax code for each company.  Currently OSPOS only allows for a single company (although there are plans to make it multi-company).  The default tax code is a configured option. If and when multi-company is supported the default tax code will need to be configured at the store level. This is also known as the Origin Tax Code.
 
 **HSN Code** HSN code or Harmonized System Nomenclature code number is an internationally adopted commodity description and coding system developed by the World Customs Organization (WCO).
 
@@ -57,9 +46,9 @@ More information about configuring the Destination Based Tax feature specificall
 
 # Rules and Constraints
 
-**Once the Destination Tax feature is enabled, the current default tax rate fields should not be used for the purpose of tax.** OSPOS currently has two default tax percent fields.  When this module is enabled these will not be used.
+**Once the Destination Tax feature is enabled, the current default tax rate fields will not be used for the purpose of calculating taxes.** OSPOS currently has two default tax percent fields.  When this module is enabled these will not be used.
 
-**Use origin tax code if there isn't an customer tax code.** If there isn't a tax code for the customer then the Origin Tax Code will be used to calculate the tax for the order.  It will be retrieved using the tax code configured as the default. 
+**Use origin tax code if there isn't a tax code assigned to the customer.** If there isn't a tax code for the customer then the Origin Tax Code will be used to calculate the tax for the order.  It will be retrieved using the tax code configured as the default. 
 
 **The customer tax origin basis depends on the register mode.** If the register mode is "Sales by Receipt" then tax will be computed based on the default tax code. If the sale is "Sales by Invoice" then tax will be computed based on the city and state of the customer address.
 
@@ -98,27 +87,10 @@ The following information is provided for each tax.  You should always set up th
 
 **Category Exceptions**  The standard sales tax can be overridden for a particular tax category of items.  For example spirits, liquor and beer often have a higher tax rate.  Service items are often non-taxable.  This is implemented by assigning the tax category to the item and then adding the tax category exception to the tax rate definition.
 
-# Migration
-
-One goal of the Customer Sales Tax project was to insure that the sales taxes for a sale were computed and rounded according to the rules of the relevant taxing jurisdiction.  Since there are so many rules, the taxes cannot easily be computed "on the fly" and it isn't practical to try to develop an SQL only equivalent for the tax calculation programs.
-
-So now the computed taxes are saved to a table named `sales_taxes`.  The sales tax amount that is calculated at an item level is also now saved to the `sales_items_taxes` table.
-
-To update the values for past sales we now have a migration task that will run through all sales that do not already have an entry in the `sales_taxes` table and will add the missing entries and update the `sales_items_taxes` table.
-
-This migration is included in the project as a migration task in the newly implemented Migration module.
-
-Please backup your database before running it and I would highly recommend testing it first, running over a test database to see if the results of the migration are satisfactory.
-
-To run the migration click on the Migrations module and then click on the Start Migration button.  It is as simple as that.
 
 # Comments
 
-Prior to this feature the tax rate 1 field was required.  With the introduction of this feature the tax rate 1 field is now optional.
-
-There may be additional changes required for sales tax reporting in order to break it down by jurisdiction, but that probably should be a "back office" application.  Until then the current tax reports, with a little tweaking, should be adequate for generating tax reports that can be used to do manual tax by jurisdiction reporting.
-
-For tax reporting the tax code can be used to break out tax collected by jurisdiction.  I intend on writing a tax reporting application for a back office but that's not going to come quick but should be available within six months.
 
 # Change History
 6/13/2018 - Started adding documentation for India's Goods and Services Tax 
+4/15/2020 - Made a few corrections to the page.
