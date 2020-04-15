@@ -92,5 +92,5 @@ The following information is provided for each tax.  You should always set up th
 
 
 # Change History
-6/13/2018 - Started adding documentation for India's Goods and Services Tax 
-4/15/2020 - Made a few corrections to the page.
+* 6/13/2018 - Started adding documentation for India's Goods and Services Tax 
+* 4/15/2020 - Made a few corrections to the page.
