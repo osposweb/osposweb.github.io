@@ -15,6 +15,14 @@ extension=php_intl.dll, Was not enabled.
 
 extension=php_sockets.dll. Was not enabled.
 
+**In the latest version of php 7.4.6 extensions names are changed in Php.ini file to.**
+
+extension=gd2 This may already be enabled.
+
+extension=intl Was not enabled.
+
+extension=sockets Was not enabled.
+
 NOTE: If it doesn't work please read [issue 1607](https://github.com/opensourcepos/opensourcepos/issues/1607) for a detailed list of extensions.
 
 Now Apache should be ready to go.
