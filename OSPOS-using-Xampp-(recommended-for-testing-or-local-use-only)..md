@@ -9,7 +9,7 @@ From Apache select Config.
 Edit the Php.ini file to uncomment the following extensions as needed. The extensions are about halfway down.
 bcmath already appears to be enabled in this version of Xampp.
 
-extension=php_gd2.dll, This may already be enabled.
+extension=php_gd2.dll, This is already enabled.
 
 extension=php_intl.dll, Was not enabled.
 
