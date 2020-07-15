@@ -2,7 +2,7 @@
 As every year a stocktake is needed to check if the amounts in the point of sale correspond with reality, I decided to do a short writeup on an approach for doing a stocktake using OSPOS.
 
 ## Create a new employee
-This will help us track the corrections on our inventory after the stocktake has been done. Therefore, create a new employee that you use to do the stocktake. This means that it should be logged out once you stop correcting inventory levels. We suggerst to give it an easy recognizable and unique name.
+This will help us track the corrections on our inventory after the stocktake has been done. Therefore, create a new employee that you use to do the stocktake. This means that it should be logged out once you stop correcting inventory levels. We suggest to give it an easy recognizable and unique name.
 
 ## Correct inventory levels
 The next step is the correction of the inventory levels. Currently we'll need to rely on the inventory form that exists in the items module. The idea is as follows
