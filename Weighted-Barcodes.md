@@ -14,7 +14,7 @@ The format before 3.3.2 regex format in the above given example is as follows
 
 ```02(\d{5})(\w{6})```
 
-This was **changed in 3.3.2** and adheres to the token format used also in invoices, quotes and work orders.
+This was **changed in 3.3.2** and adheres to the token format used also in invoices, quotes and work orders (see #2797).
 
 ```02{W:5}{I:6}```
 
