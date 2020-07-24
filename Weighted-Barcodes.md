@@ -1,6 +1,8 @@
 ## How to use scales as an input device
 
-**OSPOS** also can be used for businesses that are based on **weighted items**, example: Dairy Markets, Grocery Shops, Roasteries, Veggies & Fruits Market, etc...
+**OSPOS** also can be used for businesses that are based on **weighted items**, example: Dairy Markets, Grocery Shops, Roasteries, Veggies & Fruits Market, etc... 
+
+The idea is that you configure the scale to readout the variables in a fixed string format. Most scales are regular USB devices that can be configured to send keys as if they were a keyboard. One thing you need to do is setup the format in OSPOS so it knows which data goes where.
 
 ### Where to configure
 
