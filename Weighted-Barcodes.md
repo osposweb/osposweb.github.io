@@ -1,6 +1,10 @@
-**OSPOS** also can be used for businesses that are based on **Weighted items**, example: Dairy Markets, Grocery Shops, Roasteries, Veggies & Fruits Market, etc...
+## How to use scales as an input device
 
-The feature was implemented back in August, 5 with a specific barcode format to parse the barcode set in configuration panel as below:
+**OSPOS** also can be used for businesses that are based on **weighted items**, example: Dairy Markets, Grocery Shops, Roasteries, Veggies & Fruits Market, etc...
+
+### Where to configure
+
+The feature allows you to use a specific barcode format to parse the barcode set in configuration panel as below:
 
 ![Input Field](http://ospos.wshells.org/Wiki/Input.png)
 
@@ -10,11 +14,17 @@ Below is a filled in example:
 
 ![Input Filled](http://ospos.wshells.org/Wiki/Filled.jpg)
 
-The format before 3.3.2 regex format in the above given example is as follows
+### The format before 3.3.2
 
 ```02(\d{5})(\w{6})```
 
-This was **changed in 3.3.2** and adheres to the token format used also in ([invoices, quotes and work orders](https://github.com/opensourcepos/opensourcepos/pull/2797)).
+* 2 first characters represent the department code
+* 5 following digits represent the item weight
+* last 6 characters represent the item barcode
+
+### The format in 3.3.2 and beyond
+
+The format adheres to the token formatting used also in ([invoices, quotes and work orders](https://github.com/opensourcepos/opensourcepos/pull/2797)).
 
 ```02{W:5}{I:6}```
 
