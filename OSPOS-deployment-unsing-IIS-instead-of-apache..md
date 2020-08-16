@@ -5,12 +5,15 @@ After some trial and error, I succeeded in making it work and have some simple s
 1. Point your webroot folder to "/ospos_path/public" directly 
 2. install the url_rewrite module in iis manager
 3. import the .htaccess to make a web.config file with the rewrite rules
+4. everything else can be followed in the install.md
 
 Everything works exactly as it should, took me longer than i would like to admit to figure that out. 
 Keep up the good work everyone! 
 
 
 The following is my web.config file in my /public/ directory if anyone wants to edit/add it in to the github.
+
+
 `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
