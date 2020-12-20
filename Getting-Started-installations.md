@@ -21,7 +21,7 @@ ___We will be installing a prebuilt version of OSPOS.  Do not click on the Green
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, it's best to elevate to root access with `sudo su` command.
 
-2. **Dependencies** Install: Apache2, MariaDB, PhP with openssl, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php5-curl php5-mysql php5-gd php5-intl php5-openssl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd php-openssl`. Debian does not use "php5" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
+2. **Dependencies** Install: Apache2, MariaDB, PhP with openssl, curl, gd, intl and bcmath, in MAC all these are included in MAMP, in Linux for Deb and RPM based distribution you need `apt-get install apache2 mariadb-server php7.4-curl php7.4-mysql php7.4-gd php7.4-intl php7.4-openssl` or/and `yum install httpd mysql-server php php-bcmath php-dba php-gd php-openssl`. Debian does not use "php7.4" bit "php" in their names of the packages. Now finally enable the mod-rewrite module by entering the `a2enmod rewrite` command.
 
 3. **Htdocs** working directory: Change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remember this depends of the Operating System Apache2 install
 
