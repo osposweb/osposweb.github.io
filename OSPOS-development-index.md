@@ -183,7 +183,7 @@ the correct way its:
 
 `$employee_id = $this->Employee->get_logged_in_employee_info()->person_id;`
 
-To cheap memory it's recommended:
+To save memory it's recommended:
 
 ``` php
 $employee = $this->Employee->get_logged_in_employee_info();
@@ -214,7 +214,6 @@ and sanitize values before load in a modal dialog form:
         $this->load->view('employees/form_change_password', $data);	// load a form and parse the information
     }
 ```
-For more info check code API at https://dan4cat.github.io/opensourcepos/
 
 ### How to invoke a function with anchor as a modal dialog
 
