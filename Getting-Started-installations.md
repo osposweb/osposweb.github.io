@@ -49,11 +49,11 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
 
-4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.0/opensourcepos.20190929181753.3.3.0.0b9a76.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.2/opensourcepos.20200903075833.3.3.2.bb309c.zip -O osposlastedstable.zip` to later move to the htdoc directory.
 
 5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdocker` this will populate all the docker root image directory only for the software.
 
-6. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideratin password administrative privilegies** for the database users.
+6. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideration password administrative privileges** for the database users.
 
 Now next to [Getting Started Usage](Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
