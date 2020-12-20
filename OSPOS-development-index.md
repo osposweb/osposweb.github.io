@@ -45,7 +45,7 @@ OSPOS is a web applications software, **two parts, a client rendering side and a
 |---------- | ------------- | --------------- | ---------- | -------------------------------------- |
 |webserver  | Apache2  | 2.2.12   | 2.4 | Only apache2 are officially supported  |
 |database   | MySQL or MariaDB | 5.5 | 5.6 / 10.0.1 | Only MySQL related DBMS are compatible such Percona Server also works |
-|websoftware  | PHP  | 5.6   | 7.0 | Need mycrypt/openssl, curl and mysql modules actived.  |
+|websoftware  | PHP  | 7.2  | 7.4 | Need mycrypt/openssl, curl and mysql modules actived.  |
 |Machine    | PC/MAC/RasberryPi/Daruma | year of 2010    | year of 2012 | Recent hardware with enough RAM and fast storage  |
 
 Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getting-Started-installations) wiki page for normal install. For Development install plese refers to the [Development Environment page wiki (click here)](OSPOS-Environment-Development) and then when ready go back here.
