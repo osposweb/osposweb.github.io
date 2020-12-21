@@ -1,7 +1,7 @@
 OSPOS is an open source application as evolution of [PHP Point Of Sale](https://github.com/daN4cat/PHP-Point-Of-Sale), when it used to be Open Source before it became a commercial application. Since that time the two applications diverged **OSPOS evolved in a robust application thanks to active contributors**, that small shops can use. [![GitHub version](https://badge.fury.io/gh/jekkos%2Fopensourcepos.svg)](https://badge.fury.io/gh/jekkos%2Fopensourcepos)
 [![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
 
-The overall of how to contribute are primary [creating issues](https://github.com/opensourcepos/opensourcepos/issues/new), sharing ideas in the [issue creation](https://github.com/opensourcepos/opensourcepos/issues/new)/[commenting](https://github.com/opensourcepos/opensourcepos/issues) or reporting bugs, **for code contributions, please read this** wiki page or for **impatients go to [Workflow Contributions (click here)](#workflow-contributions) section** directly
+The overall of how to contribute are primary [creating issues](https://github.com/opensourcepos/opensourcepos/issues/new), sharing ideas in the [issue creation](https://github.com/opensourcepos/opensourcepos/issues/new)/[commenting](https://github.com/opensourcepos/opensourcepos/issues) or reporting bugs, **for code contributions, please read this** wiki page or for **impatient go to [Workflow Contributions (click here)](#workflow-contributions) section** directly
 
 * [Tech: Installation](#tech-installation)
   * [Requirements: Software and Hardware](#requirements)
@@ -28,7 +28,7 @@ OSPOS is a web applications software, **two parts, a client rendering side and a
 
 #### Client side requirements
 
-**The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser. Real install are in the server side (below the requirements, continue reading), theres the officially tested supported web browsers:
+**The hardware on which OSPOS will be consumed and used by employees**, could be any that runs Firefox or any modern web browser. Real install are in the server side (below the requirements, continue reading), there is the officially tested supported web browsers:
 
 |name                                                 | minimal version | observations                         |
 |---------------------------------------------------- | --------------- | ------------------------------------ |
@@ -52,7 +52,7 @@ Please refers to the [DOCS-USERS-Getting-Started-installations](DOCS-USERS-Getti
 
 ## Tech: Architecture
 
-This software is about using **MySQL DBMS as data** backend and (for now) **Apache2 as WEBSERVER render** frontend. So not so important, your should be **enought knowledge about managing those**.
+This software is about using **MySQL DBMS as database** and **Apache2** as a webserver.
 
   * [1 - Architecture workflow](#1---architecture-workflow)
   * [2 - How to start to develop](#2---how-to-start-develop)
@@ -65,41 +65,44 @@ This software is about using **MySQL DBMS as data** backend and (for now) **Apac
 OSPOS is a project **based on CodeIgniter**, so a good starting point to understand the architecture of the software is to read a [Codeigniter tutorial (https://www.codeigniter.com/user_guide/tutorial/)](https://www.codeigniter.com/user_guide/tutorial/static_pages.html).
 
 Among `Codeigniter`, also has usage of some other web software technologies such like `JQuery` and `Bootstrap`, 
-please read the section [2 - How to start develop](#2---how-to-start-development) of this page wiki to lear more and how to start tune up the development environment. But first please learn a little about the architecture workflow.
+please read the section [2 - How to start develop](#2---how-to-start-development) of this page wiki to learn how to start the development environment. But first we will discuss the architecture workflow.
 
 ### 1 - Architecture workflow
 
-The code makes use of the architecture pattern called `Model-View-Controller` (MVC) complete managed by the `Codeigniter` 
-framework as explained, and from now CI for short. Therefore it's important that you get accustomed to dir names 
+The code makes use of the architecture pattern called `Model-View-Controller` (MVC) which is managed by the `Codeigniter` 
+framework, which we will call CI for short from here. It's important that you get accustomed to the directory names 
 like `controllers`, `models`, `views` and what they are about.
 
-Take a reading of [CI workflow MVC](https://www.codeigniter.com/userguide3/overview/appflow.html) at https://www.codeigniter.com/user_guide/general/controllers.html#what-is-a-controller, 
-on top of the MVC concept `CodeIgniter` uses the URL to point to `Class/Functions` 
-and it uses a routing table to facilitate navigation through the `views` and according to the `URL` path. 
+Take a read of [CI workflow MVC](https://www.codeigniter.com/userguide3/overview/appflow.html) at https://www.codeigniter.com/user_guide/general/controllers.html#what-is-a-controller. `CodeIgniter` uses a routing table that maps an URL to a method in a controller and a view.
 
-The OSPOS has some little modifications: first autoload the models, then execute any hooks, and later loads class and/or controllers. This means that first load config model and later the hooks that tracks and checks session and routing so the configuration instance are available for all the environment.
+Some small modifications were done that sit on top of the default routing logic
+
+* autoload the models
+* execute any hooks, 
+* load class and/or controllers. 
+
+This means that first load config model and later the hooks that tracks and checks session and routing so the configuration instance are available for all the environment.
 
 **About models**
 
-All the models are autoloading, the order are in the autoload config file, the `Appconfig` model are the first. The `Employee` and `Reports` models are also important, as they are parents of others.
-Not all the models consult the DB, the `enums/Routing` model are a pure class.
+All the models are loaded automatically. The load order is described in the autoload config file. Not all the models query the DB, the `enums/Routing` model is a purely a class eg.
 
 **About controllers**
 
-So in fact, after reading [controllers in CI](https://www.codeigniter.com/user_guide/general/controllers.html#what-is-a-controller) 
+After reading [controllers in CI](https://www.codeigniter.com/user_guide/general/controllers.html#what-is-a-controller) 
 there's two important controllers in OSPOS mvc:
 
-* the Secure_controller that check employee/session and defines methods to implements in others controllers
+* the Secure_controller checks the employee/session and defines methods to implements in others controllers
 * the Login controller that by using callback perform username so then password check to log in to application
 
-Each controller has their own view directory.
+Each controller has it's own view directory.
 
 **About hooks**
 
 So in fact, after reading [hooks in CI](https://www.codeigniter.com/userguide3/general/hooks.html), 
 there are four hooks in the OSPOS:
 
-* a loading config so the configuration settings are available to developer as CI config array part
+* a load config hook so the configuration settings are available to developer as CI config array part
 * a db logging facility, if enabled from config file, will log all the sql querys.
 * a env dot file, from application config, if foud a `.env` filename for docker installation devel.
 
@@ -112,8 +115,8 @@ So then you will need:
 1. Install `git`, `npm`, `bower`, `composer`, `apache`, `mysql`, `php` and a web browser with good debugging tools.
 2. Understand the web client-server concepts of `request` and `response`
 3. Understand the `Codeigniter` applications framework at https://www.codeigniter.com/user_guide
-4. Clone the repository and ....
-5. ...read the [Development Environment documentation](OSPOS-Environment-Development).
+4. Clone the repository 
+5. Read the [Development Environment documentation](OSPOS-Environment-Development).
 6. Start coding with the [Development coding tips and help](#development code tips and help)
 7. To debug errors, please read [OSPOS DEVEL: Error Logging How to](OSPOS-DEVEL-for-Error-Logging-in-OSPOS)
 
@@ -129,7 +132,7 @@ WIP: database structure info and some tips must be necessary if plans to make ne
 
 ## Development code tips and help
 
-Before read this section, remenber that must take care of the information in the [Technology and Architecture](#tech-architecture) section above. Some important information to start coding and make usefully changes in the project:
+Before you read this section, remember that must take care of the information in the [Technology and Architecture](#tech-architecture) section above. Some important information to start coding and make usefully changes in the project:
 
   * [Workflow Contributions](#workflow-contributions)
   * [Code and API Documentation](#code-and-api-documentation)
@@ -138,7 +141,7 @@ Before read this section, remenber that must take care of the information in the
   * [Using loaded object in new functions](#using-a-predefined-loaded-object-and-used-in-new-function)
   * [Invoking functions and making links dialogs](#how-to-invokes-that-function-with-anchor-as-a-modal-dialog-and-what-will-have-it)
   * [Translations and laguajes](#always-use-translations-event-hardcoded-strings)
-* Technicall Development Specifications:
+* Technical Development Specifications:
     * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
     * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
     * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
@@ -150,13 +153,13 @@ Before read this section, remenber that must take care of the information in the
 
 ### Workflow Contributions
 
-Obviously as github does, by pull request, there's no extended process of "reviews", the pull are accepted once any developer of OSPOS revised and confirm works, but try to adhere to coding standard and documentation as described in this document.
+Contributions can be done in by creating pull requestes. These pull are accepted once any developer approves and all requested changes are performed. One should try to adhere to coding standards and guidelines as described in this document.
 
 ![](https://s3.amazonaws.com/github-images/blog/2012/easy-pull-request-creation.png)
 
-After pushing a branch to GitHub, you (and only you) will see that branch at the top of your repo’s page, **along with buttons to create a Pull Request for it or compare it with master**. Then a interface to select branchs and source/destiny targets will display, please toggle with "across folks" if not, be sure use destiny targe the ospos repository and source target your repository branch.
+After pushing a branch to GitHub, you (and only you) will see that branch at the top of your repo’s page, Next to this some **buttons to create a Pull Request for it or compare it with master** will be visible. Also an interface to select branches and source/destination targets will be shown. Make sure to use the branch on the opensourcepos repository as target destination.
 
-Remenber that if you made all the changes in directly master branch of your repository, dont made more commits unrelated to the specific pull request to/already created. If not, try to make a branch from the top commit and re-send a new pull from.
+Remember that if you made all the changes in the master branch of your repository, that it should not contain any extra commits unrelated to the changes you want to contribute. If not, try to make a branch from the top commit and re-send a new pull request from there.
 
 ### Code and API Documentation
 
