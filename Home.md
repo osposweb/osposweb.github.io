@@ -37,7 +37,7 @@ The documentation of [installation, development and technical and / or advanced 
 
 ### Minimum Server Requirements
 
-* PHP version 5.6+ (openssl, curl, gd, intl and bcmath)
-* MySQL 5.1+ or MariaDB 5.1+
+* PHP version 7.2+ (openssl, curl, gd, intl and bcmath)
+* MySQL 5.5+ or MariaDB 10.1+
 * Apache 2+, lighttpd or nginx
 
