@@ -22,7 +22,7 @@ If you need assistance you can create [a support ticket by clicking here](https:
 ### User Documentation
 
 * [Getting Started with Open Source POS](#)
-  * [OSPOS Feature datasheet and usage](OSPOS-complete-feature-datasheet)
+  * [OSPOS Feature datasheet and usage](Complete-feature-datasheet)
   * [Getting Started - Installation](Getting-Started-installations)
   * [Getting Started - Usage](DOCS-USERS-Getting-Started-usage)
 * [OSPOS hardware support](Supported-hardware-datasheet)
