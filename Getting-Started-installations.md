@@ -33,11 +33,9 @@ ___We will be installing a prebuilt version of OSPOS.  Do not click on the Green
 
 7. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
 
-8. **Configure** the OSPOS index page and encryption key this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
+8. **Browse** use the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
 
-9. **Browsing** using the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
-
-10. **Login** by using username as **admin**  and the password are **pointofsale** and then enjoy the software.
+9. **Login** by using username as **admin** and the password **pointofsale** and then enjoy the software.
 
 Now next to [Getting Started Usage](Getting-Started-usage)
 
@@ -75,25 +73,23 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 
 2. **Choose** a Debian Droplet by click the Create button in the top right hand corner, and later from the dropdown menu.
 
-3. **OneClickApp** as the LAMP on 9 app, clik the One click apps link. Scroll down, and choose a size. Then scroll down to Choose a datacenter region. Select the region closest to you. Finally select hosname as `osposdo`
+3. **OneClickApp** as the LAMP on 9 app, clik the One click apps link. Scroll down, and choose a size. Then scroll down to Choose a datacenter region. Select the region closest to you. Finally select a hostname as `osposdo`
 
 4. **Connecting**: Now click the Create button to create your droplet. When your droplet has been created, you'll receive an email from DigitalOcean. This will have the information to log in. You now have the information needed to log in to your server. If you have Mac or Linux, you can use the built-in terminal program SSH as `ssh root@<digitalocean's-ip>`.
 
-5. **Install** software, apache and mysql/mariadb are already, need enable the mod-rewrite module by `a2enmod rewrite` then PHP modules by `apt-get install php-intl php-openssl php-bcmath php-curl` Type "Y" when it asks if you want to continue. Finally restart service by `service apache2 restart`
+5. **Install** software, apache and mysql/mariadb are already there. You only need to enable the mod-rewrite module by `a2enmod rewrite` then PHP modules by `apt-get install php-intl php-openssl php-bcmath php-curl` Type "Y" when it asks if you want to continue. Finally restart service by `service apache2 restart`
 
-6. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.0/opensourcepos.20190929181753.3.3.0.0b9a76.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+6. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.2/opensourcepos.20200903075833.3.3.2.bb309c.zip -O osposlastedstable.zip` to later move to the htdoc directory.
 
 7. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C /var/www/html` this will populate all the web server htdocs root directory only for the software.
 
-8. **Create** database and access: executing in same terminal `mysql -u root -p -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` the DigitalOcean's password are in the filesystem, get with `cat /root/.digitalocean_password` command before, and take **in consideratin password administrative privilegies** for the database users.
+8. **Create** database and access: executing in same terminal `mysql -u root -p -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` the DigitalOcean's password are in the filesystem, get with `cat /root/.digitalocean_password` command before, and take **in consideration password administrative privileges** for the database users.
 
 9. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
 
-10. **Configure** the OSPOS index page and encription key, this its by editing the config and htaccess files, can be bypassing but strong recommended set the encryption key at `application/config/config.php` with your owcurrently for security.
+10. **Browse** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
 
-11. **Browsing** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
-
-12. **Login** by using username as **admin** and the password are **pointofsale** and then enjoy the software.
+11. **Login** by using username as **admin** and the password are **pointofsale** and then enjoy the software.
 
 Now next to [Getting Started Usage](Getting-Started-usage)
 
