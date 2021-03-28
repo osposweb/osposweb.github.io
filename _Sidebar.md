@@ -45,6 +45,7 @@
      * [Localisation](https://github.com/opensourcepos/opensourcepos/wiki/Localisation-support)
      * [Menu and Permissions](https://github.com/opensourcepos/opensourcepos/wiki/Menu-and-Permissions)
      * [Sales](https://github.com/opensourcepos/opensourcepos/wiki/Sales)
+     * [Payments](https://github.com/opensourcepos/opensourcepos/wiki/Payment-Processing)
      * [Alternate Currency Sales](https://github.com/opensourcepos/opensourcepos/wiki/Alternate-Currency-Receipts-and-Invoices)
      * [Taxes](https://github.com/opensourcepos/opensourcepos/wiki/Taxes)
      * [Work Orders](https://github.com/opensourcepos/opensourcepos/wiki/Work-Orders)
