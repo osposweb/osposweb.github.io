@@ -8,4 +8,4 @@ There is support for a manual payment transaction (used for POS sales) that allo
 
 In an invoice sale it is normal for there to be a balance due.  All invoices require a customer be associated with the sale.  Although it's possible to enter a "due" payment transaction against an invoice, it is unnecessary.
 
-Development is currently underway to better track balance due amounts (including "due" transactions) and to slightly improve the support for post sale payments.
+Development is currently underway to better track balance due amounts (including "due" transactions) and to slightly improve the support for post sale payments.  This work is to resolve issue #3072
