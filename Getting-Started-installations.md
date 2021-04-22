@@ -24,7 +24,7 @@ ___We will be installing a prebuilt version of OSPOS.  Do not click on the Green
 
 3. **Htdocs** working directory: Change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remember this depends of the Operating System Apache2 install
 
-4. **Download** the latest version of from the release section and uncompress it to the htdoc directory
+4. **Download** the latest version from the [release section](https://github.com/opensourcepos/opensourcepos/releases) and uncompress it to the htdoc directory
 
 5. **Create** database and access: executing in same terminal `mysql -u root -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` take **in consideratin password administrative privilegies** for the database users.
 
@@ -44,7 +44,7 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 3. **Dockerplace** working directory for the dockerfile of ospos: this change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker`.
 
-4. **Download** the latest version of from the release section and uncompress it to the htdoc directory
+4. **Download** the latest version of from the [release section](https://github.com/opensourcepos/opensourcepos/releases) and uncompress it to the htdoc directory
 
 5. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideration password administrative privileges** for the database users.
 
@@ -74,7 +74,7 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 
 5. **Install** software, apache and mysql/mariadb are already there. You only need to enable the mod-rewrite module by `a2enmod rewrite` then PHP modules by `apt-get install php-intl php-openssl php-bcmath php-curl` Type "Y" when it asks if you want to continue. Finally restart service by `service apache2 restart`
 
-6. **Download** the latest version of from the release section and uncompress it to a directory of choice
+6. **Download** the latest version from the [release section](https://github.com/opensourcepos/opensourcepos/releases)  and uncompress it to a directory of choice
 
 7. **Create** database and access: executing in same terminal `mysql -u root -p -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` the DigitalOcean's password are in the filesystem, get with `cat /root/.digitalocean_password` command before, and take **in consideration password administrative privileges** for the database users.
 
