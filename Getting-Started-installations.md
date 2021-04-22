@@ -25,17 +25,15 @@ ___We will be installing a prebuilt version of OSPOS.  Do not click on the Green
 
 3. **Htdocs** working directory: Change the working directory in the current terminal window, assuming the `/var/www/html` as the web root html document directory and you can move to by executing `cd /var/www/html` but remember this depends of the Operating System Apache2 install
 
-4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.2/opensourcepos.20200903075833.3.3.2.bb309c.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+4. **Download** the latest version of from the release section and uncompress it to the htdoc directory
 
-5. **Uncompress** to htdocs the download: `cd /var/www/html;unzip osposlastedstable.zip` this will populate all the web server htdocs root directory only for the software.
+5. **Create** database and access: executing in same terminal `mysql -u root -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` take **in consideratin password administrative privilegies** for the database users.
 
-6. **Create** database and access: executing in same terminal `mysql -u root -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` take **in consideratin password administrative privilegies** for the database users.
+6. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
 
-7. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
+7. **Browse** use the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
 
-8. **Browse** use the web browser and run from `http://localhost/public` or better `http://127.0.0.1/public` 
-
-9. **Login** by using username as **admin** and the password **pointofsale** and then enjoy the software.
+8. **Login** by using username as **admin** and the password **pointofsale** and then enjoy the software.
 
 Now next to [Getting Started Usage](Getting-Started-usage)
 
@@ -43,15 +41,13 @@ Now next to [Getting Started Usage](Getting-Started-usage)
 
 1. **Terminal** windows must be open: in MacOSX at Finder->Accesories->Terminal in Linux at Menu->SystemTools->Terminal, then a window with prompt will show, in Linux flavors must gain root access only for next step with `sudo su` command
 
-2. **Dependences** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to out from root account.
+2. **Dependencies** install: docker.io, please refer to the docker documentation for better instructions: in MAC all included in `docker.img` file by launching it, drag Moby the whale to the Applications folder and later relaunch service from Finder, in Linux for Deb and RPM based distribution are `apt-get install docker.io` or/and `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo;yum install -y docker-ce` respectively, oldstable deb distributions may need "backports" or "external" repositories. After install hit "CRTL+D" to exit the root shell.
 
-3. **Dockerplace** working directory for the dockerfile of ospos: this it's change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker` but remenber this depends of the Operating System Docker install too.
+3. **Dockerplace** working directory for the dockerfile of ospos: this change the working directory in the current terminal window, assuming the `~` represent your home with a docker root document directory and you can move to by executing `mkdir ~/osposdocker;cd ~/osposdocker`.
 
-4. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.2/opensourcepos.20200903075833.3.3.2.bb309c.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+4. **Download** the latest version of from the release section and uncompress it to the htdoc directory
 
-5. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C ~/osposdocker` this will populate all the docker root image directory only for the software.
-
-6. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideration password administrative privileges** for the database users.
+5. **Build+Run** the image with following commands `docker-compose build` and then later `docker-compose up`, take **in consideration password administrative privileges** for the database users.
 
 Now next to [Getting Started Usage](Getting-Started-usage) More info in the wiki page [Extras for Docker cloud maintenance](Extras-for-Docker-cloud-maintenance) must be read.
 
@@ -79,17 +75,15 @@ For Cloud hosting we recommend [`DigitalOcean` (click here)](https://m.do.co/c/a
 
 5. **Install** software, apache and mysql/mariadb are already there. You only need to enable the mod-rewrite module by `a2enmod rewrite` then PHP modules by `apt-get install php-intl php-openssl php-bcmath php-curl` Type "Y" when it asks if you want to continue. Finally restart service by `service apache2 restart`
 
-6. **Download** Retrieve a prebuilt version of OSPOS using the latest release.  Execute in same terminal: `wget https://github.com/opensourcepos/opensourcepos/releases/download/3.3.2/opensourcepos.20200903075833.3.3.2.bb309c.zip -O osposlastedstable.zip` to later move to the htdoc directory.
+6. **Download** the latest version of from the release section and uncompress it to a directory of choice
 
-7. **Uncompress** to htdocs the download: `tar zxvf osposlastedstable.tar.gz  --strip 1 -C /var/www/html` this will populate all the web server htdocs root directory only for the software.
+7. **Create** database and access: executing in same terminal `mysql -u root -p -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` the DigitalOcean's password are in the filesystem, get with `cat /root/.digitalocean_password` command before, and take **in consideration password administrative privileges** for the database users.
 
-8. **Create** database and access: executing in same terminal `mysql -u root -p -e "CREATE SCHEMA ospos;CREATE USER 'admin'@'%' IDENTIFIED BY 'pointofsale';GRANT ALL PRIVILEGES ON ospos . * TO 'admin'@'%' IDENTIFIED BY 'pointofsale' WITH GRANT OPTION;FLUSH PRIVILEGES;"` the DigitalOcean's password are in the filesystem, get with `cat /root/.digitalocean_password` command before, and take **in consideration password administrative privileges** for the database users.
+8. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
 
-9. **Populate** database with that other command in same terminal `mysql -u admin -ppointofsale -D ospos < /var/www/html/database/database.sql`
+9. **Browse** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
 
-10. **Browse** using the web browser and run from `http://<digitalocean-ip>/public` changing the "digitalocean-ip" with that provided in the mail previously received.
-
-11. **Login** by using username as **admin** and the password are **pointofsale** and then enjoy the software.
+10. **Login** by using username as **admin** and the password are **pointofsale** and then enjoy the software.
 
 Now next to [Getting Started Usage](Getting-Started-usage)
 
