@@ -3,7 +3,6 @@
   * 🖳 [Local Docker Deploy Install](#local-docker-install)
 * 📶 [Cloud Install](#cloud-install)
   * 🖧 [Cloud Deploy Installation](#cloud-deploy-installation)
-* ⌨ [cPanel & SSH Installer](#cpanel-ssh-install)
 * [Professional Install](#professional-install)
   * [Local Professional Install](#professional-local-install)
   * [Others OSs Install guides](#other-install-guides)
