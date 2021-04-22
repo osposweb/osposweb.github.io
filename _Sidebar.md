@@ -57,7 +57,6 @@
 # FAQ
 
   * [Feature datasheet](OSPOS-complete-feature-datasheet)
-  * [Why my issue was closed?](OSPOS-why-my-issue-was-closed)
 
 ***
 
