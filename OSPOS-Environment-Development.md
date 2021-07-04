@@ -13,9 +13,9 @@ OSPOS uses at the moment bower and grunt. Maybe one day we switch to webpack and
 
 Docker and docker-compose are recommended to make a first full build. If you don't want to use docker, read the Basic tool setup section further on here.
 
-`docker run --rm -v $(pwd):/app composer/composer install` \
-`docker run --rm -v $(pwd):/app -w /app lucor/php7-cli php bin/install.php translations develop` \
-`docker run --rm -it -v $(pwd):/app -w /app digitallyseamless/nodejs-bower-grunt "sh -c npm install && bower install"` \
+`docker run --rm -v $(pwd):/app jekkos/composer install` \
+`docker run --rm -v $(pwd):/app -w /app jekkos/composer php bin/install.php translations develop` \
+`docker run --rm -it -v $(pwd):/app -w /app opensourcepos/node-grunt-bower "sh -c npm install && bower install"` \
 `docker-compose -f docker-compose.dev.yml build` \
 `docker-compose -f docker-compose.dev.yml up`
 
