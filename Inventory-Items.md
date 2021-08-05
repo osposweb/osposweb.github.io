@@ -11,7 +11,7 @@ The [Inventory module](Getting-Started-usage#3-inventory) has a list of availabl
 The [Sale Module](Getting-Started-usage#4-sales) has a input entry to scan barcode or search items/kits by name or barcode numbers, then the list are present and can pickup the items to the current sale.
 
 
-##Importing Items
+## Importing Items
 CSV imports are possible for items to both **add new items** and **update existing items**.  The file must follow standard Comma Separated Values file format including a header row.  It is recommended that you download the CSV Import Template each time (Items > CSV Import > "Download Import CSV Template (CSV)"). 
 
 If the **Id** column is populated in a given row with the item_id then the importer will **update** the item, but it only replaces attributes and fields where there is a value.  Empty fields are ignored rather than removing the existing data for that field.  This means that for an update operation there are no required columns like there are in an import.
